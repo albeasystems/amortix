@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Amortix — La calculadora de hipotecas más completa para iPhone. Simula cuotas, compara escenarios y amortiza anticipadamente."/>
+<title>Amortix — Calculadora de Hipoteca para iPhone</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, #0f172a 0%, #064e3b 55%, #065f46 100%);
+  color: #fff;
+  padding: 100px 24px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(16,185,129,.28) 0%, transparent 70%);
+}
+.hero::after {
+  content: "";
+  position: absolute; bottom: -1px; left: 0; right: 0; height: 60px;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+.hero > * { position: relative; z-index: 1; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  color: #6ee7b7;
+  padding: 6px 16px; border-radius: 50px;
+  font-size: 13px; font-weight: 600;
+  margin-bottom: 28px;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 68px);
+  font-weight: 900; line-height: 1.08;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+.hero h1 .highlight {
+  background: linear-gradient(90deg, #34d399, #0ea5e9);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #94a3b8;
+  max-width: 540px; margin: 0 auto 40px;
+  line-height: 1.7;
+}
+.hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--green); color: #fff;
+  padding: 15px 32px; border-radius: 50px;
+  font-size: 16px; font-weight: 700;
+  box-shadow: 0 8px 28px rgba(16,185,129,.45);
+  transition: transform .2s, box-shadow .2s;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(16,185,129,.55); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff;
+  padding: 15px 28px; border-radius: 50px;
+  font-size: 16px; font-weight: 600;
+  transition: background .2s;
+}
+.btn-secondary:hover { background: rgba(255,255,255,.18); }
+
+/* ── PHONE MOCKUP ── */
+.hero-mockup { margin: 64px auto 0; max-width: 280px; }
+.phone {
+  background: #1e293b; border-radius: 44px; padding: 12px;
+  box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.08);
+}
+.phone img { width: 100%; border-radius: 34px; display: block; }
+
+/* ── STATS ── */
+.stats { background: #fff; border-bottom: 1px solid var(--border); }
+.stats-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.stat { padding: 32px 24px; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: none; }
+.stat-num { font-size: 38px; font-weight: 900; color: var(--green); letter-spacing: -1px; line-height: 1; }
+.stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+
+/* ── SECTIONS ── */
+section { padding: 88px 24px; }
+.section-title { font-size: clamp(26px, 4vw, 40px); font-weight: 900; letter-spacing: -.5px; line-height: 1.15; margin-bottom: 14px; }
+.section-sub { font-size: 17px; color: var(--text-muted); max-width: 520px; line-height: 1.7; }
+.section-header { margin-bottom: 56px; }
+
+/* ── SCREENSHOTS ── */
+.screenshots-section { background: #fff; overflow: hidden; }
+.screenshots-inner { max-width: 1100px; margin: 0 auto; }
+.screenshots-scroll {
+  display: flex; gap: 24px; align-items: flex-end;
+  overflow-x: auto; padding: 12px 4px 24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.screenshots-scroll::-webkit-scrollbar { display: none; }
+.screenshot-item { flex-shrink: 0; scroll-snap-align: start; }
+.screenshot-item .phone-wrap {
+  background: #1e293b; border-radius: 36px; padding: 10px;
+  box-shadow: 0 20px 48px rgba(0,0,0,.18), 0 0 0 1px rgba(255,255,255,.06);
+  transition: transform .3s;
+}
+.screenshot-item:hover .phone-wrap { transform: translateY(-6px); }
+.screenshot-item .phone-wrap img { width: 180px; border-radius: 28px; display: block; }
+.screenshot-caption { text-align: center; margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--text-muted); }
+
+/* ── FEATURES ── */
+.features-section { background: var(--bg); }
+.features-grid { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.feature-card {
+  background: #fff; border-radius: var(--radius-lg);
+  border: 1px solid var(--border); padding: 30px 28px;
+  transition: transform .2s, box-shadow .2s;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.feature-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; margin-bottom: 18px;
+}
+.feature-icon.green { background: #ecfdf5; }
+.feature-icon.blue  { background: #eff8ff; }
+.feature-icon.yellow{ background: #fffbeb; }
+.feature-icon.teal  { background: #f0fdfa; }
+.feature-card h3 { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
+.feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+/* ── SIMULATOR DARK SECTION ── */
+.sim-section { background: linear-gradient(160deg, #0f172a, #064e3b); color: #fff; }
+.sim-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.sim-section .section-label { color: #6ee7b7; }
+.sim-section .section-title { color: #fff; }
+.sim-section .section-sub { color: #94a3b8; }
+.sim-points { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+.sim-point { display: flex; gap: 14px; align-items: flex-start; }
+.sim-point-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: rgba(255,255,255,.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.sim-point-text h4 { font-size: 15px; font-weight: 700; color: #e2e8f0; }
+.sim-point-text p { font-size: 13px; color: #94a3b8; margin-top: 2px; line-height: 1.5; }
+
+/* ── HOW IT WORKS ── */
+.how-section { background: #fff; }
+.how-inner { max-width: 900px; margin: 0 auto; }
+.how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+.how-steps::before {
+  content: "";
+  position: absolute; top: 26px; left: 15%; right: 15%; height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--blue)); z-index: 0;
+}
+.how-step { text-align: center; position: relative; z-index: 1; }
+.how-step-num {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), var(--teal));
+  color: #fff; font-size: 20px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 18px;
+  box-shadow: 0 4px 16px rgba(16,185,129,.35);
+}
+.how-step h3 { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
+.how-step p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+/* ── PRICING ── */
+.pricing-section { background: linear-gradient(135deg, #f0fdf4, #ecfdf5); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.pricing-inner { max-width: 800px; margin: 0 auto; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
+.plan-card { background: #fff; border-radius: 22px; border: 1px solid var(--border); padding: 32px; transition: transform .2s; }
+.plan-card.featured { border-color: var(--green); box-shadow: 0 8px 32px rgba(16,185,129,.15); position: relative; }
+.plan-badge {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--green); color: #fff;
+  font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px;
+  white-space: nowrap;
+}
+.plan-card:hover { transform: translateY(-2px); }
+.plan-name { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.plan-price { font-size: 38px; font-weight: 900; color: var(--text); letter-spacing: -1px; }
+.plan-price sup { font-size: 20px; font-weight: 700; vertical-align: super; }
+.plan-price small { font-size: 15px; color: var(--text-muted); font-weight: 500; }
+.plan-desc { font-size: 14px; color: var(--text-muted); margin: 10px 0 22px; }
+.plan-features { display: flex; flex-direction: column; gap: 10px; }
+.plan-features li { font-size: 14px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; }
+.plan-features li .check { color: var(--green); font-size: 16px; flex-shrink: 0; }
+.plan-features li .cross { color: #cbd5e1; font-size: 16px; flex-shrink: 0; }
+
+/* ── TESTIMONIALS ── */
+.testimonials-section { background: var(--bg); }
+.testimonials-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.testimonial { background: #fff; border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 28px; }
+.stars { color: var(--yellow); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+.testimonial q { font-size: 15px; color: var(--text); line-height: 1.7; font-style: italic; quotes: "«" "»"; }
+.testimonial q::before { content: open-quote; }
+.testimonial q::after { content: close-quote; }
+.testimonial-author { margin-top: 16px; display: flex; align-items: center; gap: 12px; }
+.author-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: #fff; }
+.author-info strong { display: block; font-size: 14px; font-weight: 700; }
+.author-info span { font-size: 12px; color: var(--text-muted); }
+
+/* ── FAQ ── */
+.faq-section { background: #fff; }
+.faq-inner { max-width: 720px; margin: 0 auto; }
+
+/* ── DOWNLOAD CTA ── */
+.download-section {
+  background: linear-gradient(160deg, #0f172a 0%, #064e3b 55%, #065f46 100%);
+  color: #fff; text-align: center; padding: 100px 24px;
+}
+.download-section h2 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; letter-spacing: -1px; margin-bottom: 16px; }
+.download-section p { font-size: 18px; color: #94a3b8; max-width: 480px; margin: 0 auto 40px; line-height: 1.7; }
+.app-store-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: #fff; color: var(--text);
+  padding: 14px 28px; border-radius: 18px;
+  font-size: 15px; font-weight: 700;
+  box-shadow: 0 8px 28px rgba(0,0,0,.25);
+  transition: transform .2s, box-shadow .2s;
+}
+.app-store-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,.35); }
+.app-store-btn .store-icon { font-size: 26px; }
+.app-store-btn .store-text small { display: block; font-size: 10px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
+.app-store-btn .store-text strong { font-size: 18px; font-weight: 800; }
+.download-note { margin-top: 18px; font-size: 13px; color: #475569; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .sim-inner { grid-template-columns: 1fr; }
+  .hero-mockup.sim-phone { margin: 0 auto; max-width: 260px; }
+}
+@media (max-width: 720px) {
+  .stats-inner { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .stat:last-child { border-bottom: none; }
+  .how-steps { grid-template-columns: 1fr; gap: 24px; }
+  .how-steps::before { display: none; }
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="icon">🏠</div>
+    <span>Amortix</span>
+  </a>
+  <div class="nav-links">
+    <a href="#funcionalidades" class="nav-hide">Funcionalidades</a>
+    <a href="#simulador" class="nav-hide">Simulador</a>
+    <a href="support.html" class="nav-hide">Soporte</a>
+    <a href="#descargar" class="btn-nav">Descargar gratis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🏦 Hipotecas bajo control</div>
+  <h1>
+    Tu hipoteca, <br/>
+    <span class="highlight">siempre clara</span>
+  </h1>
+  <p>Calcula cuotas, simula amortizaciones anticipadas y compara escenarios en segundos. La calculadora de hipoteca más completa para iPhone.</p>
+  <div class="hero-ctas">
+    <a href="#descargar" class="btn-primary">
+      <span>🍎</span> Descarga gratis en iOS
+    </a>
+    <a href="#funcionalidades" class="btn-secondary">
+      Ver funcionalidades →
+    </a>
+  </div>
+  <div class="hero-mockup">
+    <div class="phone">
+      <img src="images/screenshot-1.png" alt="Amortix — Calculadora de hipoteca"/>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Gratuita sin anuncios</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Escenarios comparables</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">€0</div>
+      <div class="stat-label">Sin suscripciones</div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features-section" id="funcionalidades">
+  <div style="max-width:1080px; margin:0 auto;">
+    <div class="section-header">
+      <span class="section-label">Funcionalidades</span>
+      <h2 class="section-title">Todo lo que necesitas<br/>para entender tu hipoteca</h2>
+      <p class="section-sub">Amortix pone en tu bolsillo las herramientas que antes solo tenían los gestores bancarios.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon green">🧮</div>
+        <h3>Cálculo de cuotas</h3>
+        <p>Introduce el importe, el plazo y el tipo de interés y obtén tu cuota mensual al instante, con el desglose completo entre capital e intereses.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon blue">📊</div>
+        <h3>Tabla de amortización</h3>
+        <p>Visualiza mes a mes cuánto pagas de capital, cuánto de intereses y cuál es el saldo pendiente. Exportable y fácil de entender.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon yellow">⚡</div>
+        <h3>Amortización anticipada</h3>
+        <p>Simula el impacto de pagar de más un mes concreto. Ve cuántos meses ahorras y cuánto dinero en intereses dejas de pagar.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon teal">🔀</div>
+        <h3>Comparador de escenarios</h3>
+        <p>Compara hasta varios escenarios lado a lado: fijo vs. variable, distinto plazo o distinto banco. Decide con datos, no con intuición.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="screenshots-section">
+  <div class="screenshots-inner">
+    <div class="section-header" style="text-align:center; padding: 0 24px;">
+      <span class="section-label">La app por dentro</span>
+      <h2 class="section-title">Diseñada para la claridad.<br/>Sin jerga financiera.</h2>
+    </div>
+    <div class="screenshots-scroll">
+      <div class="screenshot-item">
+        <div class="phone-wrap"><img src="images/screenshot-1.png" alt="Calculadora principal"/></div>
+        <div class="screenshot-caption">Calculadora</div>
+      </div>
+      <div class="screenshot-item">
+        <div class="phone-wrap"><img src="images/screenshot-2.png" alt="Tabla de amortización"/></div>
+        <div class="screenshot-caption">Tabla de amortización</div>
+      </div>
+      <div class="screenshot-item">
+        <div class="phone-wrap"><img src="images/screenshot-3.png" alt="Amortización anticipada"/></div>
+        <div class="screenshot-caption">Amortización anticipada</div>
+      </div>
+      <div class="screenshot-item">
+        <div class="phone-wrap"><img src="images/screenshot-4.png" alt="Comparador de escenarios"/></div>
+        <div class="screenshot-caption">Comparador</div>
+      </div>
+      <div class="screenshot-item">
+        <div class="phone-wrap"><img src="images/screenshot-5.png" alt="Gráficas y resumen"/></div>
+        <div class="screenshot-caption">Gráficas y resumen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATOR SECTION -->
+<section class="sim-section" id="simulador">
+  <div class="sim-inner">
+    <div>
+      <span class="section-label">Simulador</span>
+      <h2 class="section-title">Introduce tu hipoteca.<br/>Descubre cuánto puedes ahorrar.</h2>
+      <p class="section-sub">El simulador de amortización anticipada más sencillo. Ajusta el importe, el plazo y la cuota extra y ve el ahorro en tiempo real.</p>
+      <div class="sim-points">
+        <div class="sim-point">
+          <div class="sim-point-icon">📉</div>
+          <div class="sim-point-text">
+            <h4>Reduce la deuda más rápido</h4>
+            <p>Cada euro de amortización anticipada reduce el capital pendiente y los intereses futuros.</p>
+          </div>
+        </div>
+        <div class="sim-point">
+          <div class="sim-point-icon">⏱️</div>
+          <div class="sim-point-text">
+            <h4>Acorta el plazo o baja la cuota</h4>
+            <p>Elige si prefieres pagar menos cada mes o terminar antes de pagar la hipoteca.</p>
+          </div>
+        </div>
+        <div class="sim-point">
+          <div class="sim-point-icon">💡</div>
+          <div class="sim-point-text">
+            <h4>Decide con datos reales</h4>
+            <p>Ve el ahorro total en euros e intereses antes de hablar con tu banco.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-mockup sim-phone" style="margin: 0;">
+      <div class="phone">
+        <img src="images/screenshot-3.png" alt="Simulador de amortización Amortix"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Cómo funciona</span>
+      <h2 class="section-title">Tres pasos.<br/>Tu hipoteca bajo control.</h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <h3>Introduce tu hipoteca</h3>
+        <p>Añade el importe, el tipo de interés, el plazo y la fecha de inicio. Sin registro ni cuenta.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <h3>Explora los escenarios</h3>
+        <p>Consulta la tabla de amortización completa, simula pagos extra y compara entre distintas opciones.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <h3>Toma la mejor decisión</h3>
+        <p>Lleva los datos a tu banco o decide por tu cuenta con toda la información sobre la mesa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div style="max-width:1000px; margin:0 auto;">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Valoraciones</span>
+      <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <q>Por fin una app que explica la hipoteca sin tecnicismos. Con Amortix vi claramente cuánto me ahorraba amortizando 5.000€ antes de firmar.</q>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">M</div>
+          <div class="author-info">
+            <strong>Marta G.</strong>
+            <span>Propietaria, Valencia</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <q>Uso la app cada vez que recibo la carta del banco. La tabla de amortización es perfecta y el comparador me ayudó a elegir entre hipoteca fija y variable.</q>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#14b8a6,#10b981);">J</div>
+          <div class="author-info">
+            <strong>Javier R.</strong>
+            <span>Comprador de vivienda, Madrid</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <q>Simple, rápida y sin anuncios molestos. El simulador de amortización anticipada me convenció de pagar 200€ extra al mes. Ahorro 3 años de hipoteca.</q>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#f59e0b,#10b981);">A</div>
+          <div class="author-info">
+            <strong>Ana P.</strong>
+            <span>Barcelona</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="pricing-inner">
+    <div class="section-header">
+      <span class="section-label">Precio</span>
+      <h2 class="section-title">Completamente gratuita.<br/>Sin publicidad. Sin trampa.</h2>
+      <p class="section-sub">Amortix es 100% gratuita. Sin suscripciones, sin anuncios y sin límites de uso. Tu gestor hipotecario en el bolsillo.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan-card featured">
+        <div class="plan-badge">Gratis para siempre</div>
+        <div class="plan-name">Amortix</div>
+        <div class="plan-price">0<small> €</small></div>
+        <div class="plan-desc">Acceso completo. Sin coste. Sin condiciones.</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Calculadora de cuotas ilimitada</li>
+          <li><span class="check">✓</span> Tabla de amortización completa</li>
+          <li><span class="check">✓</span> Simulador de amortización anticipada</li>
+          <li><span class="check">✓</span> Comparador de escenarios</li>
+          <li><span class="check">✓</span> Gráficas e informes</li>
+          <li><span class="check">✓</span> Sin anuncios. Sin registro.</li>
+        </ul>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">¿Por qué gratis?</div>
+        <div class="plan-price" style="font-size:28px; margin: 8px 0 12px;">🤝</div>
+        <div class="plan-desc">Porque una hipoteca es la decisión financiera más importante de tu vida. Creemos que todo el mundo merece herramientas de calidad, sin pagar por ellas.</div>
+        <ul class="plan-features" style="margin-top:8px;">
+          <li><span class="check">✓</span> Sin suscripción mensual</li>
+          <li><span class="check">✓</span> Sin compras dentro de la app</li>
+          <li><span class="check">✓</span> Actualizaciones gratuitas siempre</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿Qué tipos de hipoteca calcula Amortix? <span class="arrow">▼</span></div>
+      <div class="faq-a">Amortix calcula hipotecas a tipo fijo, variable y mixto con el método francés de amortización, que es el estándar utilizado por la mayoría de bancos en España.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿Incluye el cálculo de la TAE? <span class="arrow">▼</span></div>
+      <div class="faq-a">Sí. Amortix calcula tanto el TIN como la TAE de tu hipoteca, teniendo en cuenta comisiones y gastos asociados cuando los introduces.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿Puedo exportar la tabla de amortización? <span class="arrow">▼</span></div>
+      <div class="faq-a">Sí, puedes exportar la tabla de amortización completa en formato PDF o compartirla directamente desde la app con cualquier aplicación de tu iPhone.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿La app guarda mis datos en la nube? <span class="arrow">▼</span></div>
+      <div class="faq-a">No. Todos los datos de tu hipoteca se almacenan únicamente en tu dispositivo. Amortix no requiere registro ni conexión a internet para funcionar.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿Está disponible para Android? <span class="arrow">▼</span></div>
+      <div class="faq-a">Actualmente Amortix está disponible únicamente para iPhone (iOS). Estamos valorando el soporte para Android en futuras versiones.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">¿De verdad es completamente gratuita? <span class="arrow">▼</span></div>
+      <div class="faq-a">Sí, 100% gratuita. Sin anuncios, sin suscripciones, sin compras dentro de la app. Todas las funcionalidades están disponibles desde el primer momento sin coste alguno.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section class="download-section" id="descargar">
+  <h2>Empieza a entender<br/>tu hipoteca hoy mismo</h2>
+  <p>Únete a los propietarios que ya usan Amortix para tomar mejores decisiones. Gratis, en tu iPhone.</p>
+  <a href="https://apps.apple.com/app/amortix" class="app-store-btn">
+    <span class="store-icon">🍎</span>
+    <div class="store-text">
+      <small>Disponible en</small>
+      <strong>App Store</strong>
+    </div>
+  </a>
+  <div class="download-note">Gratis · iOS 16+ · Sin registro · Sin anuncios</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="icon">🏠</div>
+        <span>Amortix</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="support.html">Soporte</a>
+        <a href="https://apps.apple.com/app/amortix">App Store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Amortix. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggle(el) {
+  el.classList.toggle('open');
+  el.nextElementSibling.classList.toggle('open');
+}
+</script>
+</body>
+</html>
