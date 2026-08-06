@@ -1,18 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Amortix — The most complete mortgage calculator for iPhone. Simulate payments, compare scenarios and plan early repayments."/>
-<title>Amortix — Mortgage Calculator for iPhone</title>
+
+<title>Calculadora de hipoteca mixta y amortización anticipada | Amortix</title>
+<meta name="description" content="Calcula tu cuota, simula la amortización anticipada y descubre si te compensa reducir plazo o cuota. La única app que modela la hipoteca mixta en sus dos fases. Gratis para iPhone."/>
+<link rel="canonical" href="https://albeasystems.github.io/amortix/"/>
+
+<!-- Idiomas: apunta a las versiones traducidas cuando las publiques -->
+<link rel="alternate" hreflang="es" href="https://albeasystems.github.io/amortix/"/>
+<link rel="alternate" hreflang="en" href="https://albeasystems.github.io/amortix/en/"/>
+<link rel="alternate" hreflang="x-default" href="https://albeasystems.github.io/amortix/"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:site_name" content="Amortix"/>
+<meta property="og:title" content="Calculadora de hipoteca mixta y amortización anticipada"/>
+<meta property="og:description" content="Simula tu hipoteca en las dos fases, compara reducir plazo o cuota y mira el ahorro real en euros. Gratis para iPhone."/>
+<meta property="og:url" content="https://albeasystems.github.io/amortix/"/>
+<meta property="og:image" content="https://albeasystems.github.io/amortix/images/og-cover.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Calculadora de hipoteca mixta y amortización anticipada"/>
+<meta name="twitter:description" content="Simula tu hipoteca en las dos fases y mira el ahorro real de amortizar. Gratis para iPhone."/>
+<meta name="twitter:image" content="https://albeasystems.github.io/amortix/images/og-cover.png"/>
+
+<!-- Smart App Banner: muestra un banner nativo de descarga en Safari iOS -->
+<meta name="apple-itunes-app" content="app-id=6773757657, app-argument=https://albeasystems.github.io/amortix/"/>
+
 <link rel="stylesheet" href="style.css"/>
+
+<!-- Datos estructurados: ficha de app -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Amortix",
+  "operatingSystem": "iOS 17.6",
+  "applicationCategory": "FinanceApplication",
+  "url": "https://albeasystems.github.io/amortix/",
+  "downloadUrl": "https://apps.apple.com/es/app/id6773757657",
+  "inLanguage": ["es","en","de","fr","it","pt","ar","hi","zh"],
+  "author": { "@type": "Person", "name": "Alberto Dimanuel" },
+  "offers": [
+    { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "name": "Versión gratuita con publicidad" },
+    { "@type": "Offer", "price": "2.99", "priceCurrency": "EUR", "name": "Premium: sin anuncios, pago único" }
+  ]
+}
+</script>
+
+<!-- Datos estructurados: FAQ (puede generar resultados enriquecidos en Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"¿Cómo se calcula una hipoteca mixta?","acceptedAnswer":{"@type":"Answer","text":"Una hipoteca mixta tiene dos fases. Durante los primeros años se aplica un tipo fijo (TIN). Al terminar esa fase, la cuota se recalcula sobre el capital que quede pendiente, aplicando Euríbor más el diferencial pactado y repartiéndolo entre los años que resten. Amortix calcula las dos fases por separado con tus números reales, sin aproximar la segunda fase."}},
+    {"@type":"Question","name":"¿Me compensa más reducir plazo o reducir cuota al amortizar?","acceptedAnswer":{"@type":"Answer","text":"Reducir plazo ahorra siempre más intereses, porque el capital deja de generar interés durante más meses. Reducir cuota ahorra menos pero te da aire cada mes. Amortix calcula las dos opciones en paralelo y muestra el ahorro neto en euros de cada una para que decidas con la cifra delante."}},
+    {"@type":"Question","name":"¿Qué comisión puede cobrarme el banco por amortizar anticipadamente?","acceptedAnswer":{"@type":"Answer","text":"En España la Ley 5/2019 limita la comisión por amortización anticipada. En hipotecas a tipo variable el máximo es del 0,25 % durante los tres primeros años o del 0,15 % durante los cinco primeros, según lo pactado, y cero después. En tipo fijo el máximo es del 2 % durante los diez primeros años y del 1,5 % después. En todos los casos la comisión no puede superar la pérdida financiera del banco. Amortix incluye los límites legales de ocho países."}},
+    {"@type":"Question","name":"¿Amortix es gratis?","acceptedAnswer":{"@type":"Answer","text":"Todas las funciones son gratuitas y la versión gratuita muestra publicidad. Si prefieres usarla sin anuncios, hay una compra única de 2,99 euros. No hay suscripciones ni funciones de pago."}},
+    {"@type":"Question","name":"¿Amortix guarda mis datos en la nube?","acceptedAnswer":{"@type":"Answer","text":"No. Los datos de tu hipoteca se quedan en tu iPhone. No hay cuenta, ni registro, ni servidor. La app funciona sin conexión."}},
+    {"@type":"Question","name":"¿Puedo exportar el cuadro de amortización?","acceptedAnswer":{"@type":"Answer","text":"Sí. Puedes exportar el cuadro de amortización completo en PDF y compartirlo desde el iPhone por correo, WhatsApp o Archivos."}}
+  ]
+}
+</script>
+
 <style>
+/* ═══════════════════════════════════════════════════════════
+   Amortix — landing
+   Los colores usan var(--x, fallback) para no romper style.css
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --ax-ink:      #0f172a;
+  --ax-deep:     #064e3b;
+  --ax-fase1:    #10b981;
+  --ax-fase2:    #0ea5e9;
+  --ax-warn:     #f59e0b;
+}
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(160deg, #0f172a 0%, #064e3b 55%, #065f46 100%);
+  background: linear-gradient(160deg, var(--ax-ink) 0%, var(--ax-deep) 55%, #065f46 100%);
   color: #fff;
-  padding: 100px 24px 90px;
+  padding: 88px 24px 72px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -21,11 +95,6 @@
   content: "";
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(16,185,129,.28) 0%, transparent 70%);
-}
-.hero::after {
-  content: "";
-  position: absolute; bottom: -1px; left: 0; right: 0; height: 60px;
-  background: linear-gradient(to bottom, transparent, #fff);
 }
 .hero > * { position: relative; z-index: 1; }
 
@@ -36,29 +105,30 @@
   color: #6ee7b7;
   padding: 6px 16px; border-radius: 50px;
   font-size: 13px; font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 .hero h1 {
-  font-size: clamp(36px, 6vw, 68px);
+  font-size: clamp(34px, 5.5vw, 62px);
   font-weight: 900; line-height: 1.08;
   letter-spacing: -2px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .hero h1 .highlight {
   background: linear-gradient(90deg, #34d399, #0ea5e9);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.hero p {
-  font-size: clamp(16px, 2vw, 20px);
-  color: #94a3b8;
-  max-width: 540px; margin: 0 auto 40px;
+.hero p.hero-sub {
+  font-size: clamp(16px, 2vw, 19px);
+  color: #cbd5e1;
+  max-width: 560px; margin: 0 auto 34px;
   line-height: 1.7;
 }
 .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
 .btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
-  background: var(--green); color: #fff;
+  background: var(--green, #10b981); color: #fff;
   padding: 15px 32px; border-radius: 50px;
   font-size: 16px; font-weight: 700;
   box-shadow: 0 8px 28px rgba(16,185,129,.45);
@@ -76,37 +146,200 @@
 }
 .btn-secondary:hover { background: rgba(255,255,255,.18); }
 
-/* ── PHONE MOCKUP ── */
-.hero-mockup { margin: 64px auto 0; max-width: 280px; }
-.phone {
-  background: #1e293b; border-radius: 44px; padding: 12px;
-  box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.08);
+.hero-trust {
+  margin-top: 22px; font-size: 13px; color: #94a3b8;
+  display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
 }
-.phone img { width: 100%; border-radius: 34px; display: block; }
+.hero-trust span { display: inline-flex; align-items: center; gap: 5px; }
+
+/* ═══ SIMULADOR (elemento estrella) ═══ */
+.sim-wrap {
+  max-width: 940px; margin: 56px auto 0;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 26px;
+  padding: 8px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 70px rgba(0,0,0,.4);
+}
+.sim-card {
+  background: #fff; color: var(--text, #0f172a);
+  border-radius: 20px; overflow: hidden;
+  text-align: left;
+}
+.sim-head {
+  padding: 20px 26px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.sim-head h2 { font-size: 17px; font-weight: 800; letter-spacing: -.3px; }
+.sim-head p { font-size: 13px; color: var(--text-muted, #64748b); margin-top: 2px; }
+
+.sim-toggle {
+  display: inline-flex; background: #f1f5f9; border-radius: 12px; padding: 3px;
+}
+.sim-toggle button {
+  border: 0; background: transparent; cursor: pointer;
+  font: inherit; font-size: 13px; font-weight: 700;
+  color: var(--text-muted, #64748b);
+  padding: 8px 16px; border-radius: 9px;
+  transition: background .18s, color .18s;
+}
+.sim-toggle button[aria-pressed="true"] {
+  background: #fff; color: var(--ax-deep);
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+.sim-body { padding: 22px 26px 26px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 30px; }
+
+.sim-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: start; }
+.sim-field.full { grid-column: 1 / -1; }
+.sim-field label {
+  display: block; font-size: 12px; font-weight: 700;
+  color: var(--text-muted, #64748b); margin-bottom: 5px;
+  text-transform: uppercase; letter-spacing: .5px;
+}
+.sim-input {
+  display: flex; align-items: center;
+  border: 1.5px solid var(--border, #e2e8f0); border-radius: 11px;
+  background: #fff; overflow: hidden;
+  transition: border-color .16s, box-shadow .16s;
+}
+.sim-input:focus-within {
+  border-color: var(--green, #10b981);
+  box-shadow: 0 0 0 3px rgba(16,185,129,.14);
+}
+.sim-input input {
+  border: 0; outline: 0; width: 100%;
+  font: inherit; font-size: 15px; font-weight: 600;
+  padding: 10px 12px; background: transparent;
+  color: var(--text, #0f172a);
+  -moz-appearance: textfield;
+}
+.sim-input input::-webkit-outer-spin-button,
+.sim-input input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.sim-input .unit {
+  padding: 0 12px; font-size: 13px; font-weight: 700;
+  color: var(--text-muted, #94a3b8); flex-shrink: 0;
+}
+
+.sim-radio { display: flex; gap: 8px; }
+.sim-radio label {
+  flex: 1; text-transform: none; letter-spacing: 0; margin: 0;
+  border: 1.5px solid var(--border, #e2e8f0); border-radius: 11px;
+  padding: 9px 10px; text-align: center;
+  font-size: 13px; font-weight: 700; color: var(--text-muted, #64748b);
+  cursor: pointer; transition: all .16s;
+}
+.sim-radio input { position: absolute; opacity: 0; pointer-events: none; }
+.sim-radio input:checked + label {
+  border-color: var(--green, #10b981);
+  background: #ecfdf5; color: var(--ax-deep);
+}
+.sim-radio input:focus-visible + label { box-shadow: 0 0 0 3px rgba(16,185,129,.3); }
+
+/* Resultados */
+.sim-results { display: flex; flex-direction: column; gap: 14px; }
+.res-primary {
+  background: linear-gradient(135deg, #ecfdf5, #f0fdfa);
+  border: 1px solid #a7f3d0; border-radius: 16px; padding: 18px 20px;
+}
+.res-label { font-size: 12px; font-weight: 700; color: #047857; text-transform: uppercase; letter-spacing: .6px; }
+.res-value { font-size: clamp(28px, 4vw, 38px); font-weight: 900; letter-spacing: -1.5px; color: var(--ax-deep); line-height: 1.1; margin-top: 2px; }
+.res-note { font-size: 12.5px; color: #047857; margin-top: 6px; line-height: 1.5; }
+
+.res-phases { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.phase {
+  border: 1px solid var(--border, #e2e8f0); border-radius: 14px; padding: 14px 16px;
+  border-left: 4px solid var(--ax-fase1);
+}
+.phase.p2 { border-left-color: var(--ax-fase2); }
+.phase .p-tag { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; color: var(--ax-fase1); }
+.phase.p2 .p-tag { color: var(--ax-fase2); }
+.phase .p-val { font-size: 21px; font-weight: 900; letter-spacing: -.8px; margin-top: 3px; }
+.phase .p-sub { font-size: 11.5px; color: var(--text-muted, #64748b); margin-top: 3px; line-height: 1.45; }
+
+.res-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cmp {
+  border: 1.5px solid var(--border, #e2e8f0); border-radius: 14px; padding: 14px 16px;
+  position: relative;
+}
+.cmp.win { border-color: var(--green, #10b981); background: #f0fdf4; }
+.cmp-tag { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; color: var(--text-muted, #64748b); }
+.cmp.win .cmp-tag { color: #047857; }
+.cmp-val { font-size: 20px; font-weight: 900; letter-spacing: -.7px; margin-top: 3px; }
+.cmp-sub { font-size: 11.5px; color: var(--text-muted, #64748b); margin-top: 3px; line-height: 1.45; }
+.cmp-crown {
+  position: absolute; top: -9px; right: 10px;
+  background: var(--green, #10b981); color: #fff;
+  font-size: 10px; font-weight: 800; letter-spacing: .4px;
+  padding: 3px 9px; border-radius: 20px;
+}
+
+.sim-error {
+  font-size: 13px; color: #b45309; background: #fffbeb;
+  border: 1px solid #fde68a; border-radius: 12px; padding: 12px 14px; line-height: 1.5;
+}
+.sim-foot {
+  border-top: 1px solid var(--border, #e2e8f0);
+  padding: 14px 26px; display: flex; align-items: center; justify-content: space-between;
+  gap: 14px; flex-wrap: wrap; background: #fafafa;
+}
+.sim-foot p { font-size: 12.5px; color: var(--text-muted, #64748b); line-height: 1.5; max-width: 460px; }
+.sim-foot .btn-primary { padding: 11px 22px; font-size: 14px; }
 
 /* ── STATS ── */
-.stats { background: #fff; border-bottom: 1px solid var(--border); }
+.stats { background: #fff; border-bottom: 1px solid var(--border, #e2e8f0); }
 .stats-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
-.stat { padding: 32px 24px; border-right: 1px solid var(--border); }
+.stat { padding: 30px 24px; border-right: 1px solid var(--border, #e2e8f0); }
 .stat:last-child { border-right: none; }
-.stat-num { font-size: 38px; font-weight: 900; color: var(--green); letter-spacing: -1px; line-height: 1; }
-.stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+.stat-num { font-size: 34px; font-weight: 900; color: var(--green, #10b981); letter-spacing: -1px; line-height: 1; }
+.stat-label { font-size: 13.5px; color: var(--text-muted, #64748b); margin-top: 6px; font-weight: 500; line-height: 1.4; }
 
-/* ── SECTIONS ── */
-section { padding: 88px 24px; }
-.section-title { font-size: clamp(26px, 4vw, 40px); font-weight: 900; letter-spacing: -.5px; line-height: 1.15; margin-bottom: 14px; }
-.section-sub { font-size: 17px; color: var(--text-muted); max-width: 520px; line-height: 1.7; }
-.section-header { margin-bottom: 56px; }
+/* ── SECCIONES ── */
+section { padding: 84px 24px; }
+.section-title { font-size: clamp(26px, 4vw, 38px); font-weight: 900; letter-spacing: -.5px; line-height: 1.15; margin-bottom: 14px; }
+.section-sub { font-size: 17px; color: var(--text-muted, #64748b); max-width: 560px; line-height: 1.7; }
+.section-header { margin-bottom: 52px; }
+
+/* ── COMPARATIVA ── */
+.vs-section { background: var(--bg, #f8fafc); }
+.vs-inner { max-width: 860px; margin: 0 auto; }
+.vs-table { width: 100%; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid var(--border, #e2e8f0); border-radius: 18px; overflow: hidden; }
+.vs-table th, .vs-table td { padding: 15px 18px; text-align: left; font-size: 14.5px; border-bottom: 1px solid var(--border, #e2e8f0); }
+.vs-table tr:last-child th, .vs-table tr:last-child td { border-bottom: 0; }
+.vs-table thead th { background: #f8fafc; font-size: 12.5px; text-transform: uppercase; letter-spacing: .6px; color: var(--text-muted, #64748b); font-weight: 800; }
+.vs-table thead th.mine { background: #ecfdf5; color: var(--ax-deep); }
+.vs-table tbody th { font-weight: 600; color: var(--text, #0f172a); }
+.vs-table td { text-align: center; width: 130px; }
+.vs-table td.mine { background: #f0fdf4; font-weight: 700; color: #047857; }
+.vs-yes { color: var(--green, #10b981); font-weight: 800; }
+.vs-no  { color: #cbd5e1; font-weight: 800; }
+
+/* ── FEATURES ── */
+.features-section { background: #fff; }
+.features-grid { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.feature-card {
+  background: #fff; border-radius: var(--radius-lg, 20px);
+  border: 1px solid var(--border, #e2e8f0); padding: 30px 28px;
+  transition: transform .2s, box-shadow .2s;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg, 0 12px 32px rgba(0,0,0,.1)); }
+.feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 18px; }
+.feature-icon.green { background: #ecfdf5; }
+.feature-icon.blue  { background: #eff8ff; }
+.feature-icon.yellow{ background: #fffbeb; }
+.feature-icon.teal  { background: #f0fdfa; }
+.feature-card h3 { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
+.feature-card p { font-size: 14px; color: var(--text-muted, #64748b); line-height: 1.65; }
 
 /* ── SCREENSHOTS ── */
-.screenshots-section { background: #fff; overflow: hidden; }
+.screenshots-section { background: var(--bg, #f8fafc); overflow: hidden; }
 .screenshots-inner { max-width: 1100px; margin: 0 auto; }
 .screenshots-scroll {
   display: flex; gap: 24px; align-items: flex-end;
   overflow-x: auto; padding: 12px 4px 24px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
 .screenshots-scroll::-webkit-scrollbar { display: none; }
 .screenshot-item { flex-shrink: 0; scroll-snap-align: start; }
@@ -117,463 +350,539 @@ section { padding: 88px 24px; }
 }
 .screenshot-item:hover .phone-wrap { transform: translateY(-6px); }
 .screenshot-item .phone-wrap img { width: 180px; border-radius: 28px; display: block; }
-.screenshot-caption { text-align: center; margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.screenshot-caption { text-align: center; margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--text-muted, #64748b); }
 
-/* ── FEATURES ── */
-.features-section { background: var(--bg); }
-.features-grid { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-.feature-card {
-  background: #fff; border-radius: var(--radius-lg);
-  border: 1px solid var(--border); padding: 30px 28px;
-  transition: transform .2s, box-shadow .2s;
+/* ── GUÍAS / SEO ── */
+.guides-section { background: #fff; }
+.guides-inner { max-width: 1000px; margin: 0 auto; }
+.guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.guide {
+  border: 1px solid var(--border, #e2e8f0); border-radius: var(--radius-lg, 20px);
+  padding: 26px 26px 24px; background: #fff;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
 }
-.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.feature-icon {
-  width: 52px; height: 52px; border-radius: 14px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 26px; margin-bottom: 18px;
-}
-.feature-icon.green { background: #ecfdf5; }
-.feature-icon.blue  { background: #eff8ff; }
-.feature-icon.yellow{ background: #fffbeb; }
-.feature-icon.teal  { background: #f0fdfa; }
-.feature-card h3 { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
-.feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+.guide:hover { transform: translateY(-3px); border-color: #a7f3d0; box-shadow: var(--shadow-lg, 0 12px 32px rgba(0,0,0,.08)); }
+.guide h3 { font-size: 16.5px; font-weight: 800; line-height: 1.35; margin-bottom: 10px; }
+.guide p { font-size: 14px; color: var(--text-muted, #64748b); line-height: 1.7; }
+.guide .guide-key { font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .7px; color: var(--green, #10b981); margin-bottom: 10px; display: block; }
 
-/* ── SIMULATOR DARK SECTION ── */
-.sim-section { background: linear-gradient(160deg, #0f172a, #064e3b); color: #fff; }
-.sim-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.sim-section .section-label { color: #6ee7b7; }
-.sim-section .section-title { color: #fff; }
-.sim-section .section-sub { color: #94a3b8; }
-.sim-points { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
-.sim-point { display: flex; gap: 14px; align-items: flex-start; }
-.sim-point-icon {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: rgba(255,255,255,.1);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px; flex-shrink: 0;
-}
-.sim-point-text h4 { font-size: 15px; font-weight: 700; color: #e2e8f0; }
-.sim-point-text p { font-size: 13px; color: #94a3b8; margin-top: 2px; line-height: 1.5; }
+/* ── PRIVACIDAD ── */
+.trust-section { background: linear-gradient(160deg, var(--ax-ink), var(--ax-deep)); color: #fff; }
+.trust-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.trust-inner .section-title { color: #fff; }
+.trust-inner .section-sub { color: #94a3b8; margin: 0 auto; }
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin-top: 44px; }
+.trust-item { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 18px; padding: 24px 22px; text-align: left; }
+.trust-item .t-icon { font-size: 24px; margin-bottom: 12px; display: block; }
+.trust-item h3 { font-size: 15px; font-weight: 800; color: #e2e8f0; margin-bottom: 6px; }
+.trust-item p { font-size: 13.5px; color: #94a3b8; line-height: 1.6; }
 
-/* ── HOW IT WORKS ── */
-.how-section { background: #fff; }
-.how-inner { max-width: 900px; margin: 0 auto; }
-.how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
-.how-steps::before {
-  content: "";
-  position: absolute; top: 26px; left: 15%; right: 15%; height: 2px;
-  background: linear-gradient(90deg, var(--green), var(--blue)); z-index: 0;
-}
-.how-step { text-align: center; position: relative; z-index: 1; }
-.how-step-num {
-  width: 52px; height: 52px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--green), var(--teal));
-  color: #fff; font-size: 20px; font-weight: 900;
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 18px;
-  box-shadow: 0 4px 16px rgba(16,185,129,.35);
-}
-.how-step h3 { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
-.how-step p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
-
-/* ── PRICING ── */
-.pricing-section { background: linear-gradient(135deg, #f0fdf4, #ecfdf5); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+/* ── PRECIO ── */
+.pricing-section { background: linear-gradient(135deg, #f0fdf4, #ecfdf5); border-top: 1px solid var(--border, #e2e8f0); border-bottom: 1px solid var(--border, #e2e8f0); }
 .pricing-inner { max-width: 800px; margin: 0 auto; }
 .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
-.plan-card { background: #fff; border-radius: 22px; border: 1px solid var(--border); padding: 32px; transition: transform .2s; }
-.plan-card.featured { border-color: var(--green); box-shadow: 0 8px 32px rgba(16,185,129,.15); position: relative; }
-.plan-badge {
-  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
-  background: var(--green); color: #fff;
-  font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px;
-  white-space: nowrap;
-}
+.plan-card { background: #fff; border-radius: 22px; border: 1px solid var(--border, #e2e8f0); padding: 32px; transition: transform .2s; }
+.plan-card.featured { border-color: var(--green, #10b981); box-shadow: 0 8px 32px rgba(16,185,129,.15); position: relative; }
+.plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--green, #10b981); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
 .plan-card:hover { transform: translateY(-2px); }
-.plan-name { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.plan-price { font-size: 38px; font-weight: 900; color: var(--text); letter-spacing: -1px; }
-.plan-price sup { font-size: 20px; font-weight: 700; vertical-align: super; }
-.plan-price small { font-size: 15px; color: var(--text-muted); font-weight: 500; }
-.plan-desc { font-size: 14px; color: var(--text-muted); margin: 10px 0 22px; }
-.plan-features { display: flex; flex-direction: column; gap: 10px; }
-.plan-features li { font-size: 14px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; }
-.plan-features li .check { color: var(--green); font-size: 16px; flex-shrink: 0; }
+.plan-name { font-size: 14px; font-weight: 700; color: var(--text-muted, #64748b); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.plan-price { font-size: 38px; font-weight: 900; color: var(--text, #0f172a); letter-spacing: -1px; }
+.plan-price small { font-size: 17px; color: var(--text-muted, #64748b); font-weight: 600; }
+.plan-desc { font-size: 14px; color: var(--text-muted, #64748b); margin: 10px 0 22px; }
+.plan-features { display: flex; flex-direction: column; gap: 10px; list-style: none; padding: 0; }
+.plan-features li { font-size: 14px; color: var(--text, #0f172a); display: flex; gap: 8px; align-items: flex-start; line-height: 1.5; }
+.plan-features li .check { color: var(--green, #10b981); font-size: 16px; flex-shrink: 0; }
 .plan-features li .cross { color: #cbd5e1; font-size: 16px; flex-shrink: 0; }
-
-/* ── TESTIMONIALS ── */
-.testimonials-section { background: var(--bg); }
-.testimonials-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.testimonial { background: #fff; border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 28px; }
-.stars { color: var(--yellow); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
-.testimonial q { font-size: 15px; color: var(--text); line-height: 1.7; font-style: italic; quotes: "\201C" "\201D"; }
-.testimonial q::before { content: open-quote; }
-.testimonial q::after { content: close-quote; }
-.testimonial-author { margin-top: 16px; display: flex; align-items: center; gap: 12px; }
-.author-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: #fff; }
-.author-info strong { display: block; font-size: 14px; font-weight: 700; }
-.author-info span { font-size: 12px; color: var(--text-muted); }
 
 /* ── FAQ ── */
 .faq-section { background: #fff; }
-.faq-inner { max-width: 720px; margin: 0 auto; }
-
-/* ── DOWNLOAD CTA ── */
-.download-section {
-  background: linear-gradient(160deg, #0f172a 0%, #064e3b 55%, #065f46 100%);
-  color: #fff; text-align: center; padding: 100px 24px;
+.faq-inner { max-width: 740px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border, #e2e8f0); }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+  font: inherit; font-size: 16px; font-weight: 700; color: var(--text, #0f172a);
+  padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px;
 }
-.download-section h2 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; letter-spacing: -1px; margin-bottom: 16px; }
-.download-section p { font-size: 18px; color: #94a3b8; max-width: 480px; margin: 0 auto 40px; line-height: 1.7; }
+.faq-q .arrow { color: var(--green, #10b981); font-size: 13px; transition: transform .25s; flex-shrink: 0; }
+.faq-q[aria-expanded="true"] .arrow { transform: rotate(180deg); }
+.faq-a { display: none; padding: 0 0 20px; font-size: 14.5px; color: var(--text-muted, #64748b); line-height: 1.75; }
+.faq-a.open { display: block; }
+
+/* ── DESCARGA ── */
+.download-section { background: linear-gradient(160deg, var(--ax-ink) 0%, var(--ax-deep) 55%, #065f46 100%); color: #fff; text-align: center; padding: 96px 24px; }
+.download-section h2 { font-size: clamp(28px, 5vw, 46px); font-weight: 900; letter-spacing: -1px; margin-bottom: 16px; }
+.download-section p { font-size: 17px; color: #94a3b8; max-width: 500px; margin: 0 auto 38px; line-height: 1.7; }
 .app-store-btn {
   display: inline-flex; align-items: center; gap: 12px;
-  background: #fff; color: var(--text);
-  padding: 14px 28px; border-radius: 18px;
-  font-size: 15px; font-weight: 700;
-  box-shadow: 0 8px 28px rgba(0,0,0,.25);
-  transition: transform .2s, box-shadow .2s;
+  background: #fff; color: var(--text, #0f172a);
+  padding: 14px 28px; border-radius: 18px; font-size: 15px; font-weight: 700;
+  box-shadow: 0 8px 28px rgba(0,0,0,.25); transition: transform .2s, box-shadow .2s;
 }
 .app-store-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,.35); }
 .app-store-btn .store-icon { font-size: 26px; }
 .app-store-btn .store-text small { display: block; font-size: 10px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
 .app-store-btn .store-text strong { font-size: 18px; font-weight: 800; }
-.download-note { margin-top: 18px; font-size: 13px; color: #475569; }
+.download-note { margin-top: 18px; font-size: 13px; color: #94a3b8; }
+
+/* ── ACCESIBILIDAD ── */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid #34d399; outline-offset: 2px; border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  .sim-inner { grid-template-columns: 1fr; }
-  .hero-mockup.sim-phone { margin: 0 auto; max-width: 260px; }
+@media (max-width: 860px) {
+  .sim-body { grid-template-columns: 1fr; gap: 24px; }
+  .sim-head { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 720px) {
+  section { padding: 64px 20px; }
+  .hero { padding: 64px 20px 56px; }
   .stats-inner { grid-template-columns: 1fr; }
-  .stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .stat { border-right: none; border-bottom: 1px solid var(--border, #e2e8f0); }
   .stat:last-child { border-bottom: none; }
-  .how-steps { grid-template-columns: 1fr; gap: 24px; }
-  .how-steps::before { display: none; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .res-phases, .res-compare { grid-template-columns: 1fr; }
+  .sim-fields { grid-template-columns: 1fr; }
+  .vs-inner { overflow-x: auto; }
+  .vs-table { min-width: 520px; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ═══ NAV ═══ -->
 <nav>
   <a href="index.html" class="nav-logo">
     <div class="icon">🏠</div>
     <span>Amortix</span>
   </a>
   <div class="nav-links">
-    <a href="#features" class="nav-hide">Features</a>
-    <a href="#simulator" class="nav-hide">Simulator</a>
-    <a href="support.html" class="nav-hide">Support</a>
-    <a href="#download" class="btn-nav">Download free</a>
+    <a href="#simulador" class="nav-hide">Simulador</a>
+    <a href="#funciones" class="nav-hide">Funciones</a>
+    <a href="#guias" class="nav-hide">Guías</a>
+    <a href="support.html" class="nav-hide">Soporte</a>
+    <a href="#descargar" class="btn-nav">Descargar gratis</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-badge">🏦 Your mortgage, under control</div>
+<!-- ═══ HERO + SIMULADOR ═══ -->
+<header class="hero">
+  <div class="hero-badge">🏦 Hipoteca fija, variable y mixta</div>
   <h1>
-    Your mortgage,<br/>
-    <span class="highlight">crystal clear</span>
+    ¿Cuánto ahorras<br/>
+    <span class="highlight">si amortizas hoy?</span>
   </h1>
-  <p>Calculate payments, simulate early repayments and compare scenarios in seconds. The most complete mortgage calculator for iPhone.</p>
+  <p class="hero-sub">
+    Calcúlalo aquí mismo, sin instalar nada. Y si tienes una hipoteca mixta,
+    Amortix es la única app que calcula sus dos fases de verdad: la fija al TIN
+    y la variable recalculada sobre el capital que realmente te queda.
+  </p>
   <div class="hero-ctas">
-    <a href="#download" class="btn-primary">
-      <span>🍎</span> Download free on iOS
-    </a>
-    <a href="#features" class="btn-secondary">
-      See features →
-    </a>
+    <a href="#simulador" class="btn-secondary">Probar el simulador ↓</a>
+    <a href="#descargar" class="btn-primary"><span>🍎</span> Descargar gratis</a>
   </div>
-  <div class="hero-mockup">
-    <div class="phone">
-      <img src="images/screenshot-1.png" alt="Amortix — Mortgage Calculator"/>
+  <div class="hero-trust">
+    <span>✓ Sin registro</span>
+    <span>✓ Sin suscripción</span>
+    <span>✓ Tus datos no salen del móvil</span>
+  </div>
+
+  <!-- ── EL SIMULADOR: elemento estrella de la página ── -->
+  <div class="sim-wrap" id="simulador">
+    <div class="sim-card">
+
+      <div class="sim-head">
+        <div>
+          <h2 id="simTitulo">Simulador de amortización anticipada</h2>
+          <p id="simSubtitulo">Mira el ahorro real de un pago extra, en euros y en meses.</p>
+        </div>
+        <div class="sim-toggle" role="group" aria-label="Tipo de simulación">
+          <button type="button" id="tabAmortizar" aria-pressed="true">Amortizar</button>
+          <button type="button" id="tabMixta" aria-pressed="false">Hipoteca mixta</button>
+        </div>
+      </div>
+
+      <div class="sim-body">
+        <!-- Campos -->
+        <div class="sim-fields">
+          <div class="sim-field full">
+            <label for="fCapital">Capital pendiente</label>
+            <div class="sim-input">
+              <input type="number" id="fCapital" value="180000" min="1000" step="1000" inputmode="numeric"/>
+              <span class="unit">€</span>
+            </div>
+          </div>
+
+          <div class="sim-field">
+            <label for="fPlazo">Plazo restante</label>
+            <div class="sim-input">
+              <input type="number" id="fPlazo" value="25" min="1" max="45" step="1" inputmode="numeric"/>
+              <span class="unit">años</span>
+            </div>
+          </div>
+
+          <div class="sim-field">
+            <label for="fTin" id="lblTin">Tipo de interés</label>
+            <div class="sim-input">
+              <input type="number" id="fTin" value="3.10" min="0" max="20" step="0.01" inputmode="decimal"/>
+              <span class="unit">%</span>
+            </div>
+          </div>
+
+          <!-- Modo: amortizar -->
+          <div class="sim-field grupo-amortizar">
+            <label for="fExtra">Pago extra</label>
+            <div class="sim-input">
+              <input type="number" id="fExtra" value="10000" min="0" step="500" inputmode="numeric"/>
+              <span class="unit">€</span>
+            </div>
+          </div>
+          <div class="sim-field grupo-amortizar">
+            <label for="fMes">Lo amortizas en</label>
+            <div class="sim-input">
+              <input type="number" id="fMes" value="12" min="1" max="480" step="1" inputmode="numeric"/>
+              <span class="unit">meses</span>
+            </div>
+          </div>
+
+          <!-- Modo: mixta -->
+          <div class="sim-field grupo-mixta" hidden>
+            <label for="fAnosFijos">Años en fase fija</label>
+            <div class="sim-input">
+              <input type="number" id="fAnosFijos" value="10" min="1" max="30" step="1" inputmode="numeric"/>
+              <span class="unit">años</span>
+            </div>
+          </div>
+          <div class="sim-field grupo-mixta" hidden>
+            <label for="fEuribor">Euríbor previsto</label>
+            <div class="sim-input">
+              <input type="number" id="fEuribor" value="2.30" min="-1" max="15" step="0.01" inputmode="decimal"/>
+              <span class="unit">%</span>
+            </div>
+          </div>
+          <div class="sim-field grupo-mixta full" hidden>
+            <label for="fDiferencial">Diferencial de la fase variable</label>
+            <div class="sim-input">
+              <input type="number" id="fDiferencial" value="0.60" min="0" max="5" step="0.01" inputmode="decimal"/>
+              <span class="unit">%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="sim-results" id="simResultados" aria-live="polite">
+          <!-- Se rellena por JS -->
+        </div>
+      </div>
+
+      <div class="sim-foot">
+        <p>
+          Cálculo con sistema francés de amortización. Esta simulación es orientativa
+          y no sustituye a la oferta vinculante de tu banco.
+        </p>
+        <a href="#descargar" class="btn-primary">Ver el cuadro completo →</a>
+      </div>
+
     </div>
   </div>
-</section>
+</header>
 
-<!-- STATS -->
+<!-- ═══ STATS (honestas y verificables) ═══ -->
 <div class="stats">
   <div class="stats-inner">
     <div class="stat">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Free, no ads</div>
+      <div class="stat-num">2 fases</div>
+      <div class="stat-label">La hipoteca mixta calculada de verdad, no aproximada</div>
     </div>
     <div class="stat">
-      <div class="stat-num">∞</div>
-      <div class="stat-label">Comparable scenarios</div>
+      <div class="stat-num">8 países</div>
+      <div class="stat-label">Límites legales de comisión por amortización anticipada</div>
     </div>
     <div class="stat">
-      <div class="stat-num">$0</div>
-      <div class="stat-label">No subscriptions ever</div>
+      <div class="stat-num">0 €/mes</div>
+      <div class="stat-label">Sin suscripciones: pago único opcional de 2,99 €</div>
     </div>
   </div>
 </div>
 
-<!-- FEATURES -->
-<section class="features-section" id="features">
+<!-- ═══ COMPARATIVA ═══ -->
+<section class="vs-section">
+  <div class="vs-inner">
+    <div class="section-header">
+      <span class="section-label">Por qué Amortix</span>
+      <h2 class="section-title">Lo que las calculadoras<br/>de hipoteca no hacen</h2>
+      <p class="section-sub">
+        Casi todas te dan la cuota y paran ahí. Las decisiones caras vienen después:
+        cuándo amortizar, cuánto, y qué pasa cuando cambia el tipo.
+      </p>
+    </div>
+    <table class="vs-table">
+      <thead>
+        <tr>
+          <th scope="col">Función</th>
+          <th scope="col">Calculadora al uso</th>
+          <th scope="col" class="mine">Amortix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Cuota mensual y cuadro de amortización</th><td><span class="vs-yes">✓</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Hipoteca mixta con recálculo real en la segunda fase</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Reducir plazo vs. reducir cuota, comparados en paralelo</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Comisión legal por amortizar, según la ley de tu país</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Test de estrés: qué pasa si el tipo sube 2, 3 o 4 puntos</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Cada resultado explicado paso a paso con tus cifras</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+        <tr><th scope="row">Exportar el cuadro en PDF</th><td><span class="vs-no">—</span></td><td class="mine"><span class="vs-yes">✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══ FUNCIONES ═══ -->
+<section class="features-section" id="funciones">
   <div style="max-width:1080px; margin:0 auto;">
     <div class="section-header">
-      <span class="section-label">Features</span>
-      <h2 class="section-title">Everything you need<br/>to understand your mortgage</h2>
-      <p class="section-sub">Amortix puts in your pocket the tools that used to belong only to bank advisors.</p>
+      <span class="section-label">Funciones</span>
+      <h2 class="section-title">Las herramientas que<br/>solo tenía tu asesor bancario</h2>
+      <p class="section-sub">Sin jerga financiera. Cada número viene con la explicación de cómo se ha calculado.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon green">🧮</div>
-        <h3>Payment Calculator</h3>
-        <p>Enter the loan amount, term and interest rate and get your monthly payment instantly, with a full breakdown of principal and interest.</p>
+        <div class="feature-icon green">🔀</div>
+        <h3>Hipoteca mixta en dos fases</h3>
+        <p>Calcula la fase fija al TIN durante los años pactados y después recalcula la cuota sobre el capital real pendiente, al Euríbor más tu diferencial. Verás exactamente qué pagarás en cada etapa.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon blue">📊</div>
-        <h3>Amortization Schedule</h3>
-        <p>See month by month how much goes to principal, how much to interest and what the outstanding balance is. Exportable and easy to read.</p>
+        <div class="feature-icon blue">⚡</div>
+        <h3>Amortización anticipada</h3>
+        <p>Compara reducir plazo frente a reducir cuota con el ahorro neto real, descontando la comisión que puede cobrarte el banco. Y descubre en qué momento del préstamo compensa más.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon yellow">⚡</div>
-        <h3>Early Repayment</h3>
-        <p>Simulate the impact of making an extra payment. See how many months you save and how much interest you stop paying.</p>
+        <div class="feature-icon yellow">📈</div>
+        <h3>Revisión del Euríbor y test de estrés</h3>
+        <p>Simula tu próxima revisión antes de que llegue la carta, y comprueba cuánto subiría la cuota si el tipo sube 2, 3 o 4 puntos.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon teal">🔀</div>
-        <h3>Scenario Comparator</h3>
-        <p>Compare multiple scenarios side by side — fixed vs. variable, different terms or different banks. Decide with data, not guesswork.</p>
+        <div class="feature-icon teal">📊</div>
+        <h3>Capital vs. intereses, año a año</h3>
+        <p>Barras apiladas que muestran cuánto de tu cuota amortiza capital y cuánto se va en intereses. De un vistazo ves el momento en que amortizar deja de compensar.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SCREENSHOTS -->
+<!-- ═══ CAPTURAS ═══ -->
 <section class="screenshots-section">
   <div class="screenshots-inner">
     <div class="section-header" style="text-align:center; padding: 0 24px;">
-      <span class="section-label">Inside the app</span>
-      <h2 class="section-title">Built for clarity.<br/>No financial jargon.</h2>
+      <span class="section-label">Por dentro</span>
+      <h2 class="section-title">Hecha para entenderse</h2>
     </div>
     <div class="screenshots-scroll">
       <div class="screenshot-item">
-        <div class="phone-wrap"><img src="images/screenshot-1.png" alt="Payment calculator"/></div>
-        <div class="screenshot-caption">Calculator</div>
+        <div class="phone-wrap"><img src="images/screenshot-1.png" alt="Pantalla de cálculo de la cuota mensual en Amortix" loading="lazy" width="180" height="390"/></div>
+        <div class="screenshot-caption">Cuota</div>
       </div>
       <div class="screenshot-item">
-        <div class="phone-wrap"><img src="images/screenshot-2.png" alt="Amortization schedule"/></div>
-        <div class="screenshot-caption">Amortization schedule</div>
+        <div class="phone-wrap"><img src="images/screenshot-2.png" alt="Cuadro de amortización mes a mes con capital e intereses" loading="lazy" width="180" height="390"/></div>
+        <div class="screenshot-caption">Cuadro de amortización</div>
       </div>
       <div class="screenshot-item">
-        <div class="phone-wrap"><img src="images/screenshot-3.png" alt="Early repayment"/></div>
-        <div class="screenshot-caption">Early repayment</div>
+        <div class="phone-wrap"><img src="images/screenshot-3.png" alt="Simulador de amortización anticipada con el ahorro en euros" loading="lazy" width="180" height="390"/></div>
+        <div class="screenshot-caption">Amortización anticipada</div>
       </div>
       <div class="screenshot-item">
-        <div class="phone-wrap"><img src="images/screenshot-4.png" alt="Scenario comparator"/></div>
-        <div class="screenshot-caption">Comparator</div>
+        <div class="phone-wrap"><img src="images/screenshot-4.png" alt="Comparador de escenarios de hipoteca" loading="lazy" width="180" height="390"/></div>
+        <div class="screenshot-caption">Comparador</div>
       </div>
       <div class="screenshot-item">
-        <div class="phone-wrap"><img src="images/screenshot-5.png" alt="Charts and summary"/></div>
-        <div class="screenshot-caption">Charts & summary</div>
+        <div class="phone-wrap"><img src="images/screenshot-5.png" alt="Gráfica de capital frente a intereses año a año" loading="lazy" width="180" height="390"/></div>
+        <div class="screenshot-caption">Gráficas</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SIMULATOR SECTION -->
-<section class="sim-section" id="simulator">
-  <div class="sim-inner">
-    <div>
-      <span class="section-label">Simulator</span>
-      <h2 class="section-title">Enter your mortgage.<br/>Discover how much you can save.</h2>
-      <p class="section-sub">The simplest early repayment simulator. Adjust the amount, term and extra payment and see your savings in real time.</p>
-      <div class="sim-points">
-        <div class="sim-point">
-          <div class="sim-point-icon">📉</div>
-          <div class="sim-point-text">
-            <h4>Pay off debt faster</h4>
-            <p>Every extra dollar of repayment reduces your outstanding principal and future interest.</p>
-          </div>
-        </div>
-        <div class="sim-point">
-          <div class="sim-point-icon">⏱️</div>
-          <div class="sim-point-text">
-            <h4>Shorten the term or lower the payment</h4>
-            <p>Choose whether you'd rather pay less each month or finish your mortgage sooner.</p>
-          </div>
-        </div>
-        <div class="sim-point">
-          <div class="sim-point-icon">💡</div>
-          <div class="sim-point-text">
-            <h4>Decide with real numbers</h4>
-            <p>See the total savings in dollars and interest before talking to your bank.</p>
-          </div>
-        </div>
-      </div>
+<!-- ═══ GUÍAS (imán SEO) ═══ -->
+<section class="guides-section" id="guias">
+  <div class="guides-inner">
+    <div class="section-header">
+      <span class="section-label">Guías</span>
+      <h2 class="section-title">Las tres dudas que<br/>cuestan más dinero</h2>
+      <p class="section-sub">Explicadas con números, no con generalidades. Son las mismas que resuelve la app con tus cifras.</p>
     </div>
-    <div class="hero-mockup sim-phone" style="margin: 0;">
-      <div class="phone">
-        <img src="images/screenshot-3.png" alt="Amortix early repayment simulator"/>
+    <div class="guides-grid">
+      <article class="guide">
+        <span class="guide-key">Amortización anticipada</span>
+        <h3>¿Reducir plazo o reducir cuota?</h3>
+        <p>
+          Reducir plazo ahorra siempre más intereses: el capital deja de generar interés
+          durante más meses. Reducir cuota ahorra menos, pero te libera flujo cada mes.
+          La pregunta correcta no es cuál ahorra más, sino cuánto estás dispuesto a pagar
+          por ese aire mensual. Prueba las dos opciones en el simulador de arriba y verás
+          la diferencia exacta en euros.
+        </p>
+      </article>
+      <article class="guide">
+        <span class="guide-key">Hipoteca mixta</span>
+        <h3>Cómo funciona realmente una mixta</h3>
+        <p>
+          Durante los primeros años pagas un tipo fijo. Cuando esa fase acaba, el banco
+          no reparte lo que queda como si empezaras de cero: recalcula la cuota sobre el
+          capital pendiente en ese momento, aplicando Euríbor más diferencial al plazo
+          restante. Por eso el salto de cuota depende tanto de cuánto capital hayas
+          amortizado antes del cambio.
+        </p>
+      </article>
+      <article class="guide">
+        <span class="guide-key">Comisiones</span>
+        <h3>Qué puede cobrarte el banco por amortizar</h3>
+        <p>
+          En España la Ley 5/2019 pone techo a la comisión por amortización anticipada:
+          en tipo variable, 0,25 % los tres primeros años o 0,15 % los cinco primeros
+          según lo pactado, y cero después. En tipo fijo, hasta 2 % los diez primeros
+          años y 1,5 % a partir de ahí. Además nunca puede superar la pérdida financiera
+          del banco. Amortix aplica los límites de España, Francia, Alemania, Italia,
+          Brasil, EE. UU., India y el Golfo.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRIVACIDAD ═══ -->
+<section class="trust-section">
+  <div class="trust-inner">
+    <span class="section-label">Privacidad</span>
+    <h2 class="section-title">Tu hipoteca es tuya</h2>
+    <p class="section-sub">
+      Los datos de tu préstamo no viajan a ningún sitio. Amortix no tiene servidor
+      donde guardarlos aunque quisiera.
+    </p>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="t-icon">📵</span>
+        <h3>Sin cuenta ni registro</h3>
+        <p>Abres la app y calculas. No hay correo, ni contraseña, ni verificación.</p>
+      </div>
+      <div class="trust-item">
+        <span class="t-icon">📱</span>
+        <h3>Todo en el dispositivo</h3>
+        <p>Capital, tipo, plazo y escenarios se guardan solo en tu iPhone. Funciona sin conexión.</p>
+      </div>
+      <div class="trust-item">
+        <span class="t-icon">🪧</span>
+        <h3>Publicidad, con transparencia</h3>
+        <p>La versión gratuita muestra anuncios de terceros que usan identificadores del dispositivo. Nunca ven los datos de tu hipoteca. Con Premium desaparecen.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="how-section">
-  <div class="how-inner">
-    <div class="section-header" style="text-align:center;">
-      <span class="section-label">How it works</span>
-      <h2 class="section-title">Three steps.<br/>Your mortgage under control.</h2>
-    </div>
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="how-step-num">1</div>
-        <h3>Enter your mortgage</h3>
-        <p>Add the loan amount, interest rate, term and start date. No sign-up, no account needed.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-step-num">2</div>
-        <h3>Explore the scenarios</h3>
-        <p>Browse the full amortization schedule, simulate extra payments and compare different options.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-step-num">3</div>
-        <h3>Make the best decision</h3>
-        <p>Take the data to your bank or decide on your own with all the information at hand.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials-section">
-  <div style="max-width:1000px; margin:0 auto;">
-    <div class="section-header" style="text-align:center;">
-      <span class="section-label">Reviews</span>
-      <h2 class="section-title">What our users say</h2>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <q>Finally an app that explains mortgages without the jargon. With Amortix I could clearly see how much I saved by making an early repayment before signing.</q>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">M</div>
-          <div class="author-info">
-            <strong>Martha G.</strong>
-            <span>Homeowner, California</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <q>I use it every time I get a letter from the bank. The amortization schedule is perfect and the comparator helped me choose between fixed and variable rates.</q>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#14b8a6,#10b981);">J</div>
-          <div class="author-info">
-            <strong>James R.</strong>
-            <span>First-time buyer, New York</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <q>Simple, fast and no annoying ads. The early repayment simulator convinced me to pay $300 extra a month. I'm saving 3 years of mortgage payments.</q>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#f59e0b,#10b981);">A</div>
-          <div class="author-info">
-            <strong>Anna P.</strong>
-            <span>Chicago</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
+<!-- ═══ PRECIO ═══ -->
 <section class="pricing-section">
   <div class="pricing-inner">
     <div class="section-header">
-      <span class="section-label">Pricing</span>
-      <h2 class="section-title">Everything free.<br/>Remove ads for $2.99.</h2>
-      <p class="section-sub">All features are free for everyone. The only optional purchase is to remove ads — a one-time payment, forever.</p>
+      <span class="section-label">Precio</span>
+      <h2 class="section-title">Todas las funciones gratis.<br/>Sin anuncios por 2,99 €.</h2>
+      <p class="section-sub">
+        No hay funciones de pago ni límites de uso: la versión gratuita hace exactamente
+        lo mismo que la Premium. Lo único que compras es quitar la publicidad, una vez y para siempre.
+      </p>
     </div>
     <div class="pricing-grid">
       <div class="plan-card">
-        <div class="plan-name">Free</div>
-        <div class="plan-price">0<small> $</small></div>
-        <div class="plan-desc">Full access to every feature.</div>
+        <div class="plan-name">Gratis</div>
+        <div class="plan-price">0 <small>€</small></div>
+        <div class="plan-desc">Acceso completo a todas las funciones.</div>
         <ul class="plan-features">
-          <li><span class="check">✓</span> Unlimited payment calculator</li>
-          <li><span class="check">✓</span> Full amortization schedule</li>
-          <li><span class="check">✓</span> Early repayment simulator</li>
-          <li><span class="check">✓</span> Scenario comparator</li>
-          <li><span class="check">✓</span> Charts and reports</li>
-          <li><span class="cross">✕</span> With ads</li>
+          <li><span class="check">✓</span> Calculadora de cuota sin límite</li>
+          <li><span class="check">✓</span> Cuadro de amortización completo</li>
+          <li><span class="check">✓</span> Simulador de amortización anticipada</li>
+          <li><span class="check">✓</span> Comparador de escenarios y mixta</li>
+          <li><span class="check">✓</span> Exportar a PDF</li>
+          <li><span class="cross">✕</span> Con publicidad</li>
         </ul>
       </div>
       <div class="plan-card featured">
-        <div class="plan-badge">One-time payment</div>
-        <div class="plan-name">No ads</div>
-        <div class="plan-price"><sup>$</sup>2<small>.99</small></div>
-        <div class="plan-desc">Pay once. No ads forever.</div>
+        <div class="plan-badge">Pago único</div>
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">2,99 <small>€</small></div>
+        <div class="plan-desc">Pagas una vez. Sin anuncios para siempre.</div>
         <ul class="plan-features">
-          <li><span class="check">✓</span> Everything in the free plan</li>
-          <li><span class="check">✓</span> No ads</li>
-          <li><span class="check">✓</span> No subscriptions or renewals</li>
-          <li><span class="check">✓</span> One-time payment for life</li>
+          <li><span class="check">✓</span> Todo lo del plan gratuito</li>
+          <li><span class="check">✓</span> Sin ningún anuncio</li>
+          <li><span class="check">✓</span> Sin suscripciones ni renovaciones</li>
+          <li><span class="check">✓</span> Un solo pago, de por vida</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ═══ FAQ ═══ -->
 <section class="faq-section" id="faq">
   <div class="faq-inner">
     <div class="section-header" style="text-align:center;">
-      <span class="section-label">FAQ</span>
-      <h2 class="section-title">Frequently asked questions</h2>
+      <span class="section-label">Preguntas frecuentes</span>
+      <h2 class="section-title">Lo que suele preguntarse</h2>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">What types of mortgage does Amortix calculate? <span class="arrow">▼</span></div>
-      <div class="faq-a">Amortix calculates fixed-rate, variable-rate and mixed mortgages using the French amortization method (equal monthly payments), which is the standard used by the majority of lenders.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq1">¿Cómo se calcula una hipoteca mixta? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq1">Una mixta tiene dos fases. Durante los primeros años se aplica un tipo fijo (TIN). Al terminar esa fase, la cuota se recalcula sobre el capital que quede pendiente, aplicando Euríbor más el diferencial pactado y repartiéndolo entre los años que resten. Amortix calcula las dos fases por separado con tus números reales, sin aproximar la segunda.</div>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">Does it calculate APR? <span class="arrow">▼</span></div>
-      <div class="faq-a">Yes. Amortix calculates both the nominal interest rate and the APR (Annual Percentage Rate), taking into account any fees and associated costs you enter.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq2">¿Me compensa más reducir plazo o reducir cuota? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq2">Reducir plazo ahorra siempre más intereses, porque el capital deja de generar interés durante más meses. Reducir cuota ahorra menos pero te da margen cada mes. Amortix calcula las dos opciones en paralelo y te muestra el ahorro neto en euros de cada una, ya descontada la comisión, para que decidas con la cifra delante.</div>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">Can I export the amortization schedule? <span class="arrow">▼</span></div>
-      <div class="faq-a">Yes, you can export the full amortization schedule as a PDF and share it directly from the app with any application on your iPhone — email, WhatsApp, Files, and more.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq3">¿Qué comisión puede cobrarme el banco por amortizar? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq3">En España la Ley 5/2019 la limita: en tipo variable, un máximo del 0,25 % durante los tres primeros años o del 0,15 % durante los cinco primeros, según lo que figure en tu escritura, y cero a partir de ahí. En tipo fijo, hasta el 2 % los diez primeros años y el 1,5 % después. En ningún caso puede superar la pérdida financiera del banco. Amortix incluye los límites de ocho países.</div>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">Does the app store my data in the cloud? <span class="arrow">▼</span></div>
-      <div class="faq-a">No. All your mortgage data is stored only on your device. Amortix does not require an account or an internet connection to work.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq4">¿Calcula la TAE? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq4">Sí. Amortix calcula el TIN y la TAE, teniendo en cuenta las comisiones y gastos asociados que introduzcas.</div>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">Is it available on Android? <span class="arrow">▼</span></div>
-      <div class="faq-a">Amortix is currently available only for iPhone (iOS 16+). We are considering Android support in a future release.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq5">¿Es gratis de verdad? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq5">Todas las funciones son gratuitas, sin límites ni versiones recortadas. La versión gratuita muestra publicidad. Si prefieres usarla sin anuncios, hay una compra única de 2,99 €. No hay suscripciones.</div>
     </div>
+
     <div class="faq-item">
-      <div class="faq-q" onclick="toggle(this)">Is it really completely free? <span class="arrow">▼</span></div>
-      <div class="faq-a">Yes, 100% free. No ads, no subscriptions, no in-app purchases. All features are available from the moment you download the app, at no cost whatsoever.</div>
+      <button class="faq-q" aria-expanded="false" aria-controls="faq6">¿Guarda mis datos en la nube? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq6">No. Los datos de tu hipoteca se quedan en tu iPhone. No hay cuenta, ni registro, ni servidor, y la app funciona sin conexión.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="faq7">¿Qué necesito para usarla? ¿Hay versión Android? <span class="arrow">▼</span></button>
+      <div class="faq-a" id="faq7">Amortix funciona en iPhone, iPad, Mac con chip Apple y Apple Vision, con iOS 17.6 o posterior. Por ahora no hay versión para Android, aunque está en estudio.</div>
     </div>
   </div>
 </section>
 
-<!-- DOWNLOAD CTA -->
-<section class="download-section" id="download">
-  <h2>Start understanding<br/>your mortgage today</h2>
-  <p>Join homeowners who already use Amortix to make better financial decisions. Free, on your iPhone.</p>
-  <a href="https://apps.apple.com/app/id6773757657" class="app-store-btn">
+<!-- ═══ DESCARGA ═══ -->
+<section class="download-section" id="descargar">
+  <h2>Deja de calcular tu hipoteca<br/>a ojo</h2>
+  <p>Gratis, en tu iPhone, sin registro. Y si te gusta, quitas los anuncios por 2,99 € una sola vez.</p>
+  <!-- ct= identifica esta fuente en App Analytics. Sustituye PROVIDER_TOKEN por tu token de App Store Connect (Usuarios y acceso → Claves) -->
+  <a href="https://apps.apple.com/es/app/id6773757657?pt=PROVIDER_TOKEN&amp;ct=web_landing_footer&amp;mt=8" class="app-store-btn">
     <span class="store-icon">🍎</span>
     <div class="store-text">
-      <small>Download on the</small>
+      <small>Descargar en el</small>
       <strong>App Store</strong>
     </div>
   </a>
-  <div class="download-note">Free · iOS 16+ · No sign-up · Remove ads for $2.99</div>
+  <div class="download-note">Gratis · iOS 17.6+ · Sin registro · Premium sin anuncios: 2,99 €</div>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -582,24 +891,273 @@ section { padding: 88px 24px; }
         <span>Amortix</span>
       </div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
-        <a href="https://apps.apple.com/app/id6773757657">App Store</a>
+        <a href="index.html">Inicio</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#guias">Guías</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="support.html">Soporte</a>
+        <a href="https://apps.apple.com/es/app/id6773757657">App Store</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Amortix. All rights reserved.</p>
+      <p>© 2026 Amortix · Albea Systems. Amortix ofrece cálculos orientativos y no constituye asesoramiento financiero.</p>
     </div>
   </div>
 </footer>
 
 <script>
-function toggle(el) {
-  el.classList.toggle('open');
-  el.nextElementSibling.classList.toggle('open');
-}
+(function () {
+  "use strict";
+
+  /* ───────── Utilidades ───────── */
+  var eur = new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', maximumFractionDigits:0 });
+  var eur2 = new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', minimumFractionDigits:2, maximumFractionDigits:2 });
+
+  function cuotaFrancesa(capital, tasaMensual, meses) {
+    if (meses <= 0) return capital;
+    if (tasaMensual === 0) return capital / meses;
+    return capital * tasaMensual / (1 - Math.pow(1 + tasaMensual, -meses));
+  }
+
+  function tasaEn(tramos, mes) {
+    var t = tramos[0].tasa;
+    for (var i = 0; i < tramos.length; i++) {
+      if (mes >= tramos[i].desde) t = tramos[i].tasa;
+    }
+    return t;
+  }
+
+  /* Escenario base: sin pago extra. Devuelve la cuota de cada mes. */
+  function escenarioBase(capital, meses, tramos) {
+    var saldo = capital, interes = 0, tPrev = null, cuota = 0;
+    var cuotas = [];
+    for (var m = 0; m < meses && saldo > 0.005; m++) {
+      var t = tasaEn(tramos, m);
+      if (t !== tPrev) { cuota = cuotaFrancesa(saldo, t, meses - m); tPrev = t; }
+      var i = saldo * t;
+      var a = cuota - i;
+      if (a <= 0) return null;            // la cuota no cubre ni los intereses
+      if (a > saldo) a = saldo;
+      interes += i; saldo -= a;
+      cuotas.push(cuota);
+    }
+    return { cuotas: cuotas, interes: interes, meses: cuotas.length, cuotaInicial: cuotas[0] || 0 };
+  }
+
+  /* Escenario con pago extra.
+     modo 'plazo' → mantiene la cuota original y acorta el préstamo
+     modo 'cuota' → mantiene el plazo y recalcula la cuota           */
+  function escenarioPrepago(capital, meses, tramos, mesPago, importe, modo, base) {
+    var saldo = capital, interes = 0, tPrev = null, cuota = 0, m;
+    var cuotaTras = null, total = 0;
+    for (m = 0; m < meses * 2 && saldo > 0.005; m++) {
+      var t = tasaEn(tramos, Math.min(m, meses - 1));
+      if (m === mesPago) {
+        saldo = Math.max(0, saldo - importe);
+        if (saldo <= 0.005) break;
+        if (modo === 'cuota') { cuota = cuotaFrancesa(saldo, t, meses - m); tPrev = t; }
+      }
+      if (modo === 'plazo') {
+        cuota = base.cuotas[Math.min(m, base.cuotas.length - 1)];
+      } else if (t !== tPrev) {
+        cuota = cuotaFrancesa(saldo, t, Math.max(1, meses - m)); tPrev = t;
+      }
+      var i = saldo * t;
+      var a = cuota - i;
+      if (a <= 0) return null;
+      if (a > saldo) a = saldo;
+      interes += i; saldo -= a;
+      total++;
+      if (m === mesPago) cuotaTras = cuota;
+    }
+    return { interes: interes, meses: total, cuotaTras: cuotaTras || cuota };
+  }
+
+  /* ───────── Estado y elementos ───────── */
+  var modo = 'amortizar';
+  var $ = function (id) { return document.getElementById(id); };
+  var out = $('simResultados');
+  var campos = ['fCapital','fPlazo','fTin','fExtra','fMes','fAnosFijos','fEuribor','fDiferencial'];
+
+  function leer(id, min, max, def) {
+    var v = parseFloat($(id).value);
+    if (isNaN(v)) return def;
+    if (typeof min === 'number' && v < min) return min;
+    if (typeof max === 'number' && v > max) return max;
+    return v;
+  }
+
+  function error(msg) {
+    out.innerHTML = '<div class="sim-error">' + msg + '</div>';
+  }
+
+  /* ───────── Cálculo ───────── */
+  function calcular() {
+    var capital = leer('fCapital', 1000, 5000000, 180000);
+    var anos    = leer('fPlazo', 1, 45, 25);
+    var meses   = Math.round(anos * 12);
+    var tin     = leer('fTin', 0, 20, 3.1);
+
+    if (modo === 'mixta') {
+      var anosFijos = Math.min(leer('fAnosFijos', 1, 30, 10), anos);
+      var euribor   = leer('fEuribor', -1, 15, 2.3);
+      var difer     = leer('fDiferencial', 0, 5, 0.6);
+      var t1 = tin / 100 / 12;
+      var t2 = (euribor + difer) / 100 / 12;
+      var cambioMes = Math.round(anosFijos * 12);
+
+      var mixta = escenarioBase(capital, meses, [{desde:0, tasa:t1}, {desde:cambioMes, tasa:t2}]);
+      var soloFija = escenarioBase(capital, meses, [{desde:0, tasa:t1}]);
+      if (!mixta || !soloFija) { error('Con esos números la cuota no llega a cubrir los intereses. Revisa el capital, el plazo o el tipo.'); return; }
+
+      var cuota1 = mixta.cuotas[0];
+      var cuota2 = mixta.cuotas[Math.min(cambioMes, mixta.cuotas.length - 1)];
+      var salto = cuota2 - cuota1;
+      var dif = mixta.interes - soloFija.interes;
+
+      out.innerHTML =
+        '<div class="res-phases">' +
+          '<div class="phase">' +
+            '<div class="p-tag">Fase 1 · ' + anosFijos + (anosFijos === 1 ? ' año' : ' años') + '</div>' +
+            '<div class="p-val">' + eur2.format(cuota1) + '</div>' +
+            '<div class="p-sub">Tipo fijo al ' + tin.toFixed(2).replace('.', ',') + ' %</div>' +
+          '</div>' +
+          '<div class="phase p2">' +
+            '<div class="p-tag">Fase 2 · ' + (anos - anosFijos) + (anos - anosFijos === 1 ? ' año' : ' años') + '</div>' +
+            '<div class="p-val">' + eur2.format(cuota2) + '</div>' +
+            '<div class="p-sub">Euríbor ' + euribor.toFixed(2).replace('.', ',') + ' % + ' + difer.toFixed(2).replace('.', ',') + ' %</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="res-primary">' +
+          '<div class="res-label">' + (salto >= 0 ? 'Tu cuota subirá' : 'Tu cuota bajará') + ' al cambiar de fase</div>' +
+          '<div class="res-value">' + (salto >= 0 ? '+' : '−') + eur2.format(Math.abs(salto)).replace('-', '') + '</div>' +
+          '<div class="res-note">Al mes ' + cambioMes + ' aún te quedarán ' +
+            eur.format(saldoEnMes(capital, meses, [{desde:0,tasa:t1}], cambioMes)) +
+            ' de capital por pagar. Sobre ese importe, no sobre el inicial, se recalcula la nueva cuota.</div>' +
+        '</div>' +
+        '<div class="res-primary" style="background:#f8fafc; border-color:#e2e8f0;">' +
+          '<div class="res-label" style="color:#475569;">Intereses totales</div>' +
+          '<div class="res-value" style="color:#0f172a;">' + eur.format(mixta.interes) + '</div>' +
+          '<div class="res-note" style="color:#475569;">' +
+            (dif > 0
+              ? eur.format(dif) + ' más que si todo el préstamo fuese fijo al ' + tin.toFixed(2).replace('.', ',') + ' %.'
+              : eur.format(Math.abs(dif)) + ' menos que si todo el préstamo fuese fijo al ' + tin.toFixed(2).replace('.', ',') + ' %.') +
+          '</div>' +
+        '</div>';
+      return;
+    }
+
+    /* Modo amortizar */
+    var extra = leer('fExtra', 0, capital, 10000);
+    var mesP  = Math.min(leer('fMes', 1, meses, 12), meses - 1);
+    var t = tin / 100 / 12;
+    var tramos = [{ desde: 0, tasa: t }];
+
+    var base = escenarioBase(capital, meses, tramos);
+    if (!base) { error('Con esos números la cuota no llega a cubrir los intereses. Revisa el capital, el plazo o el tipo.'); return; }
+
+    if (extra <= 0) {
+      out.innerHTML =
+        '<div class="res-primary">' +
+          '<div class="res-label">Cuota mensual</div>' +
+          '<div class="res-value">' + eur2.format(base.cuotaInicial) + '</div>' +
+          '<div class="res-note">Pagarás ' + eur.format(base.interes) + ' de intereses en total. Introduce un pago extra para ver cuánto puedes ahorrar.</div>' +
+        '</div>';
+      return;
+    }
+
+    var pPlazo = escenarioPrepago(capital, meses, tramos, mesP, extra, 'plazo', base);
+    var pCuota = escenarioPrepago(capital, meses, tramos, mesP, extra, 'cuota', base);
+    if (!pPlazo || !pCuota) { error('No se puede simular con esos valores. Prueba a reducir el pago extra o ampliar el plazo.'); return; }
+
+    var ahorroPlazo = base.interes - pPlazo.interes;
+    var ahorroCuota = base.interes - pCuota.interes;
+    var mesesMenos  = base.meses - pPlazo.meses;
+    var cuotaMenos  = base.cuotaInicial - pCuota.cuotaTras;
+    var anosMenos   = Math.floor(mesesMenos / 12);
+    var restoMeses  = mesesMenos % 12;
+    var textoTiempo = (anosMenos > 0 ? anosMenos + (anosMenos === 1 ? ' año' : ' años') : '') +
+                      (anosMenos > 0 && restoMeses > 0 ? ' y ' : '') +
+                      (restoMeses > 0 ? restoMeses + (restoMeses === 1 ? ' mes' : ' meses') : '') || 'menos de un mes';
+
+    out.innerHTML =
+      '<div class="res-primary">' +
+        '<div class="res-label">Ahorro máximo en intereses</div>' +
+        '<div class="res-value">' + eur.format(ahorroPlazo) + '</div>' +
+        '<div class="res-note">Amortizando ' + eur.format(extra) + ' y manteniendo la cuota de ' +
+          eur2.format(base.cuotaInicial) + '. Terminarías ' + textoTiempo + ' antes.</div>' +
+      '</div>' +
+      '<div class="res-compare">' +
+        '<div class="cmp win">' +
+          '<div class="cmp-crown">Ahorra más</div>' +
+          '<div class="cmp-tag">Reducir plazo</div>' +
+          '<div class="cmp-val">' + eur.format(ahorroPlazo) + '</div>' +
+          '<div class="cmp-sub">Cuota igual · ' + textoTiempo + ' menos de hipoteca</div>' +
+        '</div>' +
+        '<div class="cmp">' +
+          '<div class="cmp-tag">Reducir cuota</div>' +
+          '<div class="cmp-val">' + eur.format(ahorroCuota) + '</div>' +
+          '<div class="cmp-sub">Mismo plazo · pagas ' + eur2.format(cuotaMenos) + ' menos al mes</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="sim-error" style="background:#f8fafc; border-color:#e2e8f0; color:#475569;">' +
+        'Reducir plazo ahorra ' + eur.format(ahorroPlazo - ahorroCuota) + ' más que reducir cuota. ' +
+        'Falta descontar la comisión que pueda cobrarte tu banco: la app la calcula según tu escritura y la ley aplicable.' +
+      '</div>';
+  }
+
+  /* Capital pendiente en un mes concreto */
+  function saldoEnMes(capital, meses, tramos, mesObjetivo) {
+    var saldo = capital, tPrev = null, cuota = 0;
+    for (var m = 0; m < mesObjetivo && saldo > 0.005; m++) {
+      var t = tasaEn(tramos, m);
+      if (t !== tPrev) { cuota = cuotaFrancesa(saldo, t, meses - m); tPrev = t; }
+      var i = saldo * t;
+      var a = cuota - i;
+      if (a <= 0) break;
+      if (a > saldo) a = saldo;
+      saldo -= a;
+    }
+    return saldo;
+  }
+
+  /* ───────── Cambio de modo ───────── */
+  function setModo(nuevo) {
+    modo = nuevo;
+    var esMixta = nuevo === 'mixta';
+    $('tabAmortizar').setAttribute('aria-pressed', String(!esMixta));
+    $('tabMixta').setAttribute('aria-pressed', String(esMixta));
+    $('simTitulo').textContent = esMixta ? 'Simulador de hipoteca mixta' : 'Simulador de amortización anticipada';
+    $('simSubtitulo').textContent = esMixta
+      ? 'Las dos fases con tus números: cuánto pagas antes y después del cambio.'
+      : 'Mira el ahorro real de un pago extra, en euros y en meses.';
+    $('lblTin').textContent = esMixta ? 'TIN de la fase fija' : 'Tipo de interés';
+    Array.prototype.forEach.call(document.querySelectorAll('.grupo-amortizar'), function (el) { el.hidden = esMixta; });
+    Array.prototype.forEach.call(document.querySelectorAll('.grupo-mixta'), function (el) { el.hidden = !esMixta; });
+    calcular();
+  }
+
+  $('tabAmortizar').addEventListener('click', function () { setModo('amortizar'); });
+  $('tabMixta').addEventListener('click', function () { setModo('mixta'); });
+
+  campos.forEach(function (id) {
+    var el = $(id);
+    if (el) el.addEventListener('input', calcular);
+  });
+
+  calcular();
+
+  /* ───────── FAQ accesible ───────── */
+  Array.prototype.forEach.call(document.querySelectorAll('.faq-q'), function (btn) {
+    btn.addEventListener('click', function () {
+      var abierto = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!abierto));
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if (panel) panel.classList.toggle('open', !abierto);
+    });
+  });
+})();
 </script>
 </body>
 </html>
