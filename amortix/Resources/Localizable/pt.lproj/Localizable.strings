@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (Portuguese Brazilian — pt-BR) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Pular";
+"onboarding_next" = "Próximo";
+"onboarding_start" = "Começar";
+"onboarding_page1_title" = "Calcule seu financiamento";
+"onboarding_page1_subtitle" = "Descubra sua parcela mensal, os juros totais e o custo real do seu empréstimo.";
+"onboarding_page2_title" = "Simule amortizações";
+"onboarding_page2_subtitle" = "Compare se é melhor reduzir o prazo ou a parcela ao fazer uma amortização parcial.";
+"onboarding_page3_title" = "Tome melhores decisões";
+"onboarding_page3_subtitle" = "Analise o impacto das variações de juros, faça testes de estresse e descubra se amortizar ou investir é melhor para você.";
+
+// MARK: - Tabs
+"tab_calculator" = "Calculadora";
+"tab_euribor" = "Revisão de juros";
+"tab_stress" = "Estresse";
+"tab_amortize" = "Amortizar";
+"tab_extra" = "Pagamentos extras";
+"tab_invest" = "Investir";
+"tab_mortgage_tab" = "Financiamento";
+"tab_amortize_tab" = "Amortização";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Calculadora de Financiamento";
+"calculator_section_loan" = "Dados do empréstimo";
+"calculator_capital" = "Capital (R$)";
+"calculator_years" = "Anos";
+"calculator_tin" = "Taxa de juros (%)";
+"calculator_section_type" = "Tipo de financiamento";
+"calculator_type_fixed" = "Fixo";
+"calculator_type_variable" = "Variável";
+"calculator_type_mixed" = "Misto";
+"calculator_euribor" = "Taxa de referência (%)";
+"calculator_spread" = "Spread (%)";
+"calculator_fixed_period_years" = "Período fixo (anos)";
+"calculator_btn_calculate" = "Calcular";
+"calculator_result_monthly" = "Parcela mensal";
+"calculator_result_total_interest" = "Total de juros";
+"calculator_result_total_cost" = "Custo total";
+"calculator_btn_see_table" = "Ver tabela de amortização";
+
+// MARK: - Amortization table
+"table_nav_title" = "Tabela de amortização";
+"table_col_period" = "Período";
+"table_col_payment" = "Parcela";
+"table_col_principal" = "Capital";
+"table_col_interest" = "Juros";
+"table_col_balance" = "Saldo devedor";
+"table_export_pdf" = "Exportar";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Amortização Parcial";
+"partial_remaining_capital" = "Saldo devedor";
+"partial_remaining_months" = "Meses restantes";
+"partial_current_rate" = "Taxa atual (%)";
+"partial_amount" = "Valor a amortizar";
+"partial_commission_mode_auto" = "Automática (lei)";
+"partial_commission_mode_percent" = "Percentual (%)";
+"partial_commission_mode_fixed" = "Valor fixo";
+"partial_commission_mode_none" = "Sem multa";
+"partial_mortgage_type" = "Tipo de financiamento";
+"partial_years_since_signing" = "Anos desde a assinatura";
+"partial_btn_simulate" = "Simular";
+"partial_result_reduce_term" = "Reduzir prazo";
+"partial_result_reduce_quota" = "Reduzir parcela";
+"partial_months_saved" = "Meses economizados";
+"partial_interest_saved" = "Juros economizados";
+"partial_commission_cost" = "Multa por liquidação";
+"partial_net_saving" = "Economia líquida";
+"partial_new_payment" = "Nova parcela";
+"partial_recommended" = "Recomendado";
+"partial_info_law_fixed" = "Financiamento fixo: 2% nos primeiros 10 anos, 1,5% a partir do ano 11.";
+"partial_info_law_variable" = "Financiamento variável: 0,25% nos primeiros 3 anos, 0% a partir do ano 4.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Seu financiamento atual";
+"extra_section_extra" = "Pagamento mensal extra";
+"extra_monthly_amount" = "Valor extra/mês";
+"extra_btn_simulate" = "Calcular economia";
+"extra_months_saved" = "Meses economizados";
+"extra_interest_saved" = "Juros economizados";
+"extra_current_payment" = "Parcela atual";
+"extra_new_payoff" = "Nova duração";
+"extra_interest_comparison" = "Comparativo de juros";
+"extra_without_extra" = "Sem pagamentos extras";
+"extra_with_extra" = "Com pagamentos extras";
+"extra_balance_chart" = "Evolução do saldo devedor";
+
+// MARK: - Stress test
+"stress_section_loan" = "Dados do financiamento";
+"stress_base_rate" = "Taxa atual (%)";
+"stress_btn_calculate" = "Calcular cenários";
+"stress_scenarios_title" = "Cenários de taxa de juros";
+"stress_col_rate" = "Variação";
+"stress_col_payment" = "Parcela/mês";
+"stress_col_diff" = "Diferença";
+"stress_chart_title" = "Impacto na parcela mensal";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Revisão de juros";
+"euribor_remaining_capital" = "Saldo devedor";
+"euribor_remaining_months" = "Meses restantes";
+"euribor_spread" = "Spread (%)";
+"euribor_current_rate" = "Taxa atual (%)";
+"euribor_current_payment" = "Parcela atual";
+"euribor_scenario_label" = "Variação de taxa (pp)";
+"euribor_simulated_payment" = "Nova parcela";
+"euribor_difference_monthly" = "Diferença mensal";
+"euribor_difference_annual" = "Diferença anual";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "Investir ou Amortizar?";
+"invest_amount" = "Valor disponível";
+"invest_mortgage_tin" = "Taxa do financiamento (%)";
+"invest_expected_return" = "Rentabilidade esperada (%)";
+"invest_horizon_years" = "Horizonte (anos)";
+"invest_btn_compare" = "Comparar";
+"invest_option_amortize" = "Amortizar";
+"invest_option_invest" = "Investir";
+"invest_amortize_saving" = "Economia amortizando";
+"invest_invest_gain" = "Ganho investindo";
+"invest_recommendation_amortize" = "Melhor amortizar";
+"invest_recommendation_invest" = "Melhor investir";
+"invest_premium_title" = "Função Premium";
+"invest_premium_body" = "Desbloqueie o comparador Investir vs Amortizar para tomar a melhor decisão financeira.";
+"invest_tax_note" = "Nota fiscal: os rendimentos de investimentos podem estar sujeitos ao Imposto de Renda. Consulte um contador ou assessor financeiro.";
+
+// MARK: - Settings
+"settings_nav_title" = "Configurações";
+"settings_language" = "Idioma";
+"settings_language_system" = "Sistema";
+"settings_language_footer" = "A alteração de idioma é aplicada imediatamente.";
+"settings_country" = "País / Mercado";
+"settings_section_about" = "Sobre";
+"settings_app_version" = "Versão";
+"settings_privacy_policy" = "Política de privacidade";
+"settings_terms_of_use" = "Termos de uso";
+"settings_rate_app" = "Avaliar o app";
+"settings_premium_active" = "Premium ativo";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "Premium ativado!";
+"premium_unlock_message" = "Anúncios desativados. Aproveite todas as funcionalidades.";
+"premium_lock_title" = "Premium desativado";
+"premium_lock_message" = "Os anúncios estão ativos novamente.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Cancelar";
+"general_close" = "Fechar";
+"general_done" = "Concluído";
+"general_share" = "Compartilhar";
+"general_year_singular" = "ano";
+"general_year_plural" = "anos";
+"general_month_singular" = "mês";
+"general_month_plural" = "meses";
+"general_loading" = "Calculando...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "GRÁTIS";
+
+// MARK: - Errors
+"error_invalid_capital" = "Insira um capital válido maior que 0.";
+"error_invalid_years" = "Insira um prazo válido em anos ou meses.";
+"error_invalid_rate" = "Insira uma taxa de juros válida maior que 0.";
+"error_invalid_amount" = "Insira um valor válido maior que 0.";
+"error_amount_exceeds_capital" = "O valor a amortizar não pode ser maior que o saldo devedor.";
+
+// MARK: - ATT
+"att_usage_description" = "Usamos sua atividade para exibir anúncios relevantes e medir o desempenho dos anúncios.";
+
+// MARK: - Countries
+"country_es" = "Espanha";
+"country_en" = "Estados Unidos";
+"country_hi" = "Índia";
+"country_pt_BR" = "Brasil";
+"country_it" = "Itália";
+"country_fr" = "França";
+"country_de" = "Alemanha";
+"country_ar" = "Árabe / CCG";
+
+// MARK: - Laws by country
+"law_es" = "Lei 5/2019: Variável 0,25% anos 1-3, 0% depois. Fixo 2% anos 1-10, 1,5% depois.";
+"law_en" = "Dodd-Frank Act (2014): Máx. 3%/2%/1% anos 1/2/3, 0% a partir do ano 4.";
+"law_hi" = "RBI Circular 2012: 0% taxa variável. Máx. 2% taxa fixa.";
+"law_pt_BR" = "SFH Lei 9.514/1997: Máx. 2% sobre o valor amortizado.";
+"law_it" = "TUB + Diretiva UE: 0,5% taxa variável, 1,5% taxa fixa.";
+"law_fr" = "Code de la Consommation L313-47: IRA = mín(3% capital, 6 meses de juros).";
+"law_de" = "§490 BGB: Máx. 1% se restam >12 meses, 0,5% se restam ≤12 meses.";
+"law_ar" = "Financiamento islâmico (Murabaha/Ijara): sem juros; ~1% taxa administrativa.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Parcela mensal";
+"kpi_monthly_payment_explanation" = "O valor fixo que você paga todo mês durante toda a vigência do empréstimo. Inclui uma parte do capital (o que você está devolvendo do empréstimo) e uma parte de juros (o custo do dinheiro emprestado).";
+"kpi_monthly_payment_formula" = "C × [r(1+r)^n] / [(1+r)^n - 1]\nC=capital  r=taxa mensal  n=meses";
+"kpi_monthly_payment_example" = "Financiamento de R$200.000 em 30 anos a 3,5% → parcela mensal de R$898.";
+
+"kpi_total_interest_title" = "Total de juros";
+"kpi_total_interest_explanation" = "A soma de todos os juros que você pagará ao longo da vida do empréstimo. Quanto maior a taxa ou o prazo, mais juros você pagará.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "Em um financiamento de R$200.000 em 30 anos a 3,5%, você pagará cerca de R$123.000 só em juros.";
+
+"kpi_total_cost_title" = "Custo total";
+"kpi_total_cost_explanation" = "O dinheiro total que você devolverá ao banco: capital emprestado + todos os juros. É a melhor métrica para comparar dois financiamentos.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Capital R$200.000 + R$123.000 em juros = R$323.000 custo total.";
+
+"kpi_months_saved_title" = "Meses economizados";
+"kpi_months_saved_explanation" = "Se você optar por reduzir o prazo com uma amortização parcial, esses são os meses que você deixará de pagar. Quanto mais cedo no financiamento, maior será a economia.";
+"kpi_months_saved_formula" = "n_novo = -ln(1 - C_novo × r / parcela) / ln(1 + r)";
+"kpi_months_saved_example" = "Amortizando R$20.000 no ano 5 de um financiamento de 30 anos, você poderia eliminar 4 a 6 anos de pagamentos.";
+
+"kpi_interest_saved_title" = "Juros economizados";
+"kpi_interest_saved_explanation" = "A diferença entre os juros que você pagaria sem amortizar e os que pagará após a amortização. É a economia bruta antes de deduzir a multa.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Amortizando R$20.000 você pode economizar entre R$8.000 e R$18.000 em juros dependendo do momento.";
+
+"kpi_net_saving_title" = "Economia líquida";
+"kpi_net_saving_explanation" = "A economia real: juros economizados menos a multa por liquidação antecipada cobrada pelo banco. Se for negativa, não vale a pena amortizar.";
+"kpi_net_saving_formula" = "Economia líquida = Juros economizados − Multa";
+"kpi_net_saving_example" = "Juros economizados R$15.000 − Multa R$500 = Economia líquida R$14.500.";
+
+"kpi_commission_title" = "Multa por liquidação";
+"kpi_commission_explanation" = "O banco pode cobrar uma multa pela liquidação antecipada. A regulamentação varia por país e protege o consumidor.";
+"kpi_commission_formula" = "Variável: 0,25% × valor (anos 1-3)\nFixo: 2% × valor (anos 1-10)";
+"kpi_commission_example" = "Amortizando R$20.000 no ano 2 de financiamento variável → multa = R$20.000 × 0,25% = R$50.";
+
+"kpi_new_payment_title" = "Nova parcela";
+"kpi_new_payment_explanation" = "Se você optar por reduzir a parcela com a amortização parcial, esta será sua nova parcela mensal pelo restante do financiamento, mantendo o prazo original.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Parcela atual R$898/mês → após amortizar R$20.000 → nova parcela R$798/mês.";
+
+"kpi_euribor_diff_monthly_title" = "Diferença mensal";
+"kpi_euribor_diff_monthly_explanation" = "O quanto sua parcela mensal muda se os juros sobem ou descem conforme o cenário simulado. Um valor positivo significa que você pagará mais.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "Se os juros subirem 1 ponto, um financiamento de R$150.000 em 20 anos pode aumentar ~R$60/mês.";
+
+"kpi_amortize_saving_title" = "Economia amortizando";
+"kpi_amortize_saving_explanation" = "O benefício garantido de usar esse dinheiro para amortizar o financiamento. É equivalente a obter um retorno igual à taxa do seu financiamento, sem risco.";
+"kpi_amortize_saving_formula" = "Capital × ((1 + taxa)^anos − 1)";
+"kpi_amortize_saving_example" = "R$20.000 em financiamento a 3,5% por 10 anos → economia garantida de R$9.773.";
+
+"kpi_invest_gain_title" = "Ganho investindo";
+"kpi_invest_gain_explanation" = "O benefício esperado de investir esse dinheiro em vez de amortizar, aplicando a rentabilidade anual que você insere. Lembre-se de que investimentos envolvem riscos e os rendimentos não são garantidos.";
+"kpi_invest_gain_formula" = "Capital × ((1 + rentabilidade)^anos − 1)";
+"kpi_invest_gain_example" = "R$20.000 a 7% ao ano por 10 anos → ganho esperado de R$19.343.";
+
+"kpi_section_what" = "O que é?";
+"kpi_section_formula" = "Fórmula";
+"kpi_section_example" = "Exemplo";
+"kpi_chart_label" = "Gráfico";
+"kpi_example_reduce_term" = "Reduzir prazo";
+"kpi_example_reduce_payment" = "Reduzir parcela";
+
+// MARK: - General units
+"general_years" = "anos";
+"general_months" = "meses";
+"general_done" = "Concluído";
+"general_cancel" = "Cancelar";
+"partial_section_commission" = "Comissão";
+
+"kpi_input_capital_title" = "Capital do empréstimo";
+"kpi_input_capital_explanation" = "O valor total que você pede emprestado ao banco. É a base sobre a qual os juros são calculados.";
+"kpi_input_capital_example" = "Imóvel de R$250.000 com 20% de entrada → capital de R$200.000.";
+"kpi_input_years_title" = "Prazo do empréstimo";
+"kpi_input_years_explanation" = "O número de anos para pagar o financiamento. Prazo maior = parcela menor, mas muito mais juros totais.";
+"kpi_input_years_example" = "Financiamento de 25 anos tem parcelas menores que 15 anos, mas paga muito mais juros.";
+"kpi_input_rate_title" = "Taxa de juros";
+"kpi_input_rate_explanation" = "O percentual anual cobrado pelo banco. Pequenas diferenças têm grande impacto a longo prazo.";
+"kpi_input_rate_example" = "R$200.000 em 25 anos: de 3% para 4% = ~R$28.000 a mais em juros.";
+"kpi_input_euribor_title" = "Taxa de referência";
+"kpi_input_euribor_explanation" = "O índice de referência interbancário. Financiamentos variáveis = índice + spread.";
+"kpi_input_euribor_example" = "Taxa 3,75% + spread 0,75% = taxa efetiva 4,50%.";
+"kpi_input_spread_title" = "Spread";
+"kpi_input_spread_explanation" = "A margem fixa adicionada pelo banco à taxa de referência para calcular a taxa variável.";
+"kpi_input_spread_example" = "Spread 0,75% sobre 3,75% = taxa 4,50%.";
+"kpi_input_remaining_capital_title" = "Saldo devedor";
+"kpi_input_remaining_capital_explanation" = "A dívida que você ainda tem com o banco, sobre a qual os juros futuros são calculados.";
+"kpi_input_remaining_capital_example" = "Empréstimo de R$200.000 há 5 anos por 25 anos → saldo ≈ R$175.000.";
+"kpi_input_months_title" = "Meses restantes";
+"kpi_input_months_explanation" = "O número de parcelas mensais restantes a pagar.";
+"kpi_input_months_example" = "Financiamento de 30 anos assinado há 5 anos → 300 meses restantes.";
+"kpi_input_amortize_amount_title" = "Valor a amortizar";
+"kpi_input_amortize_amount_explanation" = "O valor extra que você quer pagar para reduzir sua dívida antecipadamente.";
+"kpi_input_amortize_amount_example" = "R$20.000 extra podem eliminar vários anos do financiamento.";
+"kpi_input_extra_monthly_title" = "Pagamento mensal extra";
+"kpi_input_extra_monthly_explanation" = "Um valor adicional pago todo mês além da parcela normal.";
+"kpi_input_extra_monthly_example" = "R$200 extras por mês em R$150.000 a 3,5% pode terminar 5-7 anos antes.";
+"kpi_input_stress_rate_title" = "Taxa base do teste de estresse";
+"kpi_input_stress_rate_explanation" = "A taxa de partida para simular diferentes cenários de alta ou queda.";
+"kpi_input_stress_rate_example" = "Base 3,5% → cenários de 1,5% a 8,5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Revisão taxa";
+"tab_extra_monthly" = "Pagamento extra";
+"calculator_reference_rate" = "Taxa de referência";
+"calculator_tin_mixed" = "Taxa (fase fixa)";
+"calculator_mixed_effective_hint %@" = "Taxa variável efetiva: %@";
+"country_menu_header" = "Selecionar país";
+"settings_country_footer" = "O país define a moeda e a legislação para o cálculo das comissões de amortização antecipada.";
+
+"extra_view_title" = "Simulador de pagamento extra mensal";
+"extra_view_description" = "Calcule quanto poupa em juros e tempo ao pagar um valor fixo adicional todos os meses.";
+"country_menu_footer" = "Afeta a moeda e a lei de comissões por amortização antecipada.";
+"partial_mortgage_type" = "Tipo de hipoteca (para aplicar a comissão legal correta)";
+
+"partial_years_remaining" = "Anos restantes";
+"partial_months_extra" = "Meses extras";
+"partial_tab_reduce_payment" = "Prestação reduzida";
+"partial_tab_reduce_term" = "Prazo reduzido";
+"partial_new_payment" = "Nova prestação";
+"partial_new_term" = "Novo prazo";
+"partial_remaining_interest" = "Juros poupados";
+"partial_narrative_title" = "Resultado";
+"partial_narrative_s1a" = "Com esta amortização de";
+"partial_narrative_s1b" = "o capital em dívida reduz-se para";
+"partial_narrative_s2" = "Pode escolher entre reduzir a prestação mensal mantendo o prazo, ou encurtar o prazo mantendo a mesma prestação.";
+"partial_narrative_s3a" = "A opção menos favorável poupa";
+"partial_narrative_s3b" = "em juros; a melhor opção poupa até";
+"partial_narrative_s4a" = "Lembre-se de subtrair a comissão de amortização antecipada de";
+"partial_narrative_s4b" = "à poupança calculada.";
+"partial_reduce_payment_explain_a" = "Reduzindo a prestação, pagará";
+"partial_reduce_payment_explain_b" = "por mês em vez de";
+"partial_reduce_term_explain_a" = "Reduzindo o prazo, terminará em";
+"partial_reduce_term_explain_b" = "em vez de";
+"partial_saving_explain" = "Esta opção permite poupar um total de";
+"partial_table_title" = "Tabela de amortização anual";
+"partial_table_year" = "Ano";
+"partial_table_payment" = "Prestação";
+"partial_table_capital" = "Capital";
+"partial_table_interest" = "Juros";
+"partial_table_balance" = "Capital em dívida";
+"partial_chart_payments_title" = "Prestações anuais";
+"partial_chart_amort_title" = "Amortização acumulada";
+
+"partial_time_remaining" = "Prazo restante";
+"kpi_input_euribor_delta_title" = "Variação do Euribor";
+"kpi_input_euribor_delta_explanation" = "O aumento (ou diminuição) que pretende simular sobre o Euribor atual. Mostra como a sua prestação mudaria se o Euribor subisse ou descesse este valor na próxima revisão do crédito habitação.";
+"kpi_input_euribor_delta_example" = "Se o Euribor atual for 3,75% e inserir +0,50%, a simulação calcula a sua prestação com um Euribor de 4,25%.";
+"euribor_chart_title" = "Comparação de prestações";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Remover publicidade";
+"settings_remove_ads_subtitle" = "Pagamento único · sem anúncios para sempre";
+"settings_web_app" = "Site do app";
+"settings_support" = "Suporte";
+"settings_send_feedback" = "Enviar sugestão";
+"settings_share_app" = "Compartilhar app";
+"settings_share_app_message" = "Conheça o Amortix, a calculadora de hipotecas";
+"settings_coming_soon_title" = "Em breve";
+"settings_coming_soon_message" = "Este recurso estará disponível em breve.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Restaurar compras";
+"settings_purchase_error_title" = "Compra falhou";
+"settings_restore_success_title" = "Compra restaurada";
+"settings_restore_success_message" = "A publicidade foi removida.";
+"settings_restore_empty_title" = "Sem compras anteriores";
+"settings_restore_empty_message" = "Não encontramos nenhuma compra anterior com esta conta Apple.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Capital";
+"partial_chart_legend_interest" = "Juros";
+
+/* MARK: - KPI "Com os teus números" + crédito misto + gráfico capital/juros */
+"kpi_section_your_numbers" = "Com os teus números";
+"kpi_label_rate" = "Taxa aplicada";
+"kpi_label_variable_rate" = "Taxa fase variável";
+"kpi_label_balance_after_fixed" = "Capital em dívida após a fase fixa";
+"kpi_label_first_interest" = "Juros (1.º mês)";
+"kpi_label_first_principal" = "Capital (1.º mês)";
+"kpi_label_amount" = "Montante";
+"kpi_label_return" = "Rentabilidade anual";
+"calculator_result_mixed_fixed" = "Prestação fase fixa";
+"calculator_result_mixed_variable" = "Prestação variável estimada";
+"calculator_mixed_explanation_title" = "Como funciona o teu crédito misto";
+"calculator_mixed_explain_s1a" = "Durante os primeiros";
+"calculator_mixed_explain_s1b" = "anos pagarás";
+"calculator_mixed_explain_s1c" = "por mês, a uma taxa fixa de";
+"calculator_mixed_explain_s2a" = "A partir daí, com uma taxa Euribor + spread de";
+"calculator_mixed_explain_s2b" = "a prestação estimada passa a ser de";
+"kpi_mixed_fixed_payment_title" = "Prestação fase fixa";
+"kpi_mixed_fixed_payment_explanation" = "É a prestação mensal durante o período inicial a taxa fixa do teu crédito misto. É calculada à taxa fixa amortizando ao longo de todo o prazo.";
+"kpi_mixed_fixed_payment_example" = "200.000 € a 30 anos com 5 anos de fase fixa a 2,5% → prestação fixa de 790 €/mês nos primeiros 5 anos.";
+"kpi_mixed_variable_payment_title" = "Prestação fase variável";
+"kpi_mixed_variable_payment_explanation" = "A prestação estimada a partir do fim do período fixo. É recalculada sobre o capital em dívida à taxa Euribor + spread para os anos restantes e varia em cada revisão.";
+"kpi_mixed_variable_payment_example" = "Após 5 anos fixos restam 175.000 € em 25 anos; com Euribor + spread de 4,5% a prestação estimada seria 973 €/mês.";
+"chart_capital_interest_title" = "Capital vs juros";
+"chart_total_capital" = "Capital total";
+"chart_total_interest" = "Juros totais";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Modelo de amortização";
+"settings_model_title" = "Modelo";
+"settings_model_caption" = "Aplica-se ao cálculo da Calculadora.";
+"system_french" = "Francês";
+"system_linear" = "Linear";
+"system_american" = "Americano";
+"systems_info_title" = "Sistemas de amortização";
+"systems_info_cta" = "Que sistema escolher?";
+"systems_info_french" = "Prestação constante em cada período. No início paga sobretudo juros e amortiza mais capital no fim. O mais comum.";
+"systems_info_linear" = "Amortiza o mesmo capital em cada período, por isso a prestação começa alta e diminui. Menos juros totais que o francês.";
+"systems_info_american" = "Paga apenas juros em cada período e devolve todo o capital no fim. Prestações mínimas, mas o maior custo total em juros.";
+"calculator_payment_first" = "Primeira prestação";
+"calculator_payment_interest_only" = "Só juros";
+"calculator_result_final_capital" = "Capital final";
+"amortization_system_label" = "Sistema:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Ver um vídeo — 1 hora sem anúncios";
+"rewarded_active" = "Tempo sem anúncios";
+"rewarded_unavailable_title" = "Nenhum vídeo disponível";
+"rewarded_unavailable_message" = "Não há nenhum vídeo disponível neste momento. Tenta novamente dentro de alguns minutos.";
+"settings_privacy_options" = "Opções de privacidade";

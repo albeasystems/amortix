@@ -1,0 +1,6 @@
+{
+  "name": "amortix-marketing",
+  "private": true,
+  "type": "module",
+  "dependencies": { "gifenc": "^1.0.3", "sharp": "^0.34.0" }
+}

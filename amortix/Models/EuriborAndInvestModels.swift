@@ -9,8 +9,8 @@ struct EuriborReviewInput {
     var currentEuribor:    Double = 3.0
     var scenarioDelta:     Double = 0
 
-    var currentRate:    Double { currentEuribor + spread }
-    var simulatedRate:  Double { currentEuribor + scenarioDelta + spread }
+    var currentRate:    Double { FinancialCalculator.variableRate(euribor: currentEuribor, spread: spread) }
+    var simulatedRate:  Double { FinancialCalculator.variableRate(euribor: currentEuribor + scenarioDelta, spread: spread) }
 }
 
 struct EuriborReviewResult {

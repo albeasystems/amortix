@@ -1,0 +1,56 @@
+PODS:
+  - FBAudienceNetwork (6.21.1)
+  - Google-Mobile-Ads-SDK (12.9.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (3.1.0)
+  - IronSourceAdMobAdapter (4.3.70.0):
+    - Google-Mobile-Ads-SDK (= 12.9.0)
+    - IronSourceSDK/Ads (~> 8.9)
+  - IronSourceAdQualitySDK (9.10.0)
+  - IronSourceFacebookAdapter (4.3.53.0):
+    - FBAudienceNetwork (= 6.21.1)
+    - IronSourceSDK/Ads (~> 8.9)
+  - IronSourceSDK (8.13.2.0):
+    - IronSourceSDK/AdQuality (= 8.13.2.0)
+    - IronSourceSDK/Ads (= 8.13.2.0)
+  - IronSourceSDK/AdQuality (8.13.2.0):
+    - IronSourceAdQualitySDK (~> 9)
+  - IronSourceSDK/Ads (8.13.2.0)
+  - IronSourceUnityAdsAdapter (4.3.61.0):
+    - IronSourceSDK/Ads (~> 8.9)
+    - UnityAds (= 4.17.0)
+  - UnityAds (4.17.0)
+
+DEPENDENCIES:
+  - GoogleUserMessagingPlatform
+  - IronSourceAdMobAdapter
+  - IronSourceFacebookAdapter
+  - IronSourceSDK (~> 8.7)
+  - IronSourceUnityAdsAdapter
+
+SPEC REPOS:
+  trunk:
+    - FBAudienceNetwork
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
+    - IronSourceAdMobAdapter
+    - IronSourceAdQualitySDK
+    - IronSourceFacebookAdapter
+    - IronSourceSDK
+    - IronSourceUnityAdsAdapter
+    - UnityAds
+
+SPEC CHECKSUMS:
+  FBAudienceNetwork: 85d18a65c9e35bc426bd4664cf3ae2a1172d7b60
+  Google-Mobile-Ads-SDK: 36cce7d8dc1b615145d02491c8bf5640ef854e7c
+  GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
+  IronSourceAdMobAdapter: 3561843be3c9803f50648d26603bcab6d803817f
+  IronSourceAdQualitySDK: 779fc3754f27b3d5fae8da52c5709a2dbdb502a6
+  IronSourceFacebookAdapter: 850dbf9c56664be57ace6c3a83de02ca5dbda423
+  IronSourceSDK: dfec229fa53c104b01e0e2f78e0033198d88b23d
+  IronSourceUnityAdsAdapter: 3370054c4ccffae0bb93e4193704760d505f122d
+  UnityAds: adbe0d522fd14b8298c5e159164fc43396165843
+
+PODFILE CHECKSUM: 9e053001cf84bd901c5308be68e472b18d4d98e8
+
+COCOAPODS: 1.16.2

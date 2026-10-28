@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T00:00:00Z",
+  "title": "Design System: Amortix",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#fbfbfc", "tonalRamp": ["#0b0f17", "#131a26", "#1f2735", "#566275", "#c5ccd8", "#e3e7ee", "#f2f4f7", "#fbfbfc"] },
+      "paper-2": { "role": "neutral", "displayName": "Paper Wash", "canonical": "#f2f4f7", "tonalRamp": ["#131a26", "#1f2735", "#364156", "#9aa6b8", "#c5ccd8", "#e3e7ee", "#f2f4f7", "#fbfbfc"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#0e1726", "tonalRamp": ["#0e1726", "#1f2a3d", "#34405a", "#566275", "#7f8a9c", "#aab3c1", "#d3d8e0", "#edf1f7"] },
+      "ink-2": { "role": "neutral", "displayName": "Slate Ink", "canonical": "#566275", "tonalRamp": ["#0e1726", "#2a3547", "#3f4a5d", "#566275", "#7d889a", "#a3acba", "#c9d0da", "#e3e7ee"] },
+      "capital-blue": { "role": "primary", "displayName": "Capital Blue", "canonical": "#2269de", "darkCanonical": "#6fa0ff", "tonalRamp": ["#0d2a5c", "#143f8c", "#1a52b8", "#2269de", "#5b92ea", "#8fb2f0", "#c9d8f5", "#e8effc"] },
+      "capital-blue-soft": { "role": "primary", "displayName": "Capital Blue Soft", "canonical": "#c9d8f5", "darkCanonical": "#2a3b5c", "tonalRamp": ["#2a3b5c", "#3c5483", "#5877b5", "#86a2d6", "#a9bde6", "#c9d8f5", "#dde7f9", "#eef3fc"] },
+      "interest-amber": { "role": "secondary", "displayName": "Interest Amber", "canonical": "#a85600", "darkCanonical": "#ffb15c", "tonalRamp": ["#3d1f00", "#5e3000", "#7f4200", "#a85600", "#d17a14", "#f0a135", "#f8c883", "#fdf1df"] },
+      "interest-amber-bar": { "role": "secondary", "displayName": "Interest Amber Bar", "canonical": "#f0a135", "darkCanonical": "#d98a26", "tonalRamp": ["#5e3a06", "#85540c", "#ab7010", "#d98a26", "#f0a135", "#f5bb68", "#f9d6a0", "#fdf1df"] },
+      "interest-amber-soft": { "role": "secondary", "displayName": "Interest Amber Wash", "canonical": "#fdf1df", "darkCanonical": "#2b2113", "tonalRamp": ["#2b2113", "#5e4220", "#a87a3c", "#e6b96f", "#f5d09a", "#f9e0bb", "#fdf1df", "#fffaf2"] },
+      "rule": { "role": "neutral", "displayName": "Rule", "canonical": "#e3e7ee", "darkCanonical": "#1f2735", "tonalRamp": ["#1f2735", "#364156", "#566275", "#9aa6b8", "#c5ccd8", "#e3e7ee", "#f2f4f7", "#fbfbfc"] },
+      "rule-strong": { "role": "neutral", "displayName": "Rule Strong", "canonical": "#c5ccd8", "darkCanonical": "#364156", "tonalRamp": ["#364156", "#566275", "#7d889a", "#9aa6b8", "#c5ccd8", "#d3d8e0", "#e3e7ee", "#f2f4f7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page H1 only, capped near 18-20ch." },
+      "headline": { "displayName": "Headline", "purpose": "Zone titles (H2)." },
+      "title": { "displayName": "Title", "purpose": "Card and FAQ question titles (H3)." },
+      "body": { "displayName": "Body", "purpose": "Running text at 65ch." },
+      "lede": { "displayName": "Lede", "purpose": "One slate paragraph under a heading." },
+      "label": { "displayName": "Label", "purpose": "Field labels, captions, table heads." }
+    },
+    "shadows": [
+      { "name": "phone-frame", "value": "0 28px 48px -28px color-mix(in oklab, var(--ink) 38%, transparent), 0 2px 6px color-mix(in oklab, var(--ink) 8%, transparent)", "purpose": "Real app captures only." },
+      { "name": "popover", "value": "0 12px 32px -12px rgb(14 23 38 / 0.28)", "purpose": "The open language menu." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "All transitions and draw-ins." },
+      { "name": "state", "value": "140-200ms", "purpose": "Hover, focus and disclosure changes." },
+      { "name": "draw-in", "value": "700-900ms", "purpose": "One-time bar draw and content rise; disabled under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "narrow", "value": "380px" },
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "App Store Stamp",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action; blue fill, white text.",
+      "html": "<a class=\"ds-stamp\" href=\"#\">Descargar en la App Store</a>",
+      "css": ".ds-stamp{display:inline-flex;align-items:center;justify-content:center;background:var(--capital-blue,#2269de);color:#fff;text-decoration:none;padding:.85rem 1.4rem;border:1.5px solid #2269de;border-radius:10px;font-weight:620;font-size:1rem;letter-spacing:-.005em;transition:background-color 160ms cubic-bezier(.16,1,.3,1),transform 160ms cubic-bezier(.16,1,.3,1)}.ds-stamp:hover{background:color-mix(in oklab,#2269de 86%,black);border-color:color-mix(in oklab,#2269de 86%,black)}.ds-stamp:active{transform:translateY(1px)}.ds-stamp:focus-visible{outline:2px solid #2269de;outline-offset:3px}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action; outlined, transparent.",
+      "html": "<a class=\"ds-quiet\" href=\"#\">Ver cuadro de amortizacion</a>",
+      "css": ".ds-quiet{display:inline-flex;align-items:center;color:#0e1726;text-decoration:none;padding:.85rem 1.4rem;border:1.5px solid #c5ccd8;border-radius:10px;font-weight:620;background:transparent;transition:background-color 160ms,border-color 160ms}.ds-quiet:hover{background:#f2f4f7;border-color:#566275}.ds-quiet:focus-visible{outline:2px solid #2269de;outline-offset:3px}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Filled input with ruled underline that turns blue on focus.",
+      "html": "<label class=\"ds-field\"><span>Capital</span><div class=\"ds-input\"><input value=\"100000\"><em>EUR</em></div></label>",
+      "css": ".ds-field{display:grid;gap:.4rem}.ds-field>span{font-size:.875rem;color:#566275;line-height:1.3}.ds-input{display:flex;align-items:baseline;gap:.5rem;padding:.6rem .8rem .5rem;background:#f2f4f7;border-bottom:2px solid #c5ccd8;border-radius:10px 10px 0 0;transition:border-color 140ms,background-color 140ms}.ds-input:focus-within{border-bottom-color:#2269de}.ds-input input{background:transparent;border:0;outline:0;width:100%;font:inherit;font-size:1.2rem;font-weight:520;font-variant-numeric:tabular-nums;color:#0e1726}.ds-input em{font-style:normal;font-size:.9375rem;color:#566275}"
+    },
+    {
+      "name": "Statement Rows",
+      "kind": "custom",
+      "refersTo": "row-hot",
+      "description": "Label, dotted leader, figure; one amber hot row.",
+      "html": "<div class=\"ds-row\"><span class=\"k\">Cuota fija</span><span class=\"lead\"></span><span class=\"v\">449,04 EUR</span></div><div class=\"ds-row hot\"><span class=\"k\">Intereses totales</span><span class=\"v\">76.512 EUR</span></div>",
+      "css": ".ds-row{display:flex;align-items:baseline;gap:.75rem;padding-block:.7rem;border-bottom:1px solid #e3e7ee}.ds-row .lead{flex:1;border-bottom:1px dotted #c5ccd8;transform:translateY(-.28em);min-width:1rem}.ds-row .k{color:#566275;font-size:.9375rem}.ds-row .v{font-variant-numeric:tabular-nums;font-size:1.125rem;font-weight:560;white-space:nowrap}.ds-row.hot{border-bottom:0;margin-top:.4rem;padding:1rem 1.1rem;background:#fdf1df;border-radius:10px}.ds-row.hot .k{color:#0e1726;font-weight:560;flex:1}.ds-row.hot .v{color:#a85600;font-size:1.6rem;font-weight:680;letter-spacing:-.02em}"
+    },
+    {
+      "name": "Cost Bar",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Signature: one bar to scale, capital blue then interest amber, with two figures.",
+      "html": "<figure class=\"ds-cost\"><div class=\"bar\"><div class=\"c\">57%</div><div class=\"i\">43%</div></div><figcaption><span><small>Capital</small><b class=\"cb\">100.000 EUR</b></span><span class=\"r\"><small>Intereses</small><b class=\"ib\">76.512 EUR</b></span></figcaption></figure>",
+      "css": ".ds-cost{margin:0}.ds-cost .bar{display:flex;gap:3px;height:3.5rem;border-radius:12px;overflow:hidden}.ds-cost .c{width:57%;background:#2269de;color:#fff;display:flex;align-items:center;padding-inline-start:1rem;font-weight:600;font-variant-numeric:tabular-nums}.ds-cost .i{flex:1;background:#f0a135;color:#1d1403;display:flex;align-items:center;padding-inline-start:1rem;font-weight:600;font-variant-numeric:tabular-nums}.ds-cost figcaption{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem;font-size:.875rem}.ds-cost small{display:block;font-size:.8125rem;color:#566275;margin-bottom:.25rem}.ds-cost b{font-size:1.125rem;font-variant-numeric:tabular-nums}.ds-cost .cb{color:#2269de}.ds-cost .ib{color:#a85600}.ds-cost .r{text-align:end}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat hairline container; no shadow.",
+      "html": "<div class=\"ds-panel\">Descarga gratis, sin suscripcion.</div>",
+      "css": ".ds-panel{border:1px solid #e3e7ee;border-radius:14px;background:#fbfbfc;padding:2rem;color:#0e1726}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Small pill label in paper wash.",
+      "html": "<span class=\"ds-chip\">iOS 17+</span>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;padding:.15rem .6rem;border-radius:999px;background:#f2f4f7;color:#566275;font-size:.8125rem;font-weight:520}"
+    },
+    {
+      "name": "Language Menu Button",
+      "kind": "nav",
+      "refersTo": "panel",
+      "description": "Native details/summary trigger in the header.",
+      "html": "<button class=\"ds-lang\">Espanol</button>",
+      "css": ".ds-lang{display:flex;align-items:center;gap:.45rem;padding:.45rem .7rem;border:1px solid #c5ccd8;border-radius:10px;font-size:.875rem;line-height:1.2;background:#fbfbfc;color:#0e1726;cursor:pointer}.ds-lang:hover{border-color:#2269de}.ds-lang:focus-visible{outline:2px solid #2269de;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Loan Statement",
+    "overview": "Amortix is a bank statement made legible: near-white paper, near-black ink, hairline-divided zones, and figures that line up in columns. The world is inherited from the sibling Capital site; what is Amortix's own is the colour logic and the signature. Blue is the capital you borrow and every action; amber is the interest you pay on top. The two never trade jobs, so a visitor can read money by colour alone.\n\nThe site is flat and quiet so the numbers carry it. Depth comes from paper tone and hairlines, never from shadow, except on the phone frames that hold real app captures. Dark mode is the same roles on near-black, not a second design.",
+    "keyCharacteristics": [
+      "One bar, drawn to scale, split capital (blue) and interest (amber): the signature, shown in the hero, the calculator result and the closing mini bar.",
+      "Geist Variable throughout; tabular figures wherever a number appears.",
+      "Statement rows: label, dotted leader, figure; one amber \"hot\" row per result.",
+      "Filled fields with a ruled underline; flat panels with a 1px hairline.",
+      "Only real captures and computed figures; no invented proof."
+    ],
+    "rules": [
+      { "name": "The Two Jobs Rule", "body": "Blue means capital or an action; amber means interest. Never use amber for a button, never use blue for interest, never add a third chromatic hue.", "section": "colors" },
+      { "name": "The Amber Text Rule", "body": "Amber text uses the darker interest-amber; the lighter bar amber is for fills only.", "section": "colors" },
+      { "name": "The Tabular Figures Rule", "body": "Every amount, percentage, axis tick and table cell uses tabular numerals so columns align.", "section": "typography" },
+      { "name": "The Phone-Only Shadow Rule", "body": "Cards, panels, buttons and fields never carry a shadow; only the device frame and the floating menu do.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do show the capital/interest split as one bar whenever a result is shown, blue first, amber second.",
+      "Do put figures in tabular numerals and give every amount its currency in the visitor's locale.",
+      "Do keep one amber hot row per result block; everything else in the block stays ink and slate.",
+      "Do keep chart text at 20 viewBox units or larger and give every chart an axis title and a legend.",
+      "Do use ease-out (cubic-bezier(0.16, 1, 0.3, 1)) at 140-200ms for state changes and 700-900ms for the one-time draw-in; respect reduced motion.",
+      "Do use only captured screens and computed figures as proof."
+    ],
+    "donts": [
+      "Don't spend a third hue, a gradient, or amber on actions.",
+      "Don't add shadows to cards, panels, buttons or fields.",
+      "Don't separate zones with background colour blocks; use the 1px rule.",
+      "Don't encode data series by colour alone in line charts; use dash patterns.",
+      "Don't set display text in a second family or let letter-spacing stay negative in Arabic, Hindi or CJK scripts."
+    ]
+  }
+}

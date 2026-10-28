@@ -1,0 +1,425 @@
+/* Amortix — Localizable.strings (English — en) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Skip";
+"onboarding_next" = "Next";
+"onboarding_start" = "Get Started";
+"onboarding_page1_title" = "Calculate your mortgage";
+"onboarding_page1_subtitle" = "Find out your monthly payment, total interest, and the real cost of your loan.";
+"onboarding_page2_title" = "Simulate prepayments";
+"onboarding_page2_subtitle" = "Compare whether it's better to reduce your term or your payment when making a partial prepayment.";
+"onboarding_page3_title" = "Make better decisions";
+"onboarding_page3_subtitle" = "Analyze the impact of rate changes, run stress tests, and discover whether paying down your mortgage or investing is better for you.";
+
+// MARK: - Tabs
+"tab_calculator" = "Calculator";
+"tab_euribor" = "Rate Review";
+"tab_stress" = "Stress Test";
+"tab_amortize" = "Prepay";
+"tab_extra" = "Extra Payments";
+"tab_invest" = "Invest";
+"tab_mortgage_tab" = "Mortgage";
+"tab_amortize_tab" = "Amortization";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Mortgage Calculator";
+"calculator_section_loan" = "Loan details";
+"calculator_capital" = "Principal";
+"calculator_years" = "Years";
+"calculator_tin" = "Interest rate (%)";
+"calculator_section_type" = "Mortgage type";
+"calculator_type_fixed" = "Fixed";
+"calculator_type_variable" = "Variable";
+"calculator_type_mixed" = "Mixed";
+"calculator_euribor" = "Base rate (%)";
+"calculator_spread" = "Spread (%)";
+"calculator_fixed_period_years" = "Fixed period (years)";
+"calculator_btn_calculate" = "Calculate";
+"calculator_result_monthly" = "Monthly payment";
+"calculator_result_total_interest" = "Total interest";
+"calculator_result_total_cost" = "Total cost";
+"calculator_btn_see_table" = "View amortization schedule";
+
+// MARK: - Amortization table
+"table_nav_title" = "Amortization schedule";
+"table_col_period" = "Period";
+"table_col_payment" = "Payment";
+"table_col_principal" = "Principal";
+"table_col_interest" = "Interest";
+"table_col_balance" = "Balance";
+"table_export_pdf" = "Export";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Partial Prepayment";
+"partial_remaining_capital" = "Remaining balance";
+"partial_remaining_months" = "Remaining months";
+"partial_current_rate" = "Current rate (%)";
+"partial_amount" = "Prepayment amount";
+"partial_commission_mode_auto" = "Automatic (law)";
+"partial_commission_mode_percent" = "Percentage (%)";
+"partial_commission_mode_fixed" = "Fixed amount";
+"partial_commission_mode_none" = "No fee";
+"partial_mortgage_type" = "Mortgage type";
+"partial_years_since_signing" = "Years since signing";
+"partial_btn_simulate" = "Simulate";
+"partial_result_reduce_term" = "Reduce term";
+"partial_result_reduce_quota" = "Reduce payment";
+"partial_months_saved" = "Months saved";
+"partial_interest_saved" = "Interest saved";
+"partial_commission_cost" = "Prepayment fee";
+"partial_net_saving" = "Net saving";
+"partial_new_payment" = "New payment";
+"partial_recommended" = "Recommended";
+"partial_info_law_fixed" = "Fixed mortgage: 2% first 10 years, 1.5% from year 11 onwards.";
+"partial_info_law_variable" = "Variable mortgage: 0.25% first 3 years, 0% from year 4 onwards.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Your current mortgage";
+"extra_section_extra" = "Monthly extra payment";
+"extra_monthly_amount" = "Extra amount/month";
+"extra_btn_simulate" = "Calculate savings";
+"extra_months_saved" = "Months saved";
+"extra_interest_saved" = "Interest saved";
+"extra_current_payment" = "Current payment";
+"extra_new_payoff" = "New payoff date";
+"extra_interest_comparison" = "Interest comparison";
+"extra_without_extra" = "Without extra payments";
+"extra_with_extra" = "With extra payments";
+"extra_balance_chart" = "Balance over time";
+
+// MARK: - Stress test
+"stress_section_loan" = "Mortgage details";
+"stress_base_rate" = "Current rate (%)";
+"stress_btn_calculate" = "Calculate scenarios";
+"stress_scenarios_title" = "Interest rate scenarios";
+"stress_col_rate" = "Change";
+"stress_col_payment" = "Payment/mo";
+"stress_col_diff" = "Difference";
+"stress_chart_title" = "Impact on monthly payment";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Rate Review";
+"euribor_remaining_capital" = "Remaining balance";
+"euribor_remaining_months" = "Remaining months";
+"euribor_spread" = "Spread (%)";
+"euribor_current_rate" = "Current rate (%)";
+"euribor_current_payment" = "Current payment";
+"euribor_scenario_label" = "Rate change (pp)";
+"euribor_simulated_payment" = "New payment";
+"euribor_difference_monthly" = "Monthly difference";
+"euribor_difference_annual" = "Annual difference";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "Invest or Pay Down?";
+"invest_amount" = "Available amount";
+"invest_mortgage_tin" = "Mortgage rate (%)";
+"invest_expected_return" = "Expected return (%)";
+"invest_horizon_years" = "Horizon (years)";
+"invest_btn_compare" = "Compare";
+"invest_option_amortize" = "Pay down";
+"invest_option_invest" = "Invest";
+"invest_amortize_saving" = "Savings from paying down";
+"invest_invest_gain" = "Gain from investing";
+"invest_recommendation_amortize" = "Better to pay down";
+"invest_recommendation_invest" = "Better to invest";
+"invest_premium_title" = "Premium Feature";
+"invest_premium_body" = "Unlock the Invest vs Pay Down calculator to make the best financial decision.";
+"invest_tax_note" = "Tax note: investment returns may be subject to income tax. Consult a tax advisor.";
+
+// MARK: - Settings
+"settings_nav_title" = "Settings";
+"settings_language" = "Language";
+"settings_language_system" = "System";
+"settings_language_footer" = "Language changes take effect immediately.";
+"settings_country" = "Country / Market";
+"settings_section_about" = "About";
+"settings_app_version" = "Version";
+"settings_privacy_policy" = "Privacy policy";
+"settings_terms_of_use" = "Terms of use";
+"settings_rate_app" = "Rate the app";
+"settings_premium_active" = "Premium active";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "Premium activated!";
+"premium_unlock_message" = "Ads disabled. Enjoy all features.";
+"premium_lock_title" = "Premium deactivated";
+"premium_lock_message" = "Ads are active again.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Cancel";
+"general_close" = "Close";
+"general_done" = "Done";
+"general_share" = "Share";
+"general_year_singular" = "year";
+"general_year_plural" = "years";
+"general_month_singular" = "month";
+"general_month_plural" = "months";
+"general_loading" = "Calculating...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "FREE";
+
+// MARK: - Errors
+"error_invalid_capital" = "Please enter a valid principal greater than 0.";
+"error_invalid_years" = "Please enter a valid term in years or months.";
+"error_invalid_rate" = "Please enter a valid interest rate greater than 0.";
+"error_invalid_amount" = "Please enter a valid amount greater than 0.";
+"error_amount_exceeds_capital" = "The prepayment amount cannot exceed the remaining balance.";
+
+// MARK: - ATT
+"att_usage_description" = "We use your activity to show you relevant ads and measure ad performance.";
+
+// MARK: - Countries
+"country_es" = "Spain";
+"country_en" = "United States";
+"country_hi" = "India";
+"country_pt_BR" = "Brazil";
+"country_it" = "Italy";
+"country_fr" = "France";
+"country_de" = "Germany";
+"country_ar" = "Arabic / GCC";
+
+// MARK: - Laws by country
+"law_es" = "Law 5/2019: Variable 0.25% years 1–3, 0% afterwards. Fixed 2% years 1–10, 1.5% afterwards.";
+"law_en" = "Dodd-Frank Act (2014): Max. 3%/2%/1% years 1/2/3, 0% from year 4 onwards.";
+"law_hi" = "RBI Circular 2012: 0% variable rate. Max. 2% fixed rate.";
+"law_pt_BR" = "SFH Lei 9.514/1997: Max. 2% on the prepaid amount.";
+"law_it" = "TUB + EU Directive: 0.5% variable rate, 1.5% fixed rate.";
+"law_fr" = "Code de la Consommation L313-47: IRA = min(3% of capital, 6 months' interest).";
+"law_de" = "§490 BGB: Max. 1% if >12 months remain, 0.5% if ≤12 months remain.";
+"law_ar" = "Islamic finance (Murabaha/Ijara): no interest; ~1% administrative fee.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Monthly payment";
+"kpi_monthly_payment_explanation" = "The fixed amount you pay each month over the life of the loan. It includes a principal portion (what you repay of the loan) and an interest portion (the cost of borrowing money).";
+"kpi_monthly_payment_formula" = "P × [r(1+r)^n] / [(1+r)^n - 1]\nP=principal  r=monthly rate  n=months";
+"kpi_monthly_payment_example" = "Loan of $200,000 over 30 years at 3.5% → monthly payment of $898.";
+
+"kpi_total_interest_title" = "Total interest";
+"kpi_total_interest_explanation" = "The sum of all interest you will pay over the life of the loan. The higher the rate or the longer the term, the more interest you'll pay.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "On a $200,000 loan over 30 years at 3.5%, you'll pay about $123,000 in interest alone.";
+
+"kpi_total_cost_title" = "Total cost";
+"kpi_total_cost_explanation" = "The total money you will repay to the bank: principal borrowed + all interest. It's the best metric for comparing two mortgages.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Principal $200,000 + $123,000 interest = $323,000 total cost.";
+
+"kpi_months_saved_title" = "Months saved";
+"kpi_months_saved_explanation" = "If you choose to reduce the term with a partial prepayment, these are the months you'll stop paying. The earlier in the loan, the greater the saving.";
+"kpi_months_saved_formula" = "n_new = -ln(1 - P_new × r / payment) / ln(1 + r)";
+"kpi_months_saved_example" = "Prepaying $20,000 in year 5 of a 30-year mortgage could eliminate 4–6 years of payments.";
+
+"kpi_interest_saved_title" = "Interest saved";
+"kpi_interest_saved_explanation" = "The difference between the interest you'd pay without prepaying and the interest you'll pay after prepaying. This is the gross saving before deducting any prepayment fee.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Prepaying $20,000 can save between $8,000 and $18,000 in interest depending on timing.";
+
+"kpi_net_saving_title" = "Net saving";
+"kpi_net_saving_explanation" = "The real saving: interest saved minus the early repayment fee charged by the lender. If negative, prepaying doesn't make sense.";
+"kpi_net_saving_formula" = "Net saving = Interest saved − Fee";
+"kpi_net_saving_example" = "Interest saved $15,000 − Fee $500 = Net saving $14,500.";
+
+"kpi_commission_title" = "Prepayment fee";
+"kpi_commission_explanation" = "The lender may charge a fee for early repayment. Regulations vary by country and protect the consumer.";
+"kpi_commission_formula" = "Variable: 0.25% × amount (years 1–3)\nFixed: 2% × amount (years 1–10)";
+"kpi_commission_example" = "Prepaying $20,000 in year 2 of a variable mortgage → fee = $20,000 × 0.25% = $50.";
+
+"kpi_new_payment_title" = "New payment";
+"kpi_new_payment_explanation" = "If you choose to reduce your payment with a partial prepayment, this will be your new monthly payment for the rest of the loan, keeping the original term.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Current payment $898/mo → after prepaying $20,000 → new payment $798/mo.";
+
+"kpi_euribor_diff_monthly_title" = "Monthly difference";
+"kpi_euribor_diff_monthly_explanation" = "How much your monthly payment changes if rates rise or fall according to the simulated scenario. A positive value means you'll pay more.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "If rates rise 1 point, a $150,000 mortgage over 20 years may increase ~$60/month.";
+
+"kpi_amortize_saving_title" = "Savings from paying down";
+"kpi_amortize_saving_explanation" = "The guaranteed benefit of using that money to pay down your mortgage. It's equivalent to earning a return equal to your mortgage rate, risk-free.";
+"kpi_amortize_saving_formula" = "Principal × ((1 + rate)^years − 1)";
+"kpi_amortize_saving_example" = "$20,000 at 3.5% mortgage rate for 10 years → guaranteed saving of $9,773.";
+
+"kpi_invest_gain_title" = "Gain from investing";
+"kpi_invest_gain_explanation" = "The expected benefit of investing that money instead of paying down your mortgage, applying the annual return you enter. Remember that investing involves risk and returns are not guaranteed.";
+"kpi_invest_gain_formula" = "Principal × ((1 + return)^years − 1)";
+"kpi_invest_gain_example" = "$20,000 at 7% annual return for 10 years → expected gain of $19,343.";
+
+"kpi_section_what" = "What is it?";
+"kpi_section_formula" = "Formula";
+"kpi_section_example" = "Example";
+"kpi_chart_label" = "Chart";
+"kpi_example_reduce_term" = "Reduce term";
+"kpi_example_reduce_payment" = "Reduce payment";
+
+// MARK: - General units
+"general_years" = "years";
+"general_months" = "months";
+"general_done" = "Done";
+"general_cancel" = "Cancel";
+"partial_section_commission" = "Commission";
+
+// MARK: - Input field KPIs
+"kpi_input_capital_title" = "Loan capital";
+"kpi_input_capital_explanation" = "The total amount you borrow from the bank. This is the base on which interest is calculated. The lower the capital, the less total interest you will pay.";
+"kpi_input_capital_example" = "Buying a home for €250,000 with a 20% down payment means a loan capital of €200,000.";
+
+"kpi_input_years_title" = "Loan term";
+"kpi_input_years_explanation" = "The number of years over which you repay the mortgage. Longer term = lower monthly payment, but much more total interest. Shorter term = higher payment but you save on interest.";
+"kpi_input_years_example" = "A 25-year mortgage has lower payments than a 15-year one, but can cost twice as much in total interest.";
+
+"kpi_input_rate_title" = "Interest rate (APR)";
+"kpi_input_rate_explanation" = "The annual percentage the bank charges for lending you money. It is the most important factor determining mortgage cost. Small differences in tenths have a huge long-term impact.";
+"kpi_input_rate_example" = "On €200,000 over 25 years, going from 3% to 4% means paying ~€28,000 more in total interest.";
+
+"kpi_input_euribor_title" = "Euribor";
+"kpi_input_euribor_explanation" = "The European interbank reference rate. Variable mortgages are calculated as Euribor + spread. It is reviewed annually and can rise or fall.";
+"kpi_input_euribor_example" = "If Euribor is 3.75% and your spread is +0.75%, your effective rate will be 4.50%.";
+
+"kpi_input_spread_title" = "Spread";
+"kpi_input_spread_explanation" = "The margin added by the bank to Euribor to calculate your variable interest rate. It is fixed for the life of the loan and varies by bank and credit profile.";
+"kpi_input_spread_example" = "A spread of 0.75% over Euribor 3.75% = effective rate 4.50%.";
+
+"kpi_input_remaining_capital_title" = "Outstanding balance";
+"kpi_input_remaining_capital_explanation" = "The debt you still owe the bank. This is the capital on which future monthly interest is calculated. You can find it on your last bank statement.";
+"kpi_input_remaining_capital_example" = "If you borrowed €200,000 five years ago on a 25-year term, your outstanding balance is around €175,000.";
+
+"kpi_input_months_title" = "Remaining months";
+"kpi_input_months_explanation" = "The number of monthly instalments left to pay. Equivalent to the remaining term of your mortgage. 300 months = 25 years, 240 months = 20 years.";
+"kpi_input_months_example" = "If you signed a 30-year mortgage 5 years ago, you have 300 months (25 years) remaining.";
+
+"kpi_input_amortize_amount_title" = "Amount to prepay";
+"kpi_input_amortize_amount_explanation" = "The lump sum you want to pay the bank to reduce your debt early. It could be savings, an inheritance, a bonus, etc.";
+"kpi_input_amortize_amount_example" = "An extra €20,000 can eliminate several years from your mortgage or significantly reduce your monthly payment.";
+
+"kpi_input_extra_monthly_title" = "Extra monthly payment";
+"kpi_input_extra_monthly_explanation" = "An additional amount you pay each month on top of your regular instalment. All of this extra goes directly to reducing capital, shortening the term and saving a lot of interest.";
+"kpi_input_extra_monthly_example" = "Paying €200 extra per month on a €150,000 mortgage at 3.5% over 25 years could finish it 5–7 years early.";
+
+"kpi_input_stress_rate_title" = "Base rate for stress test";
+"kpi_input_stress_rate_explanation" = "The starting interest rate for the stress test. The tool calculates what would happen to your payment if the rate rises or falls several percentage points from this base.";
+"kpi_input_stress_rate_example" = "With a base rate of 3.5%, the test calculates your payment for scenarios ranging from 1.5% to 8.5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Rate Review";
+"tab_extra_monthly" = "Extra Payment";
+"calculator_reference_rate" = "Reference Rate";
+"calculator_tin_mixed" = "Rate (fixed phase)";
+"calculator_mixed_effective_hint %@" = "Effective variable rate: %@";
+"country_menu_header" = "Select country";
+"settings_country_footer" = "The country sets the currency and legal framework used to calculate early repayment fees.";
+
+"extra_view_title" = "Extra monthly payment simulator";
+"extra_view_description" = "Calculate how much interest and time you save by paying a fixed extra amount every month on top of your regular instalment.";
+"country_menu_footer" = "Affects the currency and the early repayment commission law.";
+"partial_mortgage_type" = "Mortgage type (to apply the correct legal commission)";
+
+"partial_years_remaining" = "Years remaining";
+"partial_months_extra" = "Extra months";
+"partial_tab_reduce_payment" = "Reduced payment";
+"partial_tab_reduce_term" = "Reduced term";
+"partial_new_payment" = "New payment";
+"partial_new_term" = "New term";
+"partial_remaining_interest" = "Interest saved";
+"partial_narrative_title" = "Result";
+"partial_narrative_s1a" = "By making an early repayment of";
+"partial_narrative_s1b" = "your outstanding capital drops to";
+"partial_narrative_s2" = "You can choose to lower your monthly payment while keeping the same term, or keep the same payment and finish earlier.";
+"partial_narrative_s3a" = "The less favourable option saves you";
+"partial_narrative_s3b" = "in interest; the better option saves up to";
+"partial_narrative_s4a" = "Remember to subtract the early repayment fee of";
+"partial_narrative_s4b" = "from the calculated savings.";
+"partial_reduce_payment_explain_a" = "By reducing the payment, you will pay";
+"partial_reduce_payment_explain_b" = "per month instead of";
+"partial_reduce_term_explain_a" = "By reducing the term, you will finish in";
+"partial_reduce_term_explain_b" = "instead of";
+"partial_saving_explain" = "This option lets you save a total of";
+"partial_table_title" = "Annual amortization table";
+"partial_table_year" = "Year";
+"partial_table_payment" = "Payment";
+"partial_table_capital" = "Capital";
+"partial_table_interest" = "Interest";
+"partial_table_balance" = "Balance";
+"partial_chart_payments_title" = "Annual payments";
+"partial_chart_amort_title" = "Cumulative amortization";
+
+"partial_time_remaining" = "Remaining term";
+"kpi_input_euribor_delta_title" = "Euribor Variation";
+"kpi_input_euribor_delta_explanation" = "The increase (or decrease) you want to simulate on top of the current Euribor. It shows how your monthly payment would change if the Euribor moves by this many percentage points at your next mortgage review.";
+"kpi_input_euribor_delta_example" = "If the current Euribor is 3.75% and you enter +0.50%, the simulation calculates your payment with a Euribor of 4.25%.";
+"euribor_chart_title" = "Payment comparison";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Remove ads";
+"settings_remove_ads_subtitle" = "One-time payment · no ads forever";
+"settings_web_app" = "App website";
+"settings_support" = "Support";
+"settings_send_feedback" = "Send feedback";
+"settings_share_app" = "Share app";
+"settings_share_app_message" = "Check out Amortix, the mortgage calculator";
+"settings_coming_soon_title" = "Coming soon";
+"settings_coming_soon_message" = "This feature will be available soon.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Restore purchases";
+"settings_purchase_error_title" = "Purchase failed";
+"settings_restore_success_title" = "Purchase restored";
+"settings_restore_success_message" = "Ads have been removed.";
+"settings_restore_empty_title" = "No previous purchases";
+"settings_restore_empty_message" = "We couldn't find any prior purchases under this Apple account.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Principal";
+"partial_chart_legend_interest" = "Interest";
+
+/* MARK: - KPI "your numbers" + mixed mortgage + capital/interest chart */
+"kpi_section_your_numbers" = "With your numbers";
+"kpi_label_rate" = "Applied rate";
+"kpi_label_variable_rate" = "Variable-phase rate";
+"kpi_label_balance_after_fixed" = "Balance after fixed phase";
+"kpi_label_first_interest" = "Interest (1st month)";
+"kpi_label_first_principal" = "Principal (1st month)";
+"kpi_label_amount" = "Amount";
+"kpi_label_return" = "Annual return";
+"calculator_result_mixed_fixed" = "Fixed-phase payment";
+"calculator_result_mixed_variable" = "Estimated variable payment";
+"calculator_mixed_explanation_title" = "How your mixed mortgage works";
+"calculator_mixed_explain_s1a" = "For the first";
+"calculator_mixed_explain_s1b" = "years you'll pay";
+"calculator_mixed_explain_s1c" = "per month, at a fixed rate of";
+"calculator_mixed_explain_s2a" = "After that, with a Euribor + spread rate of";
+"calculator_mixed_explain_s2b" = "the estimated payment becomes";
+"kpi_mixed_fixed_payment_title" = "Fixed-phase payment";
+"kpi_mixed_fixed_payment_explanation" = "This is the payment you'll make each month during the initial fixed-rate period of your mixed mortgage. It is computed at the fixed rate, amortizing over the full term.";
+"kpi_mixed_fixed_payment_example" = "200,000 € over 30 years with a 5-year fixed phase at 2.5% → fixed payment of 790 €/month for the first 5 years.";
+"kpi_mixed_variable_payment_title" = "Variable-phase payment";
+"kpi_mixed_variable_payment_explanation" = "This is the estimated payment once the fixed period ends. It is recalculated on the outstanding balance at Euribor + spread for the remaining years and will change at each Euribor review.";
+"kpi_mixed_variable_payment_example" = "After 5 fixed years, 175,000 € remain over 25 years; at Euribor + spread of 4.5% the estimated payment would be 973 €/month.";
+"chart_capital_interest_title" = "Principal vs interest";
+"chart_total_capital" = "Total principal";
+"chart_total_interest" = "Total interest";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Amortization model";
+"settings_model_title" = "Model";
+"settings_model_caption" = "Applies to the Calculator's calculation.";
+"system_french" = "French";
+"system_linear" = "Linear";
+"system_american" = "American";
+"systems_info_title" = "Repayment systems";
+"systems_info_cta" = "Which system to choose?";
+"systems_info_french" = "Constant payment every period. At first most of it is interest, with principal growing later. The most common system.";
+"systems_info_linear" = "You repay the same principal each period, so the payment starts high and decreases. Less total interest than French.";
+"systems_info_american" = "You pay only interest each period and repay the whole principal at the end. Lowest payments but the most total interest.";
+"calculator_payment_first" = "First payment";
+"calculator_payment_interest_only" = "Interest only";
+"calculator_result_final_capital" = "Final capital";
+"amortization_system_label" = "System:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Watch a video — 1 hour without ads";
+"rewarded_active" = "Ad-free time left";
+"rewarded_unavailable_title" = "No video available";
+"rewarded_unavailable_message" = "There is no video ad ready right now. Please try again in a few minutes.";
+"settings_privacy_options" = "Privacy options";

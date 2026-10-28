@@ -1,0 +1,431 @@
+/* Amortix — Localizable.strings (Spanish — es) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Omitir";
+"onboarding_next" = "Siguiente";
+"onboarding_start" = "Empezar";
+"onboarding_page1_title" = "Calcula tu hipoteca";
+"onboarding_page1_subtitle" = "Conoce tu cuota mensual, intereses totales y coste real de tu préstamo.";
+"onboarding_page2_title" = "Simula amortizaciones";
+"onboarding_page2_subtitle" = "Compara si te conviene más reducir plazo o cuota cuando haces una amortización parcial.";
+"onboarding_page3_title" = "Toma mejores decisiones";
+"onboarding_page3_subtitle" = "Analiza el impacto del Euríbor, haz test de estrés y descubre si amortizar o invertir es mejor para ti.";
+
+// MARK: - Tabs
+"tab_calculator" = "Calculadora";
+"tab_euribor" = "Euríbor";
+"tab_stress" = "Estrés";
+"tab_amortize" = "Amortizar";
+"tab_extra" = "Pagos Extra";
+"tab_invest" = "Invertir";
+"tab_mortgage_tab" = "Hipoteca";
+"tab_amortize_tab" = "Amortización";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Calculadora Hipoteca";
+"calculator_section_loan" = "Datos del préstamo";
+"calculator_capital" = "Capital (€)";
+"calculator_years" = "Años";
+"calculator_tin" = "TIN (%)";
+"calculator_section_type" = "Tipo de hipoteca";
+"calculator_type_fixed" = "Fija";
+"calculator_type_variable" = "Variable";
+"calculator_type_mixed" = "Mixta";
+"calculator_euribor" = "Euríbor (%)";
+"calculator_spread" = "Diferencial (%)";
+"calculator_fixed_period_years" = "Años periodo fijo";
+"calculator_btn_calculate" = "Calcular";
+"calculator_result_monthly" = "Cuota mensual";
+"calculator_result_total_interest" = "Total intereses";
+"calculator_result_total_cost" = "Coste total";
+"calculator_btn_see_table" = "Ver cuadro de amortización";
+
+// MARK: - Amortization table
+"table_nav_title" = "Cuadro de amortización";
+"table_col_period" = "Período";
+"table_col_payment" = "Cuota";
+"table_col_principal" = "Capital";
+"table_col_interest" = "Intereses";
+"table_col_balance" = "Saldo";
+"table_export_pdf" = "Exportar";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Amortización Parcial";
+"partial_remaining_capital" = "Capital pendiente";
+"partial_remaining_months" = "Meses restantes";
+"partial_current_rate" = "Tipo actual (%)";
+"partial_amount" = "Importe a amortizar";
+"partial_commission_mode_auto" = "Automática (ley)";
+"partial_commission_mode_percent" = "Porcentaje (%)";
+"partial_commission_mode_fixed" = "Importe fijo";
+"partial_commission_mode_none" = "Sin comisión";
+"partial_mortgage_type" = "Tipo de hipoteca";
+"partial_years_since_signing" = "Años desde firma";
+"partial_btn_simulate" = "Simular";
+"partial_result_reduce_term" = "Reducir plazo";
+"partial_result_reduce_quota" = "Reducir cuota";
+"partial_months_saved" = "Meses ahorrados";
+"partial_interest_saved" = "Intereses ahorrados";
+"partial_commission_cost" = "Comisión";
+"partial_net_saving" = "Ahorro neto";
+"partial_new_payment" = "Nueva cuota";
+"partial_recommended" = "Recomendado";
+"partial_info_law_fixed" = "Hipoteca fija: 2% primeros 10 años, 1,5% a partir del año 11.";
+"partial_info_law_variable" = "Hipoteca variable: 0,25% los 3 primeros años, 0% a partir del año 4.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Tu hipoteca actual";
+"extra_section_extra" = "Pago extra mensual";
+"extra_monthly_amount" = "Importe extra/mes";
+"extra_btn_simulate" = "Calcular ahorro";
+"extra_months_saved" = "Meses ahorrados";
+"extra_interest_saved" = "Intereses ahorrados";
+"extra_current_payment" = "Cuota actual";
+"extra_new_payoff" = "Nueva duración";
+"extra_interest_comparison" = "Comparativa de intereses";
+"extra_without_extra" = "Sin pagos extra";
+"extra_with_extra" = "Con pagos extra";
+"extra_balance_chart" = "Evolución del saldo";
+
+// MARK: - Stress test
+"stress_section_loan" = "Datos de la hipoteca";
+"stress_base_rate" = "Tipo actual (%)";
+"stress_btn_calculate" = "Calcular escenarios";
+"stress_scenarios_title" = "Escenarios de tipo de interés";
+"stress_col_rate" = "Variación";
+"stress_col_payment" = "Cuota/mes";
+"stress_col_diff" = "Diferencia";
+"stress_chart_title" = "Impacto en cuota mensual";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Revisión Euríbor";
+"euribor_remaining_capital" = "Capital pendiente";
+"euribor_remaining_months" = "Meses restantes";
+"euribor_spread" = "Diferencial (%)";
+"euribor_current_rate" = "Euríbor actual (%)";
+"euribor_current_payment" = "Cuota actual";
+"euribor_scenario_label" = "Variación Euríbor (pp)";
+"euribor_simulated_payment" = "Nueva cuota";
+"euribor_difference_monthly" = "Diferencia mensual";
+"euribor_difference_annual" = "Diferencia anual";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "¿Invertir o Amortizar?";
+"invest_amount" = "Importe disponible";
+"invest_mortgage_tin" = "TIN hipoteca (%)";
+"invest_expected_return" = "Rentabilidad esperada (%)";
+"invest_horizon_years" = "Horizonte (años)";
+"invest_btn_compare" = "Comparar";
+"invest_option_amortize" = "Amortizar";
+"invest_option_invest" = "Invertir";
+"invest_amortize_saving" = "Ahorro amortizando";
+"invest_invest_gain" = "Ganancia invirtiendo";
+"invest_recommendation_amortize" = "Mejor amortizar";
+"invest_recommendation_invest" = "Mejor invertir";
+"invest_premium_title" = "Función Premium";
+"invest_premium_body" = "Desbloquea el comparador Invertir vs Amortizar para tomar la mejor decisión financiera.";
+"invest_tax_note" = "Nota fiscal: los rendimientos de inversión tributan en el IRPF. Consulta con un asesor fiscal.";
+
+// MARK: - Settings
+"settings_nav_title" = "Ajustes";
+"settings_language" = "Idioma";
+"settings_language_system" = "Sistema";
+"settings_language_footer" = "El cambio de idioma se aplica inmediatamente.";
+"settings_country" = "País / Mercado";
+"settings_section_about" = "Acerca de";
+"settings_app_version" = "Versión";
+"settings_privacy_policy" = "Política de privacidad";
+"settings_terms_of_use" = "Términos de uso";
+"settings_rate_app" = "Valorar la app";
+"settings_premium_active" = "Premium activo";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "¡Premium activado!";
+"premium_unlock_message" = "Anuncios desactivados. Disfruta de todas las funciones.";
+"premium_lock_title" = "Premium desactivado";
+"premium_lock_message" = "Los anuncios vuelven a estar activos.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Cancelar";
+"general_close" = "Cerrar";
+"general_done" = "Hecho";
+"general_share" = "Compartir";
+"general_year_singular" = "año";
+"general_year_plural" = "años";
+"general_month_singular" = "mes";
+"general_month_plural" = "meses";
+"general_loading" = "Calculando...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "FREE";
+
+// MARK: - Errors
+"error_invalid_capital" = "Introduce un capital válido mayor que 0.";
+"error_invalid_years" = "Introduce un plazo válido en años o meses.";
+"error_invalid_rate" = "Introduce un tipo de interés válido mayor que 0.";
+"error_invalid_amount" = "Introduce un importe válido mayor que 0.";
+"error_amount_exceeds_capital" = "El importe a amortizar no puede ser mayor que el capital pendiente.";
+
+// MARK: - ATT
+"att_usage_description" = "Usamos tu actividad para mostrarte publicidad relevante y medir el rendimiento de los anuncios.";
+
+// MARK: - Countries
+"country_es" = "España";
+"country_en" = "Estados Unidos";
+"country_hi" = "India";
+"country_pt_BR" = "Brasil";
+"country_it" = "Italia";
+"country_fr" = "Francia";
+"country_de" = "Alemania";
+"country_ar" = "Árabe / GCC";
+
+// MARK: - Laws by country
+"law_es" = "Ley 5/2019: Variable 0,25% años 1-3, 0% después. Fija 2% años 1-10, 1,5% después.";
+"law_en" = "Dodd-Frank Act (2014): Máx. 3%/2%/1% años 1/2/3, 0% a partir del año 4.";
+"law_hi" = "RBI Circular 2012: 0% tipo variable. Máx. 2% tipo fijo.";
+"law_pt_BR" = "SFH Lei 9.514/1997: Máx. 2% sobre el importe amortizado.";
+"law_it" = "TUB + Directiva UE: 0,5% tipo variable, 1,5% tipo fijo.";
+"law_fr" = "Code de la Consommation L313-47: IRA = mín(3% capital, 6 meses de interés).";
+"law_de" = "§490 BGB: Máx. 1% si quedan >12 meses, 0,5% si quedan ≤12 meses.";
+"law_ar" = "Financiación islámica (Murabaha/Ijara): sin interés; ~1% tarifa administrativa.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Cuota mensual";
+"kpi_monthly_payment_explanation" = "Es el importe fijo que pagas cada mes durante toda la vida del préstamo. Incluye una parte de capital (lo que devuelves del préstamo) y una parte de intereses (el coste del dinero prestado).";
+"kpi_monthly_payment_formula" = "C × [r(1+r)^n] / [(1+r)^n - 1]\nC=capital  r=tipo mensual  n=meses";
+"kpi_monthly_payment_example" = "Préstamo 200.000€ a 30 años al 3,5% → cuota mensual de 898€.";
+
+"kpi_total_interest_title" = "Total intereses";
+"kpi_total_interest_explanation" = "La suma de todos los intereses que pagarás a lo largo de la vida del préstamo. Cuanto mayor sea el tipo o el plazo, más intereses pagarás.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "En un préstamo de 200.000€ a 30 años al 3,5%, pagarás unos 123.000€ solo en intereses.";
+
+"kpi_total_cost_title" = "Coste total";
+"kpi_total_cost_explanation" = "El dinero total que devolverás al banco: capital prestado + todos los intereses. Es la mejor métrica para comparar dos hipotecas.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Capital 200.000€ + 123.000€ intereses = 323.000€ coste total.";
+
+"kpi_months_saved_title" = "Meses ahorrados";
+"kpi_months_saved_explanation" = "Si eliges reducir plazo con una amortización parcial, estos son los meses que dejarás de pagar. Cuanto más al principio del préstamo, mayor será el ahorro.";
+"kpi_months_saved_formula" = "n_nuevo = -ln(1 - C_nuevo × r / cuota) / ln(1 + r)";
+"kpi_months_saved_example" = "Amortizando 20.000€ en año 5 de una hipoteca a 30 años podrías eliminar 4-6 años de pagos.";
+
+"kpi_interest_saved_title" = "Intereses ahorrados";
+"kpi_interest_saved_explanation" = "La diferencia entre los intereses que pagarías sin amortizar y los que pagarás después de amortizar. Es el ahorro bruto antes de descontar la comisión.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Amortizando 20.000€ puedes ahorrar entre 8.000€ y 18.000€ en intereses según el momento.";
+
+"kpi_net_saving_title" = "Ahorro neto";
+"kpi_net_saving_explanation" = "Es el ahorro real: intereses ahorrados menos la comisión por amortización anticipada que cobra el banco. Si es negativo, no compensa amortizar.";
+"kpi_net_saving_formula" = "Ahorro neto = Intereses ahorrados − Comisión";
+"kpi_net_saving_example" = "Intereses ahorrados 15.000€ − Comisión 500€ = Ahorro neto 14.500€.";
+
+"kpi_commission_title" = "Comisión";
+"kpi_commission_explanation" = "El banco puede cobrar una comisión por amortizar anticipadamente. En España está regulada por la Ley 5/2019. En otros países existen leyes similares que protegen al consumidor.";
+"kpi_commission_formula" = "Variable: 0,25% × importe (años 1-3)\nFija: 2% × importe (años 1-10)";
+"kpi_commission_example" = "Amortizando 20.000€ en año 2 de hipoteca variable → comisión = 20.000 × 0,25% = 50€.";
+
+"kpi_new_payment_title" = "Nueva cuota";
+"kpi_new_payment_explanation" = "Si eliges reducir cuota con la amortización parcial, esta será tu nueva cuota mensual para el resto del préstamo, manteniendo el plazo original.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Cuota actual 898€/mes → tras amortizar 20.000€ → nueva cuota 798€/mes.";
+
+"kpi_euribor_diff_monthly_title" = "Diferencia mensual";
+"kpi_euribor_diff_monthly_explanation" = "Cuánto cambia tu cuota mensual si el Euríbor sube o baja según el escenario simulado. Un valor positivo significa que pagarás más.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "Si el Euríbor sube 1 punto, una hipoteca de 150.000€ a 20 años puede subir ~60€/mes.";
+
+"kpi_amortize_saving_title" = "Ahorro amortizando";
+"kpi_amortize_saving_explanation" = "El beneficio garantizado de usar ese dinero para amortizar hipoteca. Es equivalente a obtener una rentabilidad igual al tipo de interés de tu hipoteca, sin riesgo.";
+"kpi_amortize_saving_formula" = "Capital × ((1 + TIN)^años − 1)";
+"kpi_amortize_saving_example" = "20.000€ en hipoteca al 3,5% durante 10 años → ahorro garantizado de 9.773€.";
+
+"kpi_invest_gain_title" = "Ganancia invirtiendo";
+"kpi_invest_gain_explanation" = "El beneficio esperado de invertir ese dinero en lugar de amortizar, aplicando la rentabilidad anual que introduces. Recuerda que la inversión conlleva riesgo y los rendimientos no están garantizados.";
+"kpi_invest_gain_formula" = "Capital × ((1 + rentabilidad)^años − 1)";
+"kpi_invest_gain_example" = "20.000€ al 7% anual durante 10 años → ganancia esperada de 19.343€.";
+
+"kpi_section_what" = "¿Qué es?";
+"kpi_section_formula" = "Fórmula";
+"kpi_section_example" = "Ejemplo";
+"kpi_chart_label" = "Gráfica";
+"kpi_example_reduce_term" = "Reducir plazo";
+"kpi_example_reduce_payment" = "Reducir cuota";
+
+// MARK: - General units
+"general_years" = "años";
+"general_months" = "meses";
+"general_done" = "Listo";
+"general_cancel" = "Cancelar";
+"partial_section_commission" = "Comisión";
+
+// MARK: - Input field KPIs
+"kpi_input_capital_title" = "Capital del préstamo";
+"kpi_input_capital_explanation" = "El importe total que solicitas al banco. Es la base sobre la que se calculan los intereses. Cuanto menor sea el capital, menos intereses pagarás en total.";
+"kpi_input_capital_example" = "Para comprar una vivienda de 250.000€ con un 20% de entrada, el capital sería 200.000€.";
+
+"kpi_input_years_title" = "Plazo del préstamo";
+"kpi_input_years_explanation" = "El número de años durante los que pagarás la hipoteca. Más plazo = cuota más baja, pero muchos más intereses en total. Menos plazo = cuota más alta, pero ahorras en intereses.";
+"kpi_input_years_example" = "Una hipoteca a 25 años tiene cuotas más bajas que a 15, pero puede pagar el doble en intereses totales.";
+
+"kpi_input_rate_title" = "Tipo de interés (TIN)";
+"kpi_input_rate_explanation" = "El porcentaje anual que el banco cobra por prestarte el dinero. Es el factor más importante que determina el coste de tu hipoteca. Pequeñas diferencias de décimas tienen gran impacto a largo plazo.";
+"kpi_input_rate_example" = "En 200.000€ a 25 años, pasar del 3% al 4% supone pagar ~28.000€ más en intereses totales.";
+
+"kpi_input_euribor_title" = "Euribor";
+"kpi_input_euribor_explanation" = "El índice de referencia interbancario europeo. Las hipotecas variables se calculan como Euribor + diferencial. Se revisa anualmente y puede subir o bajar.";
+"kpi_input_euribor_example" = "Si el Euribor está al 3,75% y tu diferencial es +0,75%, tu TIN efectivo será 4,50%.";
+
+"kpi_input_spread_title" = "Diferencial";
+"kpi_input_spread_explanation" = "El margen que suma el banco al Euribor para calcular tu tipo de interés variable. Es fijo durante toda la vida del préstamo y varía según la entidad y tu perfil.";
+"kpi_input_spread_example" = "Un diferencial de 0,75% sobre Euribor 3,75% = tipo efectivo 4,50%.";
+
+"kpi_input_remaining_capital_title" = "Capital pendiente";
+"kpi_input_remaining_capital_explanation" = "La deuda que todavía tienes con el banco. Es el capital sobre el que se calculan los intereses de las cuotas futuras. Puedes consultarlo en tu último recibo bancario.";
+"kpi_input_remaining_capital_example" = "Si compraste por 200.000€ hace 5 años a 25 años, tu capital pendiente será aproximadamente 175.000€.";
+
+"kpi_input_months_title" = "Meses restantes";
+"kpi_input_months_explanation" = "El número de cuotas mensuales que quedan por pagar. Equivale al plazo restante de tu hipoteca. 300 meses = 25 años, 240 meses = 20 años.";
+"kpi_input_months_example" = "Si firmaste una hipoteca a 30 años hace 5 años, te quedan 300 meses (25 años).";
+
+"kpi_input_amortize_amount_title" = "Importe a amortizar";
+"kpi_input_amortize_amount_explanation" = "La cantidad extra que quieres pagar al banco para reducir tu deuda antes de tiempo. Puede ser un ahorro puntual, una herencia, una paga extra, etc.";
+"kpi_input_amortize_amount_example" = "Con 20.000€ extra puedes eliminar varios años de hipoteca o reducir significativamente tu cuota mensual.";
+
+"kpi_input_extra_monthly_title" = "Pago extra mensual";
+"kpi_input_extra_monthly_explanation" = "Una cantidad adicional que pagarás cada mes por encima de tu cuota normal. Todo este extra va directo a reducir capital, lo que acorta el plazo y ahorra muchos intereses.";
+"kpi_input_extra_monthly_example" = "Pagando 200€ extra al mes en una hipoteca de 150.000€ a 25 años al 3,5%, podrías terminar 5-7 años antes.";
+
+"kpi_input_stress_rate_title" = "Tipo base del test";
+"kpi_input_stress_rate_explanation" = "El tipo de interés de partida para el test de estrés. La herramienta calculará qué pasaría con tu cuota si el tipo sube o baja varios puntos porcentuales desde esta base.";
+"kpi_input_stress_rate_example" = "Con un tipo base del 3,5%, el test calcula tu cuota para escenarios desde 1,5% hasta 8,5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Revisión tipo";
+"tab_extra_monthly" = "Cuota extra";
+"calculator_reference_rate" = "Índice de referencia";
+"calculator_tin_mixed" = "TIN (fase fija)";
+"calculator_mixed_effective_hint %@" = "Tipo variable efectivo: %@";
+"country_menu_header" = "Seleccionar país";
+"settings_country_footer" = "El país determina la moneda y la normativa para el cálculo de comisiones por amortización anticipada.";
+
+/* MARK: - Extra payments view description */
+"extra_view_title" = "Simulador de pago extra mensual";
+"extra_view_description" = "Calcula cuánto ahorras en intereses y tiempo si pagas una cantidad fija adicional cada mes, además de tu cuota normal.";
+
+/* MARK: - Country menu footer */
+"country_menu_footer" = "Afecta a la moneda y a la ley de comisiones por amortización anticipada.";
+
+/* MARK: - partial_mortgage_type label in commission */
+"partial_mortgage_type" = "Tipo de hipoteca (para calcular la comisión legal)";
+
+/* MARK: - Partial amortization redesign */
+"partial_years_remaining" = "Años restantes";
+"partial_months_extra" = "Meses extra";
+"partial_tab_reduce_payment" = "Reducción cuota";
+"partial_tab_reduce_term" = "Reducción tiempo";
+"partial_new_payment" = "Nueva cuota";
+"partial_new_term" = "Nuevo plazo";
+"partial_remaining_interest" = "Intereses ahorrados";
+"partial_narrative_title" = "Resultado";
+"partial_narrative_s1a" = "Al amortizar";
+"partial_narrative_s1b" = "de capital, tu deuda pendiente se reduce a";
+"partial_narrative_s2" = "Puedes elegir entre reducir tu cuota mensual manteniendo el plazo, o reducir el plazo manteniendo la misma cuota.";
+"partial_narrative_s3a" = "La opción menos favorable te ahorra";
+"partial_narrative_s3b" = "en intereses, mientras que la mejor opción te ahorra hasta";
+"partial_narrative_s4a" = "Recuerda restar la comisión por amortización anticipada de";
+"partial_narrative_s4b" = "al ahorro calculado.";
+"partial_reduce_payment_explain_a" = "Reduciendo la cuota, pagarás";
+"partial_reduce_payment_explain_b" = "al mes en lugar de";
+"partial_reduce_term_explain_a" = "Reduciendo el plazo, terminarás en";
+"partial_reduce_term_explain_b" = "en lugar de";
+"partial_saving_explain" = "Esta opción te permite ahorrar un total de";
+"partial_table_title" = "Tabla de amortización anual";
+"partial_table_year" = "Año";
+"partial_table_payment" = "Cuota";
+"partial_table_capital" = "Capital";
+"partial_table_interest" = "Intereses";
+"partial_table_balance" = "Pendiente";
+"partial_chart_payments_title" = "Cuotas anuales";
+"partial_chart_amort_title" = "Amortización acumulada";
+
+"partial_time_remaining" = "Plazo restante";
+"kpi_input_euribor_delta_title" = "Variación del Euribor";
+"kpi_input_euribor_delta_explanation" = "El incremento (o descenso) que quieres simular sobre el Euribor actual. Te permite ver cómo cambiaría tu cuota si el Euribor sube o baja esa cantidad de puntos porcentuales en la próxima revisión de tu hipoteca.";
+"kpi_input_euribor_delta_example" = "Si el Euribor actual es 3,75% y pones una variación de +0,50%, la simulación calculará tu cuota con un Euribor del 4,25%.";
+"euribor_chart_title" = "Comparativa de cuotas";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Quitar publicidad";
+"settings_remove_ads_subtitle" = "Pago único · sin anuncios para siempre";
+"settings_web_app" = "Web de la app";
+"settings_support" = "Soporte";
+"settings_send_feedback" = "Enviar sugerencia";
+"settings_share_app" = "Compartir app";
+"settings_share_app_message" = "Descubre Amortix, la calculadora de hipotecas";
+"settings_coming_soon_title" = "Próximamente";
+"settings_coming_soon_message" = "Esta función estará disponible muy pronto.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Restaurar compras";
+"settings_purchase_error_title" = "Compra fallida";
+"settings_restore_success_title" = "Compra restaurada";
+"settings_restore_success_message" = "La publicidad ha sido eliminada.";
+"settings_restore_empty_title" = "Sin compras previas";
+"settings_restore_empty_message" = "No hemos encontrado ninguna compra anterior con esta cuenta de Apple.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Capital";
+"partial_chart_legend_interest" = "Intereses";
+
+/* MARK: - KPI "Con tus números" + hipoteca mixta + gráfica capital/intereses */
+"kpi_section_your_numbers" = "Con tus números";
+"kpi_label_rate" = "Tipo aplicado";
+"kpi_label_variable_rate" = "Tipo fase variable";
+"kpi_label_balance_after_fixed" = "Saldo al acabar la fase fija";
+"kpi_label_first_interest" = "Intereses (1.er mes)";
+"kpi_label_first_principal" = "Capital (1.er mes)";
+"kpi_label_amount" = "Importe";
+"kpi_label_return" = "Rentabilidad anual";
+"calculator_result_mixed_fixed" = "Cuota fase fija";
+"calculator_result_mixed_variable" = "Cuota estimada fase variable";
+"calculator_mixed_explanation_title" = "Cómo funciona tu hipoteca mixta";
+"calculator_mixed_explain_s1a" = "Durante los primeros";
+"calculator_mixed_explain_s1b" = "años pagarás";
+"calculator_mixed_explain_s1c" = "al mes, a un TIN del";
+"calculator_mixed_explain_s2a" = "A partir de entonces, con un tipo Euríbor + diferencial del";
+"calculator_mixed_explain_s2b" = "la cuota estimada pasará a ser de";
+"kpi_mixed_fixed_payment_title" = "Cuota fase fija";
+"kpi_mixed_fixed_payment_explanation" = "Es la cuota que pagarás cada mes durante el periodo inicial a tipo fijo de tu hipoteca mixta. Se calcula con el TIN fijo amortizando sobre el plazo total.";
+"kpi_mixed_fixed_payment_example" = "200.000 € a 30 años con fase fija de 5 años al 2,5% → cuota fija de 790 €/mes durante los primeros 5 años.";
+"kpi_mixed_variable_payment_title" = "Cuota fase variable";
+"kpi_mixed_variable_payment_explanation" = "Es la cuota estimada a partir del final del periodo fijo. Se recalcula sobre el capital pendiente al tipo Euríbor + diferencial para los años restantes y variará en cada revisión del Euríbor.";
+"kpi_mixed_variable_payment_example" = "Tras 5 años fijos quedan 175.000 € a pagar en 25 años; con Euríbor + diferencial del 4,5% la cuota estimada sería 973 €/mes.";
+"chart_capital_interest_title" = "Capital vs intereses";
+"chart_total_capital" = "Capital total";
+"chart_total_interest" = "Intereses totales";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Modelo de amortización";
+"settings_model_title" = "Modelo";
+"settings_model_caption" = "Se aplica al cálculo de la Calculadora.";
+"system_french" = "Francés";
+"system_linear" = "Lineal";
+"system_american" = "Americano";
+"systems_info_title" = "Sistemas de amortización";
+"systems_info_cta" = "¿Qué sistema elegir?";
+"systems_info_french" = "Cuota constante en cada periodo. Al principio pagas sobre todo intereses y amortizas más capital al final. Es el más habitual.";
+"systems_info_linear" = "Amortizas el mismo capital cada periodo, por lo que la cuota empieza alta y baja con el tiempo. Pagas menos intereses totales que en el francés.";
+"systems_info_american" = "Pagas solo intereses cada periodo y devuelves todo el capital al final. Cuotas mínimas, pero el mayor coste total en intereses.";
+"calculator_payment_first" = "Primera cuota";
+"calculator_payment_interest_only" = "Solo intereses";
+"calculator_result_final_capital" = "Capital final";
+"amortization_system_label" = "Sistema:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Ver un vídeo — 1 hora sin anuncios";
+"rewarded_active" = "Tiempo sin anuncios";
+"rewarded_unavailable_title" = "No hay vídeo disponible";
+"rewarded_unavailable_message" = "Ahora mismo no hay ningún vídeo disponible. Inténtalo de nuevo en unos minutos.";
+"settings_privacy_options" = "Opciones de privacidad";

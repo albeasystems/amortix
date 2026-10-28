@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (Arabic — ar) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "تخطي";
+"onboarding_next" = "التالي";
+"onboarding_start" = "ابدأ";
+"onboarding_page1_title" = "احسب قرضك العقاري";
+"onboarding_page1_subtitle" = "تعرّف على قسطك الشهري وإجمالي الفوائد والتكلفة الحقيقية لقرضك.";
+"onboarding_page2_title" = "محاكاة السداد المبكر";
+"onboarding_page2_subtitle" = "قارن بين تقليص مدة القرض أو تخفيض القسط عند إجراء سداد جزئي مبكر.";
+"onboarding_page3_title" = "اتخذ قرارات أفضل";
+"onboarding_page3_subtitle" = "حلّل تأثير تغيرات أسعار الفائدة، وأجرِ اختبارات الضغط، واكتشف هل السداد المبكر أم الاستثمار أفضل لك.";
+
+// MARK: - Tabs
+"tab_calculator" = "الحاسبة";
+"tab_euribor" = "مراجعة الفائدة";
+"tab_stress" = "اختبار الضغط";
+"tab_amortize" = "السداد المبكر";
+"tab_extra" = "دفعات إضافية";
+"tab_invest" = "الاستثمار";
+"tab_mortgage_tab" = "التمويل";
+"tab_amortize_tab" = "جدول الإطفاء";
+
+// MARK: - Calculator
+"calculator_nav_title" = "حاسبة التمويل العقاري";
+"calculator_section_loan" = "بيانات القرض";
+"calculator_capital" = "مبلغ التمويل";
+"calculator_years" = "سنوات";
+"calculator_tin" = "نسبة الفائدة (%)";
+"calculator_section_type" = "نوع التمويل";
+"calculator_type_fixed" = "ثابت";
+"calculator_type_variable" = "متغير";
+"calculator_type_mixed" = "مختلط";
+"calculator_euribor" = "سعر الفائدة المرجعي (%)";
+"calculator_spread" = "هامش الربح (%)";
+"calculator_fixed_period_years" = "فترة الثبات (سنوات)";
+"calculator_btn_calculate" = "احسب";
+"calculator_result_monthly" = "القسط الشهري";
+"calculator_result_total_interest" = "إجمالي الفوائد";
+"calculator_result_total_cost" = "التكلفة الإجمالية";
+"calculator_btn_see_table" = "عرض جدول الإطفاء";
+
+// MARK: - Amortization table
+"table_nav_title" = "جدول الإطفاء";
+"table_col_period" = "الفترة";
+"table_col_payment" = "القسط";
+"table_col_principal" = "رأس المال";
+"table_col_interest" = "الفوائد";
+"table_col_balance" = "الرصيد المتبقي";
+"table_export_pdf" = "تصدير";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "السداد الجزئي المبكر";
+"partial_remaining_capital" = "الرصيد المتبقي";
+"partial_remaining_months" = "الأشهر المتبقية";
+"partial_current_rate" = "نسبة الفائدة الحالية (%)";
+"partial_amount" = "مبلغ السداد المبكر";
+"partial_commission_mode_auto" = "تلقائي (وفق النظام)";
+"partial_commission_mode_percent" = "نسبة مئوية (%)";
+"partial_commission_mode_fixed" = "مبلغ ثابت";
+"partial_commission_mode_none" = "بدون رسوم";
+"partial_mortgage_type" = "نوع التمويل";
+"partial_years_since_signing" = "سنوات منذ التعاقد";
+"partial_btn_simulate" = "محاكاة";
+"partial_result_reduce_term" = "تقليص المدة";
+"partial_result_reduce_quota" = "تخفيض القسط";
+"partial_months_saved" = "الأشهر المُوفَّرة";
+"partial_interest_saved" = "الفوائد المُوفَّرة";
+"partial_commission_cost" = "رسوم السداد المبكر";
+"partial_net_saving" = "التوفير الصافي";
+"partial_new_payment" = "القسط الجديد";
+"partial_recommended" = "موصى به";
+"partial_info_law_fixed" = "تمويل ثابت: 2% في السنوات العشر الأولى، 1.5% بعد ذلك.";
+"partial_info_law_variable" = "تمويل متغير: 0.25% في السنوات الثلاث الأولى، 0% بعد ذلك.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "تمويلك الحالي";
+"extra_section_extra" = "دفعة شهرية إضافية";
+"extra_monthly_amount" = "المبلغ الإضافي/الشهر";
+"extra_btn_simulate" = "حساب التوفير";
+"extra_months_saved" = "الأشهر المُوفَّرة";
+"extra_interest_saved" = "الفوائد المُوفَّرة";
+"extra_current_payment" = "القسط الحالي";
+"extra_new_payoff" = "المدة الجديدة";
+"extra_interest_comparison" = "مقارنة الفوائد";
+"extra_without_extra" = "بدون دفعات إضافية";
+"extra_with_extra" = "مع دفعات إضافية";
+"extra_balance_chart" = "تطور الرصيد";
+
+// MARK: - Stress test
+"stress_section_loan" = "بيانات التمويل";
+"stress_base_rate" = "نسبة الفائدة الحالية (%)";
+"stress_btn_calculate" = "حساب السيناريوهات";
+"stress_scenarios_title" = "سيناريوهات أسعار الفائدة";
+"stress_col_rate" = "التغيير";
+"stress_col_payment" = "القسط/الشهر";
+"stress_col_diff" = "الفرق";
+"stress_chart_title" = "تأثير التغيير على القسط الشهري";
+
+// MARK: - Euribor
+"euribor_nav_title" = "مراجعة سعر الفائدة";
+"euribor_remaining_capital" = "الرصيد المتبقي";
+"euribor_remaining_months" = "الأشهر المتبقية";
+"euribor_spread" = "هامش الربح (%)";
+"euribor_current_rate" = "نسبة الفائدة الحالية (%)";
+"euribor_current_payment" = "القسط الحالي";
+"euribor_scenario_label" = "تغير الفائدة (نقطة)";
+"euribor_simulated_payment" = "القسط الجديد";
+"euribor_difference_monthly" = "الفرق الشهري";
+"euribor_difference_annual" = "الفرق السنوي";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "استثمار أم سداد مبكر؟";
+"invest_amount" = "المبلغ المتاح";
+"invest_mortgage_tin" = "فائدة التمويل (%)";
+"invest_expected_return" = "العائد المتوقع (%)";
+"invest_horizon_years" = "الأفق الزمني (سنوات)";
+"invest_btn_compare" = "مقارنة";
+"invest_option_amortize" = "سداد مبكر";
+"invest_option_invest" = "استثمار";
+"invest_amortize_saving" = "التوفير بالسداد المبكر";
+"invest_invest_gain" = "الربح بالاستثمار";
+"invest_recommendation_amortize" = "السداد المبكر أفضل";
+"invest_recommendation_invest" = "الاستثمار أفضل";
+"invest_premium_title" = "ميزة مميزة";
+"invest_premium_body" = "افتح مقارنة الاستثمار مقابل السداد المبكر لاتخاذ أفضل قرار مالي.";
+"invest_tax_note" = "ملاحظة ضريبية: قد تخضع عوائد الاستثمار للضرائب. استشر مستشاراً ضريبياً.";
+
+// MARK: - Settings
+"settings_nav_title" = "الإعدادات";
+"settings_language" = "اللغة";
+"settings_language_system" = "النظام";
+"settings_language_footer" = "يُطبَّق تغيير اللغة فوراً.";
+"settings_country" = "الدولة / السوق";
+"settings_section_about" = "حول التطبيق";
+"settings_app_version" = "الإصدار";
+"settings_privacy_policy" = "سياسة الخصوصية";
+"settings_terms_of_use" = "شروط الاستخدام";
+"settings_rate_app" = "تقييم التطبيق";
+"settings_premium_active" = "الاشتراك المميز نشط";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "تم تفعيل الاشتراك المميز!";
+"premium_unlock_message" = "تم إيقاف الإعلانات. استمتع بجميع الميزات.";
+"premium_lock_title" = "تم إلغاء الاشتراك المميز";
+"premium_lock_message" = "الإعلانات نشطة مرة أخرى.";
+"premium_alert_ok" = "موافق";
+
+// MARK: - General
+"general_ok" = "موافق";
+"general_cancel" = "إلغاء";
+"general_close" = "إغلاق";
+"general_done" = "تم";
+"general_share" = "مشاركة";
+"general_year_singular" = "سنة";
+"general_year_plural" = "سنوات";
+"general_month_singular" = "شهر";
+"general_month_plural" = "أشهر";
+"general_loading" = "جارٍ الحساب...";
+"general_premium_badge" = "مميز";
+"general_free_badge" = "مجاني";
+
+// MARK: - Errors
+"error_invalid_capital" = "أدخل مبلغ تمويل صحيحاً أكبر من 0.";
+"error_invalid_years" = "أدخل مدة صحيحة بالسنوات أو الأشهر.";
+"error_invalid_rate" = "أدخل نسبة فائدة صحيحة أكبر من 0.";
+"error_invalid_amount" = "أدخل مبلغاً صحيحاً أكبر من 0.";
+"error_amount_exceeds_capital" = "مبلغ السداد المبكر لا يمكن أن يتجاوز الرصيد المتبقي.";
+
+// MARK: - ATT
+"att_usage_description" = "نستخدم نشاطك لعرض إعلانات ذات صلة وقياس أداء الإعلانات.";
+
+// MARK: - Countries
+"country_es" = "إسبانيا";
+"country_en" = "الولايات المتحدة";
+"country_hi" = "الهند";
+"country_pt_BR" = "البرازيل";
+"country_it" = "إيطاليا";
+"country_fr" = "فرنسا";
+"country_de" = "ألمانيا";
+"country_ar" = "عربي / دول الخليج";
+
+// MARK: - Laws by country
+"law_es" = "القانون 5/2019: متغير 0.25% السنوات 1-3، 0% بعدها. ثابت 2% السنوات 1-10، 1.5% بعدها.";
+"law_en" = "قانون دود-فرانك (2014): الحد الأقصى 3%/2%/1% للسنوات 1/2/3، 0% من السنة 4.";
+"law_hi" = "تعميم بنك الاحتياطي الهندي 2012: 0% للفائدة المتغيرة. الحد الأقصى 2% للفائدة الثابتة.";
+"law_pt_BR" = "نظام SFH القانون 9.514/1997: الحد الأقصى 2% على المبلغ المسدَّد.";
+"law_it" = "TUB + التوجيه الأوروبي: 0.5% متغير، 1.5% ثابت.";
+"law_fr" = "قانون الاستهلاك الفرنسي L313-47: IRA = أدنى (3% من رأس المال، 6 أشهر فائدة).";
+"law_de" = "§490 القانون المدني الألماني: الحد الأقصى 1% إذا تبقى >12 شهراً، 0.5% إذا تبقى ≤12 شهراً.";
+"law_ar" = "التمويل الإسلامي (مرابحة/إجارة): بدون فوائد؛ ~1% رسوم إدارية.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "القسط الشهري";
+"kpi_monthly_payment_explanation" = "المبلغ الثابت الذي تدفعه كل شهر طوال فترة التمويل. يشمل جزءاً من رأس المال (ما تسدده من القرض) وجزءاً من الفوائد (تكلفة المال المقترض).";
+"kpi_monthly_payment_formula" = "C × [r(1+r)^n] / [(1+r)^n - 1]\nC=رأس المال  r=الفائدة الشهرية  n=الأشهر";
+"kpi_monthly_payment_example" = "تمويل 200,000 وحدة على 30 سنة بنسبة 3.5% → قسط شهري 898 وحدة.";
+
+"kpi_total_interest_title" = "إجمالي الفوائد";
+"kpi_total_interest_explanation" = "مجموع جميع الفوائد التي ستدفعها على مدى فترة التمويل. كلما زادت نسبة الفائدة أو المدة، زادت الفوائد.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "في تمويل بـ 200,000 وحدة على 30 سنة بنسبة 3.5%، ستدفع نحو 123,000 وحدة فوائد.";
+
+"kpi_total_cost_title" = "التكلفة الإجمالية";
+"kpi_total_cost_explanation" = "إجمالي الأموال التي ستردها للبنك: رأس المال + جميع الفوائد. هي أفضل مقياس لمقارنة عرضين تمويليين.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "رأس المال 200,000 + 123,000 فوائد = 323,000 تكلفة إجمالية.";
+
+"kpi_months_saved_title" = "الأشهر المُوفَّرة";
+"kpi_months_saved_explanation" = "إذا اخترت تقليص المدة بسداد جزئي مبكر، فهذه هي الأشهر التي لن تدفعها. كلما كان السداد في بداية التمويل، كان التوفير أكبر.";
+"kpi_months_saved_formula" = "n_جديد = -ln(1 - C_جديد × r / قسط) / ln(1 + r)";
+"kpi_months_saved_example" = "سداد مبكر بـ 20,000 وحدة في السنة 5 من تمويل 30 سنة قد يُزيل 4-6 سنوات من الأقساط.";
+
+"kpi_interest_saved_title" = "الفوائد المُوفَّرة";
+"kpi_interest_saved_explanation" = "الفرق بين الفوائد التي كنت ستدفعها بدون سداد مبكر وتلك التي ستدفعها بعده. هذا هو التوفير الإجمالي قبل خصم رسوم السداد المبكر.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "سداد مبكر بـ 20,000 وحدة قد يُوفّر بين 8,000 و18,000 وحدة من الفوائد حسب التوقيت.";
+
+"kpi_net_saving_title" = "التوفير الصافي";
+"kpi_net_saving_explanation" = "التوفير الحقيقي: الفوائد المُوفَّرة مطروحاً منها رسوم السداد المبكر التي يفرضها البنك. إذا كانت سالبة، فالسداد المبكر غير مجدٍ.";
+"kpi_net_saving_formula" = "التوفير الصافي = الفوائد المُوفَّرة − الرسوم";
+"kpi_net_saving_example" = "فوائد موفرة 15,000 − رسوم 500 = توفير صافٍ 14,500.";
+
+"kpi_commission_title" = "رسوم السداد المبكر";
+"kpi_commission_explanation" = "قد يفرض البنك رسوماً على السداد المبكر. تتباين اللوائح حسب الدولة وتحمي المستهلك.";
+"kpi_commission_formula" = "متغير: 0.25% × المبلغ (السنوات 1-3)\nثابت: 2% × المبلغ (السنوات 1-10)";
+"kpi_commission_example" = "سداد مبكر بـ 20,000 في السنة 2 من تمويل متغير → رسوم = 20,000 × 0.25% = 50.";
+
+"kpi_new_payment_title" = "القسط الجديد";
+"kpi_new_payment_explanation" = "إذا اخترت تخفيض القسط بالسداد الجزئي المبكر، فهذا سيكون قسطك الشهري الجديد لبقية التمويل مع الإبقاء على المدة الأصلية.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "القسط الحالي 898/شهر → بعد سداد 20,000 مبكراً → القسط الجديد 798/شهر.";
+
+"kpi_euribor_diff_monthly_title" = "الفرق الشهري";
+"kpi_euribor_diff_monthly_explanation" = "مقدار تغير قسطك الشهري إذا ارتفعت أسعار الفائدة أو انخفضت وفق السيناريو المحاكى. القيمة الموجبة تعني أنك ستدفع أكثر.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "إذا ارتفعت أسعار الفائدة نقطة واحدة، يمكن أن يرتفع قسط تمويل بـ 150,000 على 20 سنة بنحو 60 وحدة/شهر.";
+
+"kpi_amortize_saving_title" = "التوفير بالسداد المبكر";
+"kpi_amortize_saving_explanation" = "الفائدة المضمونة من استخدام هذا المال في السداد المبكر. يُعادل الحصول على عائد مساوٍ لنسبة فائدة تمويلك، بدون مخاطر.";
+"kpi_amortize_saving_formula" = "رأس المال × ((1 + الفائدة)^السنوات − 1)";
+"kpi_amortize_saving_example" = "20,000 وحدة في تمويل بنسبة 3.5% لمدة 10 سنوات → توفير مضمون 9,773 وحدة.";
+
+"kpi_invest_gain_title" = "الربح بالاستثمار";
+"kpi_invest_gain_explanation" = "الفائدة المتوقعة من استثمار هذا المال بدلاً من السداد المبكر، بتطبيق العائد السنوي الذي تدخله. تذكر أن الاستثمار ينطوي على مخاطر والعوائد غير مضمونة.";
+"kpi_invest_gain_formula" = "رأس المال × ((1 + العائد)^السنوات − 1)";
+"kpi_invest_gain_example" = "20,000 وحدة بعائد 7% سنوياً لمدة 10 سنوات → ربح متوقع 19,343 وحدة.";
+
+"kpi_section_what" = "ما هذا؟";
+"kpi_section_formula" = "الصيغة";
+"kpi_section_example" = "مثال";
+"kpi_chart_label" = "الرسم البياني";
+"kpi_example_reduce_term" = "تقليص المدة";
+"kpi_example_reduce_payment" = "تخفيض القسط";
+
+// MARK: - General units
+"general_years" = "سنوات";
+"general_months" = "أشهر";
+"general_done" = "تم";
+"general_cancel" = "إلغاء";
+"partial_section_commission" = "العمولة";
+
+"kpi_input_capital_title" = "رأس مال القرض";
+"kpi_input_capital_explanation" = "المبلغ الإجمالي الذي تقترضه من البنك. هذا هو الأساس الذي تُحسب عليه الفائدة.";
+"kpi_input_capital_example" = "عقار بـ 250,000 ريال مع دفعة أولى 20% → رأس المال 200,000 ريال.";
+"kpi_input_years_title" = "مدة القرض";
+"kpi_input_years_explanation" = "عدد السنوات لسداد القرض. مدة أطول = قسط أقل، لكن فوائد أكثر.";
+"kpi_input_years_example" = "قرض 25 سنة أقساطه أقل من 15 سنة، لكن يدفع فوائد أكثر بكثير.";
+"kpi_input_rate_title" = "معدل الفائدة";
+"kpi_input_rate_explanation" = "النسبة المئوية السنوية التي يفرضها البنك. الفروق الصغيرة لها تأثير كبير على المدى البعيد.";
+"kpi_input_rate_example" = "200,000 ريال على 25 سنة: من 3% إلى 4% = فوائد إضافية ~28,000 ريال.";
+"kpi_input_euribor_title" = "سعر الفائدة المرجعي";
+"kpi_input_euribor_explanation" = "المعدل المرجعي بين البنوك. القروض المتغيرة = المعدل المرجعي + هامش البنك.";
+"kpi_input_euribor_example" = "معدل 3.75% + هامش 0.75% = معدل فعلي 4.50%.";
+"kpi_input_spread_title" = "هامش البنك";
+"kpi_input_spread_explanation" = "الهامش الثابت الذي يضيفه البنك لحساب معدل الفائدة المتغير.";
+"kpi_input_spread_example" = "هامش 0.75% على 3.75% = معدل 4.50%.";
+"kpi_input_remaining_capital_title" = "الرصيد المتبقي";
+"kpi_input_remaining_capital_explanation" = "الدين الذي لا تزال مدينًا به للبنك.";
+"kpi_input_remaining_capital_example" = "قرض 200,000 ريال منذ 5 سنوات لمدة 25 سنة → رصيد ≈ 175,000 ريال.";
+"kpi_input_months_title" = "الأشهر المتبقية";
+"kpi_input_months_explanation" = "عدد الأقساط الشهرية المتبقية.";
+"kpi_input_months_example" = "قرض 30 سنة منذ 5 سنوات → 300 شهر متبقية.";
+"kpi_input_amortize_amount_title" = "مبلغ السداد المبكر";
+"kpi_input_amortize_amount_explanation" = "المبلغ الإضافي الذي تريد دفعه لتخفيض دينك مبكرًا.";
+"kpi_input_amortize_amount_example" = "20,000 ريال مبكرًا قد تلغي عدة سنوات من القرض.";
+"kpi_input_extra_monthly_title" = "الدفعة الشهرية الإضافية";
+"kpi_input_extra_monthly_explanation" = "مبلغ إضافي تدفعه كل شهر فوق القسط العادي.";
+"kpi_input_extra_monthly_example" = "200 ريال إضافية شهريًا على 150,000 ريال بـ 3.5% قد تنهي القرض 5-7 سنوات مبكرًا.";
+"kpi_input_stress_rate_title" = "معدل الفائدة الأساسي للاختبار";
+"kpi_input_stress_rate_explanation" = "معدل البداية لمحاكاة سيناريوهات مختلفة من الارتفاع أو الانخفاض.";
+"kpi_input_stress_rate_example" = "أساس 3.5% → سيناريوهات من 1.5% إلى 8.5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "مراجعة الفائدة";
+"tab_extra_monthly" = "دفعة إضافية";
+"calculator_reference_rate" = "معدل الإشارة";
+"calculator_tin_mixed" = "الفائدة (المرحلة الثابتة)";
+"calculator_mixed_effective_hint %@" = "معدل متغير فعلي: %@";
+"country_menu_header" = "اختر الدولة";
+"settings_country_footer" = "يحدد البلد العملة والإطار القانوني لحساب رسوم السداد المبكر.";
+
+"extra_view_title" = "محاكي الدفع الشهري الإضافي";
+"extra_view_description" = "احسب كم توفر من الفوائد والوقت عند دفع مبلغ إضافي ثابت كل شهر.";
+"country_menu_footer" = "يؤثر على العملة وقانون عمولات السداد المبكر.";
+"partial_mortgage_type" = "نوع القرض (لتطبيق العمولة القانونية الصحيحة)";
+
+"partial_years_remaining" = "السنوات المتبقية";
+"partial_months_extra" = "أشهر إضافية";
+"partial_tab_reduce_payment" = "تخفيض القسط";
+"partial_tab_reduce_term" = "تخفيض المدة";
+"partial_new_payment" = "القسط الجديد";
+"partial_new_term" = "المدة الجديدة";
+"partial_remaining_interest" = "الفوائد الموفرة";
+"partial_narrative_title" = "النتيجة";
+"partial_narrative_s1a" = "بسداد مبكر بمبلغ";
+"partial_narrative_s1b" = "ينخفض رصيد قرضك إلى";
+"partial_narrative_s2" = "يمكنك الاختيار بين تخفيض القسط الشهري مع الإبقاء على المدة، أو تقليص المدة مع الإبقاء على نفس القسط.";
+"partial_narrative_s3a" = "الخيار الأقل ملاءمة يوفر";
+"partial_narrative_s3b" = "في الفوائد؛ أما الخيار الأفضل فيوفر ما يصل إلى";
+"partial_narrative_s4a" = "تذكر خصم رسوم السداد المبكر البالغة";
+"partial_narrative_s4b" = "من المدخرات المحسوبة.";
+"partial_reduce_payment_explain_a" = "بتخفيض القسط ستدفع";
+"partial_reduce_payment_explain_b" = "شهرياً بدلاً من";
+"partial_reduce_term_explain_a" = "بتخفيض المدة ستنتهي في";
+"partial_reduce_term_explain_b" = "بدلاً من";
+"partial_saving_explain" = "يتيح لك هذا الخيار توفيراً إجمالياً قدره";
+"partial_table_title" = "جدول الاستهلاك السنوي";
+"partial_table_year" = "السنة";
+"partial_table_payment" = "القسط";
+"partial_table_capital" = "رأس المال";
+"partial_table_interest" = "الفوائد";
+"partial_table_balance" = "الرصيد المتبقي";
+"partial_chart_payments_title" = "الأقساط السنوية";
+"partial_chart_amort_title" = "الاستهلاك التراكمي";
+
+"partial_time_remaining" = "المدة المتبقية";
+"kpi_input_euribor_delta_title" = "تغيير اليوريبور";
+"kpi_input_euribor_delta_explanation" = "الزيادة (أو الانخفاض) التي تريد محاكاتها على اليوريبور الحالي. يُظهر لك كيف ستتغير قسطك الشهري إذا تحرك اليوريبور بهذه النسبة عند المراجعة التالية لرهنك العقاري.";
+"kpi_input_euribor_delta_example" = "إذا كان اليوريبور الحالي 3.75% وأدخلت +0.50%، تحسب المحاكاة قسطك مع يوريبور بنسبة 4.25%.";
+"euribor_chart_title" = "مقارنة الأقساط";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "إزالة الإعلانات";
+"settings_remove_ads_subtitle" = "دفعة واحدة · بدون إعلانات إلى الأبد";
+"settings_web_app" = "موقع التطبيق";
+"settings_support" = "الدعم";
+"settings_send_feedback" = "إرسال اقتراح";
+"settings_share_app" = "مشاركة التطبيق";
+"settings_share_app_message" = "اكتشف Amortix، حاسبة الرهن العقاري";
+"settings_coming_soon_title" = "قريباً";
+"settings_coming_soon_message" = "ستتوفر هذه الميزة قريباً.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "استعادة المشتريات";
+"settings_purchase_error_title" = "فشل الشراء";
+"settings_restore_success_title" = "تمت استعادة الشراء";
+"settings_restore_success_message" = "تمت إزالة الإعلانات.";
+"settings_restore_empty_title" = "لا توجد مشتريات سابقة";
+"settings_restore_empty_message" = "لم نجد أي مشتريات سابقة بهذا الحساب من Apple.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "أصل الدين";
+"partial_chart_legend_interest" = "الفوائد";
+
+/* MARK: - KPI + القرض المختلط + رسم رأس المال/الفوائد */
+"kpi_section_your_numbers" = "بأرقامك";
+"kpi_label_rate" = "النسبة المطبقة";
+"kpi_label_variable_rate" = "نسبة المرحلة المتغيرة";
+"kpi_label_balance_after_fixed" = "الرصيد بعد المرحلة الثابتة";
+"kpi_label_first_interest" = "الفائدة (الشهر الأول)";
+"kpi_label_first_principal" = "رأس المال (الشهر الأول)";
+"kpi_label_amount" = "المبلغ";
+"kpi_label_return" = "العائد السنوي";
+"calculator_result_mixed_fixed" = "قسط المرحلة الثابتة";
+"calculator_result_mixed_variable" = "القسط المتغير التقديري";
+"calculator_mixed_explanation_title" = "كيف يعمل قرضك المختلط";
+"calculator_mixed_explain_s1a" = "خلال أول";
+"calculator_mixed_explain_s1b" = "سنوات ستدفع";
+"calculator_mixed_explain_s1c" = "شهريًا، بنسبة ثابتة قدرها";
+"calculator_mixed_explain_s2a" = "بعد ذلك، بنسبة يوريبور + الهامش قدرها";
+"calculator_mixed_explain_s2b" = "سيصبح القسط التقديري";
+"kpi_mixed_fixed_payment_title" = "قسط المرحلة الثابتة";
+"kpi_mixed_fixed_payment_explanation" = "هو القسط الشهري خلال الفترة الأولية ذات النسبة الثابتة من قرضك المختلط. يُحتسب بالنسبة الثابتة على كامل مدة القرض.";
+"kpi_mixed_fixed_payment_example" = "200.000 € لمدة 30 سنة مع مرحلة ثابتة 5 سنوات بنسبة 2.5% ← قسط ثابت 790 €/شهر خلال أول 5 سنوات.";
+"kpi_mixed_variable_payment_title" = "قسط المرحلة المتغيرة";
+"kpi_mixed_variable_payment_explanation" = "القسط التقديري بعد انتهاء الفترة الثابتة. يُعاد احتسابه على الرصيد المتبقي بنسبة يوريبور + الهامش للسنوات المتبقية ويتغير مع كل مراجعة.";
+"kpi_mixed_variable_payment_example" = "بعد 5 سنوات ثابتة يتبقى 175.000 € على 25 سنة؛ بنسبة يوريبور + الهامش 4.5% يكون القسط التقديري 973 €/شهر.";
+"chart_capital_interest_title" = "رأس المال مقابل الفوائد";
+"chart_total_capital" = "إجمالي رأس المال";
+"chart_total_interest" = "إجمالي الفوائد";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "نموذج السداد";
+"settings_model_title" = "النموذج";
+"settings_model_caption" = "يُطبَّق على حساب الآلة الحاسبة.";
+"system_french" = "فرنسي";
+"system_linear" = "خطي";
+"system_american" = "أمريكي";
+"systems_info_title" = "أنظمة السداد";
+"systems_info_cta" = "أي نظام تختار؟";
+"systems_info_french" = "قسط ثابت كل فترة. في البداية معظمه فوائد ثم يزداد سداد الأصل لاحقاً. النظام الأكثر شيوعاً.";
+"systems_info_linear" = "تسدّد نفس مبلغ الأصل كل فترة، فيبدأ القسط مرتفعاً ثم ينخفض. فوائد إجمالية أقل من النظام الفرنسي.";
+"systems_info_american" = "تدفع الفوائد فقط كل فترة وتسدّد كامل الأصل في النهاية. أقل الأقساط لكن أعلى فوائد إجمالية.";
+"calculator_payment_first" = "القسط الأول";
+"calculator_payment_interest_only" = "فوائد فقط";
+"calculator_result_final_capital" = "رأس المال النهائي";
+"amortization_system_label" = "النظام:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "شاهد فيديو — ساعة بدون إعلانات";
+"rewarded_active" = "الوقت المتبقي بدون إعلانات";
+"rewarded_unavailable_title" = "لا يوجد فيديو متاح";
+"rewarded_unavailable_message" = "لا يوجد فيديو متاح حاليًا. حاول مرة أخرى بعد بضع دقائق.";
+"settings_privacy_options" = "خيارات الخصوصية";

@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (Hindi — hi) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "छोड़ें";
+"onboarding_next" = "अगला";
+"onboarding_start" = "शुरू करें";
+"onboarding_page1_title" = "अपना होम लोन कैलकुलेट करें";
+"onboarding_page1_subtitle" = "अपनी मासिक किस्त, कुल ब्याज और लोन की वास्तविक लागत जानें।";
+"onboarding_page2_title" = "प्री-पेमेंट सिमुलेट करें";
+"onboarding_page2_subtitle" = "आंशिक प्री-पेमेंट करते समय तुलना करें कि अवधि कम करना या EMI कम करना ज़्यादा फ़ायदेमंद है।";
+"onboarding_page3_title" = "बेहतर निर्णय लें";
+"onboarding_page3_subtitle" = "ब्याज दर बदलाव का असर विश्लेषण करें, स्ट्रेस टेस्ट करें, और जानें कि प्री-पेमेंट या निवेश आपके लिए ज़्यादा फ़ायदेमंद है।";
+
+// MARK: - Tabs
+"tab_calculator" = "कैलकुलेटर";
+"tab_euribor" = "ब्याज समीक्षा";
+"tab_stress" = "स्ट्रेस टेस्ट";
+"tab_amortize" = "प्री-पेमेंट";
+"tab_extra" = "अतिरिक्त भुगतान";
+"tab_invest" = "निवेश";
+"tab_mortgage_tab" = "होम लोन";
+"tab_amortize_tab" = "अमॉर्टाइज़ेशन";
+
+// MARK: - Calculator
+"calculator_nav_title" = "होम लोन कैलकुलेटर";
+"calculator_section_loan" = "लोन विवरण";
+"calculator_capital" = "मूल राशि (₹)";
+"calculator_years" = "वर्ष";
+"calculator_tin" = "ब्याज दर (%)";
+"calculator_section_type" = "लोन प्रकार";
+"calculator_type_fixed" = "फ़िक्स्ड";
+"calculator_type_variable" = "फ्लोटिंग";
+"calculator_type_mixed" = "मिश्रित";
+"calculator_euribor" = "रेफरेंस दर (%)";
+"calculator_spread" = "स्प्रेड (%)";
+"calculator_fixed_period_years" = "फ़िक्स्ड अवधि (वर्ष)";
+"calculator_btn_calculate" = "कैलकुलेट करें";
+"calculator_result_monthly" = "मासिक EMI";
+"calculator_result_total_interest" = "कुल ब्याज";
+"calculator_result_total_cost" = "कुल लागत";
+"calculator_btn_see_table" = "अमॉर्टाइज़ेशन शेड्यूल देखें";
+
+// MARK: - Amortization table
+"table_nav_title" = "अमॉर्टाइज़ेशन शेड्यूल";
+"table_col_period" = "अवधि";
+"table_col_payment" = "EMI";
+"table_col_principal" = "मूलधन";
+"table_col_interest" = "ब्याज";
+"table_col_balance" = "बकाया राशि";
+"table_export_pdf" = "एक्सपोर्ट";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "आंशिक प्री-पेमेंट";
+"partial_remaining_capital" = "बकाया मूलधन";
+"partial_remaining_months" = "शेष महीने";
+"partial_current_rate" = "वर्तमान दर (%)";
+"partial_amount" = "प्री-पेमेंट राशि";
+"partial_commission_mode_auto" = "स्वचालित (नियमानुसार)";
+"partial_commission_mode_percent" = "प्रतिशत (%)";
+"partial_commission_mode_fixed" = "निश्चित राशि";
+"partial_commission_mode_none" = "कोई शुल्क नहीं";
+"partial_mortgage_type" = "लोन प्रकार";
+"partial_years_since_signing" = "ऋण लेने के बाद के वर्ष";
+"partial_btn_simulate" = "सिमुलेट करें";
+"partial_result_reduce_term" = "अवधि कम करें";
+"partial_result_reduce_quota" = "EMI कम करें";
+"partial_months_saved" = "बचाए गए महीने";
+"partial_interest_saved" = "बचाया गया ब्याज";
+"partial_commission_cost" = "प्री-पेमेंट शुल्क";
+"partial_net_saving" = "शुद्ध बचत";
+"partial_new_payment" = "नई EMI";
+"partial_recommended" = "अनुशंसित";
+"partial_info_law_fixed" = "फ़िक्स्ड लोन: पहले 10 वर्ष 2%, वर्ष 11 के बाद 1.5%।";
+"partial_info_law_variable" = "फ्लोटिंग लोन: पहले 3 वर्ष 0.25%, वर्ष 4 के बाद 0%।";
+
+// MARK: - Extra payments
+"extra_section_loan" = "आपका वर्तमान लोन";
+"extra_section_extra" = "मासिक अतिरिक्त भुगतान";
+"extra_monthly_amount" = "अतिरिक्त राशि/माह";
+"extra_btn_simulate" = "बचत कैलकुलेट करें";
+"extra_months_saved" = "बचाए गए महीने";
+"extra_interest_saved" = "बचाया गया ब्याज";
+"extra_current_payment" = "वर्तमान EMI";
+"extra_new_payoff" = "नई अवधि";
+"extra_interest_comparison" = "ब्याज तुलना";
+"extra_without_extra" = "बिना अतिरिक्त भुगतान के";
+"extra_with_extra" = "अतिरिक्त भुगतान के साथ";
+"extra_balance_chart" = "बैलेंस का बदलाव";
+
+// MARK: - Stress test
+"stress_section_loan" = "लोन विवरण";
+"stress_base_rate" = "वर्तमान दर (%)";
+"stress_btn_calculate" = "परिदृश्य कैलकुलेट करें";
+"stress_scenarios_title" = "ब्याज दर परिदृश्य";
+"stress_col_rate" = "बदलाव";
+"stress_col_payment" = "EMI/माह";
+"stress_col_diff" = "अंतर";
+"stress_chart_title" = "मासिक EMI पर असर";
+
+// MARK: - Euribor
+"euribor_nav_title" = "ब्याज दर समीक्षा";
+"euribor_remaining_capital" = "बकाया मूलधन";
+"euribor_remaining_months" = "शेष महीने";
+"euribor_spread" = "स्प्रेड (%)";
+"euribor_current_rate" = "वर्तमान दर (%)";
+"euribor_current_payment" = "वर्तमान EMI";
+"euribor_scenario_label" = "दर परिवर्तन (प्रतिशत अंक)";
+"euribor_simulated_payment" = "नई EMI";
+"euribor_difference_monthly" = "मासिक अंतर";
+"euribor_difference_annual" = "वार्षिक अंतर";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "निवेश करें या प्री-पेमेंट?";
+"invest_amount" = "उपलब्ध राशि";
+"invest_mortgage_tin" = "लोन ब्याज दर (%)";
+"invest_expected_return" = "अपेक्षित रिटर्न (%)";
+"invest_horizon_years" = "समय सीमा (वर्ष)";
+"invest_btn_compare" = "तुलना करें";
+"invest_option_amortize" = "प्री-पेमेंट";
+"invest_option_invest" = "निवेश";
+"invest_amortize_saving" = "प्री-पेमेंट से बचत";
+"invest_invest_gain" = "निवेश से लाभ";
+"invest_recommendation_amortize" = "प्री-पेमेंट बेहतर";
+"invest_recommendation_invest" = "निवेश बेहतर";
+"invest_premium_title" = "प्रीमियम फ़ीचर";
+"invest_premium_body" = "सर्वोत्तम वित्तीय निर्णय लेने के लिए निवेश बनाम प्री-पेमेंट कंपेरेटर अनलॉक करें।";
+"invest_tax_note" = "कर नोट: निवेश से होने वाली आय आयकर के अधीन हो सकती है। कर सलाहकार से परामर्श करें।";
+
+// MARK: - Settings
+"settings_nav_title" = "सेटिंग्स";
+"settings_language" = "भाषा";
+"settings_language_system" = "सिस्टम";
+"settings_language_footer" = "भाषा परिवर्तन तुरंत लागू होता है।";
+"settings_country" = "देश / बाज़ार";
+"settings_section_about" = "के बारे में";
+"settings_app_version" = "संस्करण";
+"settings_privacy_policy" = "गोपनीयता नीति";
+"settings_terms_of_use" = "उपयोग की शर्तें";
+"settings_rate_app" = "ऐप को रेट करें";
+"settings_premium_active" = "प्रीमियम सक्रिय";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "प्रीमियम सक्रिय हो गया!";
+"premium_unlock_message" = "विज्ञापन बंद। सभी फ़ीचर का आनंद लें।";
+"premium_lock_title" = "प्रीमियम निष्क्रिय";
+"premium_lock_message" = "विज्ञापन फिर से सक्रिय हो गए।";
+"premium_alert_ok" = "ठीक है";
+
+// MARK: - General
+"general_ok" = "ठीक है";
+"general_cancel" = "रद्द करें";
+"general_close" = "बंद करें";
+"general_done" = "हो गया";
+"general_share" = "शेयर करें";
+"general_year_singular" = "वर्ष";
+"general_year_plural" = "वर्ष";
+"general_month_singular" = "महीना";
+"general_month_plural" = "महीने";
+"general_loading" = "कैलकुलेट हो रहा है...";
+"general_premium_badge" = "प्रीमियम";
+"general_free_badge" = "मुफ़्त";
+
+// MARK: - Errors
+"error_invalid_capital" = "0 से अधिक कोई वैध मूल राशि दर्ज करें।";
+"error_invalid_years" = "वर्षों या महीनों में कोई वैध अवधि दर्ज करें।";
+"error_invalid_rate" = "0 से अधिक कोई वैध ब्याज दर दर्ज करें।";
+"error_invalid_amount" = "0 से अधिक कोई वैध राशि दर्ज करें।";
+"error_amount_exceeds_capital" = "प्री-पेमेंट राशि बकाया मूलधन से अधिक नहीं हो सकती।";
+
+// MARK: - ATT
+"att_usage_description" = "हम प्रासंगिक विज्ञापन दिखाने और विज्ञापन प्रदर्शन मापने के लिए आपकी गतिविधि का उपयोग करते हैं।";
+
+// MARK: - Countries
+"country_es" = "स्पेन";
+"country_en" = "संयुक्त राज्य अमेरिका";
+"country_hi" = "भारत";
+"country_pt_BR" = "ब्राज़ील";
+"country_it" = "इटली";
+"country_fr" = "फ्रांस";
+"country_de" = "जर्मनी";
+"country_ar" = "अरब / GCC";
+
+// MARK: - Laws by country
+"law_es" = "कानून 5/2019: फ्लोटिंग 0.25% वर्ष 1-3, उसके बाद 0%। फ़िक्स्ड 2% वर्ष 1-10, उसके बाद 1.5%।";
+"law_en" = "डोड-फ्रैंक एक्ट (2014): अधिकतम 3%/2%/1% वर्ष 1/2/3, वर्ष 4 के बाद 0%।";
+"law_hi" = "RBI सर्कुलर 2012: फ्लोटिंग दर 0%। फ़िक्स्ड दर अधिकतम 2%।";
+"law_pt_BR" = "SFH कानून 9.514/1997: प्री-पेमेंट राशि पर अधिकतम 2%।";
+"law_it" = "TUB + EU निर्देश: फ्लोटिंग 0.5%, फ़िक्स्ड 1.5%।";
+"law_fr" = "Code de la Consommation L313-47: IRA = न्यूनतम (मूलधन का 3%, 6 महीने का ब्याज)।";
+"law_de" = "§490 BGB: >12 महीने शेष हों तो अधिकतम 1%, ≤12 महीने शेष हों तो 0.5%।";
+"law_ar" = "इस्लामिक फाइनेंसिंग (मुरबाहा/इजारा): ब्याज नहीं; ~1% प्रशासनिक शुल्क।";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "मासिक EMI";
+"kpi_monthly_payment_explanation" = "लोन की पूरी अवधि में हर महीने भुगतान की जाने वाली निश्चित राशि। इसमें मूलधन का हिस्सा (लोन की वापसी) और ब्याज का हिस्सा (उधार लिए पैसे की लागत) शामिल होता है।";
+"kpi_monthly_payment_formula" = "P × [r(1+r)^n] / [(1+r)^n - 1]\nP=मूलधन  r=मासिक दर  n=महीने";
+"kpi_monthly_payment_example" = "₹20 लाख लोन, 30 वर्ष, 3.5% दर → मासिक EMI ₹898।";
+
+"kpi_total_interest_title" = "कुल ब्याज";
+"kpi_total_interest_explanation" = "लोन की पूरी अवधि में भुगतान किए जाने वाले सभी ब्याज का योग। दर या अवधि जितनी अधिक, ब्याज उतना ज़्यादा।";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "₹20 लाख लोन, 30 वर्ष, 3.5% दर पर केवल ब्याज में लगभग ₹12.3 लाख चुकाने होंगे।";
+
+"kpi_total_cost_title" = "कुल लागत";
+"kpi_total_cost_explanation" = "बैंक को वापस करने वाला कुल पैसा: उधार ली गई मूल राशि + सभी ब्याज। दो लोन की तुलना करने का यह सबसे अच्छा पैमाना है।";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "मूलधन ₹20 लाख + ब्याज ₹12.3 लाख = कुल लागत ₹32.3 लाख।";
+
+"kpi_months_saved_title" = "बचाए गए महीने";
+"kpi_months_saved_explanation" = "आंशिक प्री-पेमेंट से अवधि कम करना चुनने पर ये वे महीने हैं जो आपको चुकाने नहीं होंगे। लोन की शुरुआत में प्री-पेमेंट करने पर बचत ज़्यादा होती है।";
+"kpi_months_saved_formula" = "n_नई = -ln(1 - P_नई × r / EMI) / ln(1 + r)";
+"kpi_months_saved_example" = "30 वर्षीय लोन के 5वें वर्ष में ₹2 लाख का प्री-पेमेंट 4-6 साल बचा सकता है।";
+
+"kpi_interest_saved_title" = "बचाया गया ब्याज";
+"kpi_interest_saved_explanation" = "प्री-पेमेंट के बिना और उसके बाद चुकाए जाने वाले ब्याज का अंतर। यह शुल्क काटने से पहले की सकल बचत है।";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "₹2 लाख का प्री-पेमेंट, समय के अनुसार ₹8,000 से ₹18,000 तक ब्याज बचा सकता है।";
+
+"kpi_net_saving_title" = "शुद्ध बचत";
+"kpi_net_saving_explanation" = "वास्तविक बचत: बचाया गया ब्याज घटाकर बैंक द्वारा लिया गया प्री-पेमेंट शुल्क। यदि ऋणात्मक हो तो प्री-पेमेंट फ़ायदेमंद नहीं है।";
+"kpi_net_saving_formula" = "शुद्ध बचत = बचाया गया ब्याज − शुल्क";
+"kpi_net_saving_example" = "बचाया गया ब्याज ₹15,000 − शुल्क ₹500 = शुद्ध बचत ₹14,500।";
+
+"kpi_commission_title" = "प्री-पेमेंट शुल्क";
+"kpi_commission_explanation" = "बैंक समयपूर्व भुगतान पर शुल्क ले सकता है। नियम देश के अनुसार अलग-अलग होते हैं और उपभोक्ता की रक्षा करते हैं।";
+"kpi_commission_formula" = "फ्लोटिंग: 0.25% × राशि (वर्ष 1-3)\nफ़िक्स्ड: 2% × राशि (वर्ष 1-10)";
+"kpi_commission_example" = "फ्लोटिंग लोन के दूसरे वर्ष में ₹2 लाख का प्री-पेमेंट → शुल्क = 2,00,000 × 0.25% = ₹500।";
+
+"kpi_new_payment_title" = "नई EMI";
+"kpi_new_payment_explanation" = "आंशिक प्री-पेमेंट से EMI कम करना चुनने पर, मूल अवधि बनाए रखते हुए शेष लोन के लिए यह आपकी नई मासिक EMI होगी।";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "वर्तमान EMI ₹898/माह → ₹2 लाख प्री-पेमेंट के बाद → नई EMI ₹798/माह।";
+
+"kpi_euribor_diff_monthly_title" = "मासिक अंतर";
+"kpi_euribor_diff_monthly_explanation" = "सिमुलेटेड परिदृश्य के अनुसार ब्याज दर बढ़ने या घटने पर आपकी मासिक EMI में कितना बदलाव होता है। धनात्मक मान का अर्थ है कि आप अधिक भुगतान करेंगे।";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "ब्याज दर 1 अंक बढ़ने पर ₹15 लाख का 20 वर्षीय लोन ~₹60/माह बढ़ सकता है।";
+
+"kpi_amortize_saving_title" = "प्री-पेमेंट से बचत";
+"kpi_amortize_saving_explanation" = "इस पैसे को लोन चुकाने में लगाने का गारंटीशुदा फ़ायदा। यह आपकी लोन ब्याज दर के बराबर जोखिम-मुक्त रिटर्न पाने के समान है।";
+"kpi_amortize_saving_formula" = "मूलधन × ((1 + दर)^वर्ष − 1)";
+"kpi_amortize_saving_example" = "₹20,000, 3.5% लोन दर, 10 वर्ष → गारंटीशुदा बचत ₹9,773।";
+
+"kpi_invest_gain_title" = "निवेश से लाभ";
+"kpi_invest_gain_explanation" = "लोन चुकाने की बजाय इस पैसे को निवेश करने पर आपके द्वारा दर्ज वार्षिक रिटर्न से अपेक्षित फ़ायदा। याद रखें कि निवेश में जोखिम होता है और रिटर्न की गारंटी नहीं होती।";
+"kpi_invest_gain_formula" = "मूलधन × ((1 + रिटर्न)^वर्ष − 1)";
+"kpi_invest_gain_example" = "₹20,000, 7% वार्षिक रिटर्न, 10 वर्ष → अपेक्षित लाभ ₹19,343।";
+
+"kpi_section_what" = "यह क्या है?";
+"kpi_section_formula" = "फ़ॉर्मूला";
+"kpi_section_example" = "उदाहरण";
+"kpi_chart_label" = "चार्ट";
+"kpi_example_reduce_term" = "अवधि कम करें";
+"kpi_example_reduce_payment" = "EMI कम करें";
+
+// MARK: - General units
+"general_years" = "वर्ष";
+"general_months" = "महीने";
+"general_done" = "हो गया";
+"general_cancel" = "रद्द करें";
+"partial_section_commission" = "कमीशन";
+
+"kpi_input_capital_title" = "ऋण राशि";
+"kpi_input_capital_explanation" = "बैंक से उधार ली गई कुल राशि। यही वह आधार है जिस पर ब्याज की गणना होती है।";
+"kpi_input_capital_example" = "₹25 लाख का घर, 20% डाउन पेमेंट → ऋण राशि ₹20 लाख।";
+"kpi_input_years_title" = "ऋण अवधि";
+"kpi_input_years_explanation" = "होम लोन चुकाने के वर्षों की संख्या। लंबी अवधि = कम ईएमआई, लेकिन कुल ब्याज अधिक।";
+"kpi_input_years_example" = "25 साल की ईएमआई 15 साल से कम होती है, लेकिन कुल ब्याज कहीं ज़्यादा।";
+"kpi_input_rate_title" = "ब्याज दर";
+"kpi_input_rate_explanation" = "बैंक द्वारा वार्षिक आधार पर लिया जाने वाला प्रतिशत। यह होम लोन की लागत का सबसे महत्वपूर्ण कारक है।";
+"kpi_input_rate_example" = "₹20 लाख पर 25 साल: 3% से 4% जाने पर ~₹2.8 लाख अधिक ब्याज।";
+"kpi_input_euribor_title" = "संदर्भ दर";
+"kpi_input_euribor_explanation" = "अंतरबैंक संदर्भ दर। फ्लोटिंग लोन = संदर्भ दर + मार्जिन।";
+"kpi_input_euribor_example" = "3.75% + मार्जिन 0.75% = प्रभावी दर 4.50%।";
+"kpi_input_spread_title" = "स्प्रेड (मार्जिन)";
+"kpi_input_spread_explanation" = "बैंक द्वारा संदर्भ दर में जोड़ा जाने वाला स्थिर मार्जिन।";
+"kpi_input_spread_example" = "0.75% + 3.75% = 4.50% प्रभावी दर।";
+"kpi_input_remaining_capital_title" = "शेष मूलधन";
+"kpi_input_remaining_capital_explanation" = "बैंक को अभी भी देय ऋण, जिस पर भविष्य में ब्याज लगेगा।";
+"kpi_input_remaining_capital_example" = "₹20 लाख का 25 साल का लोन 5 साल बाद → शेष ≈ ₹17.5 लाख।";
+"kpi_input_months_title" = "शेष महीने";
+"kpi_input_months_explanation" = "भुगतान की जाने वाली मासिक किस्तों की संख्या।";
+"kpi_input_months_example" = "30 साल का लोन 5 साल पहले लिया → 300 महीने शेष।";
+"kpi_input_amortize_amount_title" = "प्री-पेमेंट राशि";
+"kpi_input_amortize_amount_explanation" = "वह अतिरिक्त राशि जो आप जल्दी भुगतान के लिए चुनते हैं।";
+"kpi_input_amortize_amount_example" = "₹2 लाख की एकमुश्त राशि कई साल के लोन को खत्म कर सकती है।";
+"kpi_input_extra_monthly_title" = "अतिरिक्त मासिक भुगतान";
+"kpi_input_extra_monthly_explanation" = "नियमित ईएमआई के ऊपर हर महीने दी जाने वाली अतिरिक्त राशि।";
+"kpi_input_extra_monthly_example" = "₹2,000 प्रति माह अतिरिक्त → ₹15 लाख पर 3.5% → 5-7 साल जल्दी खत्म।";
+"kpi_input_stress_rate_title" = "स्ट्रेस टेस्ट बेस दर";
+"kpi_input_stress_rate_explanation" = "स्ट्रेस टेस्ट के लिए शुरुआती ब्याज दर।";
+"kpi_input_stress_rate_example" = "3.5% बेस → 1.5% से 8.5% के परिदृश्य।";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "दर समीक्षा";
+"tab_extra_monthly" = "अतिरिक्त भुगतान";
+"calculator_reference_rate" = "संदर्भ दर";
+"calculator_tin_mixed" = "दर (स्थिर चरण)";
+"calculator_mixed_effective_hint %@" = "प्रभावी परिवर्तनशील दर: %@";
+"country_menu_header" = "देश चुनें";
+"settings_country_footer" = "देश मुद्रा और अग्रिम पुनर्भुगतान शुल्क की गणना के लिए कानूनी ढांचा निर्धारित करता है।";
+
+"extra_view_title" = "अतिरिक्त मासिक भुगतान सिम्युलेटर";
+"extra_view_description" = "जानें कि हर महीने एक निश्चित अतिरिक्त राशि चुकाने से कितना ब्याज और समय बचता है।";
+"country_menu_footer" = "मुद्रा और पूर्व-भुगतान कमीशन कानून को प्रभावित करता है।";
+"partial_mortgage_type" = "ऋण प्रकार (सही कानूनी कमीशन लागू करने के लिए)";
+
+"partial_years_remaining" = "शेष वर्ष";
+"partial_months_extra" = "अतिरिक्त महीने";
+"partial_tab_reduce_payment" = "कम किस्त";
+"partial_tab_reduce_term" = "कम अवधि";
+"partial_new_payment" = "नई किस्त";
+"partial_new_term" = "नई अवधि";
+"partial_remaining_interest" = "बचाया गया ब्याज";
+"partial_narrative_title" = "परिणाम";
+"partial_narrative_s1a" = "अग्रिम भुगतान करने पर";
+"partial_narrative_s1b" = "आपका बकाया मूलधन घटकर रह जाता है";
+"partial_narrative_s2" = "आप मासिक किस्त कम करके अवधि बनाए रख सकते हैं, या अवधि कम करके किस्त बनाए रख सकते हैं।";
+"partial_narrative_s3a" = "कम अनुकूल विकल्प से";
+"partial_narrative_s3b" = "ब्याज की बचत होती है; बेहतर विकल्प से";
+"partial_narrative_s4a" = "अग्रिम भुगतान शुल्क";
+"partial_narrative_s4b" = "को बचत से घटाना न भूलें।";
+"partial_reduce_payment_explain_a" = "किस्त कम करने पर आप";
+"partial_reduce_payment_explain_b" = "प्रति माह भुगतान करेंगे, बजाय";
+"partial_reduce_term_explain_a" = "अवधि कम करने पर आप";
+"partial_reduce_term_explain_b" = "में ऋण चुकाएंगे, बजाय";
+"partial_saving_explain" = "यह विकल्प आपको कुल बचत देता है";
+"partial_table_title" = "वार्षिक परिशोधन तालिका";
+"partial_table_year" = "वर्ष";
+"partial_table_payment" = "किस्त";
+"partial_table_capital" = "मूलधन";
+"partial_table_interest" = "ब्याज";
+"partial_table_balance" = "शेष राशि";
+"partial_chart_payments_title" = "वार्षिक किस्तें";
+"partial_chart_amort_title" = "संचयी परिशोधन";
+
+"partial_time_remaining" = "शेष अवधि";
+"kpi_input_euribor_delta_title" = "यूरिबोर परिवर्तन";
+"kpi_input_euribor_delta_explanation" = "वर्तमान यूरिबोर पर आप जो वृद्धि (या कमी) सिमुलेट करना चाहते हैं। यह दिखाता है कि अगली समीक्षा पर यूरिबोर इतने प्रतिशत अंक बदले तो आपकी मासिक किस्त कितनी बदलेगी।";
+"kpi_input_euribor_delta_example" = "यदि वर्तमान यूरिबोर 3.75% है और आप +0.50% दर्ज करते हैं, तो सिमुलेशन 4.25% यूरिबोर के साथ आपकी किस्त की गणना करेगा।";
+"euribor_chart_title" = "भुगतान तुलना";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "विज्ञापन हटाएं";
+"settings_remove_ads_subtitle" = "एक बार भुगतान · हमेशा के लिए विज्ञापन रहित";
+"settings_web_app" = "ऐप वेबसाइट";
+"settings_support" = "सहायता";
+"settings_send_feedback" = "सुझाव भेजें";
+"settings_share_app" = "ऐप साझा करें";
+"settings_share_app_message" = "अमॉर्टिक्स देखें, मॉर्गेज कैलकुलेटर";
+"settings_coming_soon_title" = "जल्द आ रहा है";
+"settings_coming_soon_message" = "यह सुविधा जल्द ही उपलब्ध होगी।";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "खरीदारी पुनर्स्थापित करें";
+"settings_purchase_error_title" = "खरीदारी विफल";
+"settings_restore_success_title" = "खरीदारी पुनर्स्थापित";
+"settings_restore_success_message" = "विज्ञापन हटा दिए गए हैं।";
+"settings_restore_empty_title" = "कोई पिछली खरीदारी नहीं";
+"settings_restore_empty_message" = "इस Apple खाते से कोई पिछली खरीदारी नहीं मिली।";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "मूलधन";
+"partial_chart_legend_interest" = "ब्याज";
+
+/* MARK: - KPI + मिश्रित ऋण + मूलधन/ब्याज चार्ट */
+"kpi_section_your_numbers" = "आपके आँकड़ों के साथ";
+"kpi_label_rate" = "लागू दर";
+"kpi_label_variable_rate" = "परिवर्तनशील चरण दर";
+"kpi_label_balance_after_fixed" = "स्थिर चरण के बाद शेष";
+"kpi_label_first_interest" = "ब्याज (पहला महीना)";
+"kpi_label_first_principal" = "मूलधन (पहला महीना)";
+"kpi_label_amount" = "राशि";
+"kpi_label_return" = "वार्षिक प्रतिफल";
+"calculator_result_mixed_fixed" = "स्थिर चरण की किस्त";
+"calculator_result_mixed_variable" = "अनुमानित परिवर्तनशील किस्त";
+"calculator_mixed_explanation_title" = "आपका मिश्रित ऋण कैसे काम करता है";
+"calculator_mixed_explain_s1a" = "पहले";
+"calculator_mixed_explain_s1b" = "वर्षों में आप हर माह चुकाएंगे";
+"calculator_mixed_explain_s1c" = "प्रति माह, स्थिर दर";
+"calculator_mixed_explain_s2a" = "उसके बाद, यूरिबोर + स्प्रेड दर";
+"calculator_mixed_explain_s2b" = "पर अनुमानित किस्त होगी";
+"kpi_mixed_fixed_payment_title" = "स्थिर चरण की किस्त";
+"kpi_mixed_fixed_payment_explanation" = "यह आपके मिश्रित ऋण की प्रारंभिक स्थिर-दर अवधि के दौरान मासिक किस्त है। इसे पूरी अवधि पर स्थिर दर से परिशोधित करके निकाला जाता है।";
+"kpi_mixed_fixed_payment_example" = "2,00,000 € 30 वर्षों के लिए, 5 वर्ष स्थिर चरण 2.5% पर → पहले 5 वर्षों में 790 €/माह स्थिर किस्त।";
+"kpi_mixed_variable_payment_title" = "परिवर्तनशील चरण की किस्त";
+"kpi_mixed_variable_payment_explanation" = "स्थिर अवधि समाप्त होने के बाद अनुमानित किस्त। शेष मूलधन पर शेष वर्षों के लिए यूरिबोर + स्प्रेड दर से पुनः गणना की जाती है और हर समीक्षा पर बदलती है।";
+"kpi_mixed_variable_payment_example" = "5 स्थिर वर्षों के बाद 25 वर्षों में 1,75,000 € शेष; यूरिबोर + स्प्रेड 4.5% पर अनुमानित किस्त 973 €/माह।";
+"chart_capital_interest_title" = "मूलधन बनाम ब्याज";
+"chart_total_capital" = "कुल मूलधन";
+"chart_total_interest" = "कुल ब्याज";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "परिशोधन मॉडल";
+"settings_model_title" = "मॉडल";
+"settings_model_caption" = "कैलकुलेटर की गणना पर लागू होता है।";
+"system_french" = "फ्रेंच";
+"system_linear" = "रैखिक";
+"system_american" = "अमेरिकी";
+"systems_info_title" = "भुगतान प्रणालियाँ";
+"systems_info_cta" = "कौन सी प्रणाली चुनें?";
+"systems_info_french" = "हर अवधि में किस्त समान। शुरू में ज़्यादातर ब्याज, बाद में मूलधन बढ़ता है। सबसे आम प्रणाली।";
+"systems_info_linear" = "हर अवधि में समान मूलधन चुकाते हैं, इसलिए किस्त पहले अधिक फिर घटती है। फ्रेंच से कम कुल ब्याज।";
+"systems_info_american" = "हर अवधि में केवल ब्याज देते हैं और अंत में पूरा मूलधन चुकाते हैं। किस्त सबसे कम पर कुल ब्याज सबसे ज़्यादा।";
+"calculator_payment_first" = "पहली किस्त";
+"calculator_payment_interest_only" = "केवल ब्याज";
+"calculator_result_final_capital" = "अंतिम मूलधन";
+"amortization_system_label" = "प्रणाली:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "वीडियो देखें — 1 घंटा बिना विज्ञापन";
+"rewarded_active" = "बिना विज्ञापन बचा समय";
+"rewarded_unavailable_title" = "कोई वीडियो उपलब्ध नहीं";
+"rewarded_unavailable_message" = "अभी कोई वीडियो विज्ञापन उपलब्ध नहीं है। कुछ मिनट बाद फिर से कोशिश करें।";
+"settings_privacy_options" = "गोपनीयता विकल्प";

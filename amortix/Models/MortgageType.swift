@@ -16,11 +16,26 @@ enum MortgageType: String, CaseIterable, Identifiable, Codable {
     }
 }
 
+/// Amortization repayment system — governs how each instalment splits between
+/// principal and interest. Orthogonal to `MortgageType` (which only sets the
+/// rate). Mirrors Capital's model; applied to the main calculator for
+/// fixed/variable mortgages (mixed keeps its two-phase French behaviour).
+enum AmortizationSystem: String, CaseIterable, Identifiable, Codable {
+    case french      // constant payment
+    case linear      // constant principal (a.k.a. German); payment decreases
+    case american    // interest-only, full principal as a final bullet
+
+    var id: String { rawValue }
+
+    var localizedKey: String { "system_\(rawValue)" }
+    var infoKey:      String { "systems_info_\(rawValue)" }
+}
+
 enum CommissionMode: String, CaseIterable, Identifiable {
-    case auto
-    case percent
-    case fixed
     case none
+    case fixed
+    case percent
+    case auto
 
     var id: String { rawValue }
 
@@ -33,21 +48,27 @@ enum CommissionMode: String, CaseIterable, Identifiable {
         }
     }
 
-    // MARK: - Ley 5/2019 (Spain) commission logic
+    // MARK: - Multi-country commission calculation
+    // Auto mode delegates to CountryMarket law; other modes are manual overrides.
     static func calculate(
         mode: CommissionMode,
         mortgageType: MortgageType,
         yearsSinceSigning: Int,
         amount: Double,
         customPercent: Double = 0,
-        customFixed: Double = 0
+        customFixed: Double = 0,
+        country: CountryMarket = .spain,
+        monthlyRate: Double = 0,
+        remainingMonths: Int = 0
     ) -> Double {
         switch mode {
         case .auto:
-            return autoCommission(
+            return country.earlyRepaymentCommission(
+                amount: amount,
                 mortgageType: mortgageType,
                 yearsSinceSigning: yearsSinceSigning,
-                amount: amount
+                monthlyRate: monthlyRate,
+                remainingMonths: remainingMonths
             )
         case .percent:
             return amount * customPercent / 100
@@ -55,21 +76,6 @@ enum CommissionMode: String, CaseIterable, Identifiable {
             return customFixed
         case .none:
             return 0
-        }
-    }
-
-    private static func autoCommission(
-        mortgageType: MortgageType,
-        yearsSinceSigning: Int,
-        amount: Double
-    ) -> Double {
-        switch mortgageType {
-        case .variable:
-            // 0.25% first 3 years · 0% from year 4 onwards
-            return yearsSinceSigning < 3 ? amount * 0.0025 : 0
-        case .fixed, .mixed:
-            // 2% first 10 years · 1.5% from year 11 onwards
-            return yearsSinceSigning < 10 ? amount * 0.02 : amount * 0.015
         }
     }
 }

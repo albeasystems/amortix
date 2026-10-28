@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct amortixApp: App {
     var body: some Scene {
         WindowGroup {

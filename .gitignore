@@ -1,0 +1,19 @@
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+DerivedData/
+*.xcuserstate
+# CocoaPods (restore with `pod install`)
+Pods/
+# Node
+node_modules/
+web/dist/
+web/dist-ssr/
+marketing/node_modules/
+marketing/gif/
+marketing/views/
+# Tooling and scratch
+.playwright-mcp/
+.claude/
+.impeccable/review/
+files.zip

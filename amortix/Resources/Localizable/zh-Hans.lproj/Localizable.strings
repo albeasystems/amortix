@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (Simplified Chinese — zh-Hans) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "跳过";
+"onboarding_next" = "下一步";
+"onboarding_start" = "开始";
+"onboarding_page1_title" = "计算您的房贷";
+"onboarding_page1_subtitle" = "了解您的月供金额、总利息以及贷款的实际成本。";
+"onboarding_page2_title" = "模拟提前还款";
+"onboarding_page2_subtitle" = "比较部分提前还款时，缩短还款期限还是减少月供更划算。";
+"onboarding_page3_title" = "做出更明智的决策";
+"onboarding_page3_subtitle" = "分析利率变动的影响，进行压力测试，发现提前还款还是投资更适合您。";
+
+// MARK: - Tabs
+"tab_calculator" = "计算器";
+"tab_euribor" = "利率评审";
+"tab_stress" = "压力测试";
+"tab_amortize" = "提前还款";
+"tab_extra" = "额外还款";
+"tab_invest" = "投资";
+"tab_mortgage_tab" = "房贷";
+"tab_amortize_tab" = "还款计划";
+
+// MARK: - Calculator
+"calculator_nav_title" = "房贷计算器";
+"calculator_section_loan" = "贷款信息";
+"calculator_capital" = "贷款金额";
+"calculator_years" = "年数";
+"calculator_tin" = "年利率 (%)";
+"calculator_section_type" = "贷款类型";
+"calculator_type_fixed" = "固定利率";
+"calculator_type_variable" = "浮动利率";
+"calculator_type_mixed" = "混合利率";
+"calculator_euribor" = "基准利率 (%)";
+"calculator_spread" = "利率加点 (%)";
+"calculator_fixed_period_years" = "固定利率期限（年）";
+"calculator_btn_calculate" = "计算";
+"calculator_result_monthly" = "月供";
+"calculator_result_total_interest" = "总利息";
+"calculator_result_total_cost" = "总费用";
+"calculator_btn_see_table" = "查看还款计划表";
+
+// MARK: - Amortization table
+"table_nav_title" = "还款计划表";
+"table_col_period" = "期数";
+"table_col_payment" = "还款额";
+"table_col_principal" = "本金";
+"table_col_interest" = "利息";
+"table_col_balance" = "剩余本金";
+"table_export_pdf" = "导出";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "部分提前还款";
+"partial_remaining_capital" = "剩余本金";
+"partial_remaining_months" = "剩余月数";
+"partial_current_rate" = "当前利率 (%)";
+"partial_amount" = "提前还款金额";
+"partial_commission_mode_auto" = "自动（按法规）";
+"partial_commission_mode_percent" = "百分比 (%)";
+"partial_commission_mode_fixed" = "固定金额";
+"partial_commission_mode_none" = "无违约金";
+"partial_mortgage_type" = "贷款类型";
+"partial_years_since_signing" = "签约后年数";
+"partial_btn_simulate" = "模拟";
+"partial_result_reduce_term" = "缩短还款期";
+"partial_result_reduce_quota" = "减少月供";
+"partial_months_saved" = "节省月数";
+"partial_interest_saved" = "节省利息";
+"partial_commission_cost" = "提前还款违约金";
+"partial_net_saving" = "净节省金额";
+"partial_new_payment" = "新月供";
+"partial_recommended" = "推荐";
+"partial_info_law_fixed" = "固定利率贷款：前10年2%，第11年起1.5%。";
+"partial_info_law_variable" = "浮动利率贷款：前3年0.25%，第4年起0%。";
+
+// MARK: - Extra payments
+"extra_section_loan" = "您当前的贷款";
+"extra_section_extra" = "每月额外还款";
+"extra_monthly_amount" = "额外金额/月";
+"extra_btn_simulate" = "计算节省金额";
+"extra_months_saved" = "节省月数";
+"extra_interest_saved" = "节省利息";
+"extra_current_payment" = "当前月供";
+"extra_new_payoff" = "新还款期";
+"extra_interest_comparison" = "利息对比";
+"extra_without_extra" = "不含额外还款";
+"extra_with_extra" = "含额外还款";
+"extra_balance_chart" = "余额变化趋势";
+
+// MARK: - Stress test
+"stress_section_loan" = "贷款信息";
+"stress_base_rate" = "当前利率 (%)";
+"stress_btn_calculate" = "计算情景";
+"stress_scenarios_title" = "利率情景分析";
+"stress_col_rate" = "利率变动";
+"stress_col_payment" = "月供";
+"stress_col_diff" = "差额";
+"stress_chart_title" = "月供变化影响";
+
+// MARK: - Euribor
+"euribor_nav_title" = "利率评审";
+"euribor_remaining_capital" = "剩余本金";
+"euribor_remaining_months" = "剩余月数";
+"euribor_spread" = "利率加点 (%)";
+"euribor_current_rate" = "当前利率 (%)";
+"euribor_current_payment" = "当前月供";
+"euribor_scenario_label" = "利率变动（百分点）";
+"euribor_simulated_payment" = "新月供";
+"euribor_difference_monthly" = "每月差额";
+"euribor_difference_annual" = "每年差额";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "投资还是提前还款？";
+"invest_amount" = "可用金额";
+"invest_mortgage_tin" = "贷款利率 (%)";
+"invest_expected_return" = "预期收益率 (%)";
+"invest_horizon_years" = "投资期限（年）";
+"invest_btn_compare" = "对比";
+"invest_option_amortize" = "提前还款";
+"invest_option_invest" = "投资";
+"invest_amortize_saving" = "提前还款节省";
+"invest_invest_gain" = "投资收益";
+"invest_recommendation_amortize" = "建议提前还款";
+"invest_recommendation_invest" = "建议投资";
+"invest_premium_title" = "高级功能";
+"invest_premium_body" = "解锁「投资 vs 提前还款」对比器，做出最佳财务决策。";
+"invest_tax_note" = "税务提示：投资收益可能须缴纳所得税。请咨询税务顾问。";
+
+// MARK: - Settings
+"settings_nav_title" = "设置";
+"settings_language" = "语言";
+"settings_language_system" = "系统语言";
+"settings_language_footer" = "语言更改立即生效。";
+"settings_country" = "国家 / 市场";
+"settings_section_about" = "关于";
+"settings_app_version" = "版本";
+"settings_privacy_policy" = "隐私政策";
+"settings_terms_of_use" = "使用条款";
+"settings_rate_app" = "评价应用";
+"settings_premium_active" = "高级会员已激活";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "高级会员已激活！";
+"premium_unlock_message" = "广告已关闭。享受所有功能。";
+"premium_lock_title" = "高级会员已停用";
+"premium_lock_message" = "广告已恢复显示。";
+"premium_alert_ok" = "确定";
+
+// MARK: - General
+"general_ok" = "确定";
+"general_cancel" = "取消";
+"general_close" = "关闭";
+"general_done" = "完成";
+"general_share" = "分享";
+"general_year_singular" = "年";
+"general_year_plural" = "年";
+"general_month_singular" = "个月";
+"general_month_plural" = "个月";
+"general_loading" = "计算中...";
+"general_premium_badge" = "高级";
+"general_free_badge" = "免费";
+
+// MARK: - Errors
+"error_invalid_capital" = "请输入大于0的有效贷款金额。";
+"error_invalid_years" = "请输入有效的还款年数或月数。";
+"error_invalid_rate" = "请输入大于0的有效利率。";
+"error_invalid_amount" = "请输入大于0的有效金额。";
+"error_amount_exceeds_capital" = "提前还款金额不能超过剩余本金。";
+
+// MARK: - ATT
+"att_usage_description" = "我们使用您的活动数据向您展示相关广告并衡量广告效果。";
+
+// MARK: - Countries
+"country_es" = "西班牙";
+"country_en" = "美国";
+"country_hi" = "印度";
+"country_pt_BR" = "巴西";
+"country_it" = "意大利";
+"country_fr" = "法国";
+"country_de" = "德国";
+"country_ar" = "阿拉伯 / 海湾合作委员会";
+
+// MARK: - Laws by country
+"law_es" = "西班牙第5/2019号法：浮动利率第1-3年0.25%，之后0%。固定利率第1-10年2%，之后1.5%。";
+"law_en" = "多德-弗兰克法案（2014）：最高 第1/2/3年3%/2%/1%，第4年起0%。";
+"law_hi" = "印度储备银行2012年通函：浮动利率0%。固定利率最高2%。";
+"law_pt_BR" = "SFH 第9.514/1997号法：最高为提前还款金额的2%。";
+"law_it" = "TUB + 欧盟指令：浮动利率0.5%，固定利率1.5%。";
+"law_fr" = "法国消费法典L313-47条：IRA = 最小值（本金的3%，6个月利息）。";
+"law_de" = "德国民法典§490条：剩余期限>12个月最高1%，≤12个月最高0.5%。";
+"law_ar" = "伊斯兰融资（穆拉巴哈/伊贾拉）：无利息；约1%管理费。";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "月供";
+"kpi_monthly_payment_explanation" = "贷款存续期间每月支付的固定金额。包含本金部分（偿还贷款本金）和利息部分（借款成本）。";
+"kpi_monthly_payment_formula" = "P × [r(1+r)^n] / [(1+r)^n - 1]\nP=本金  r=月利率  n=期数（月）";
+"kpi_monthly_payment_example" = "20万元贷款，30年，年利率3.5% → 月供898元。";
+
+"kpi_total_interest_title" = "总利息";
+"kpi_total_interest_explanation" = "贷款存续期间支付的所有利息之和。利率越高或期限越长，支付的利息越多。";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "20万元贷款，30年，年利率3.5%，仅利息就需支付约12.3万元。";
+
+"kpi_total_cost_title" = "总费用";
+"kpi_total_cost_explanation" = "还给银行的全部资金：贷款本金 + 所有利息。是比较两笔贷款的最佳指标。";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "本金20万 + 利息12.3万 = 总费用32.3万。";
+
+"kpi_months_saved_title" = "节省月数";
+"kpi_months_saved_explanation" = "选择部分提前还款并缩短期限时，这是您将少还的月数。越早进行提前还款，节省越多。";
+"kpi_months_saved_formula" = "n_新 = -ln(1 - P_新 × r / 月供) / ln(1 + r)";
+"kpi_months_saved_example" = "30年贷款第5年提前还款2万元，可节省4-6年还款期。";
+
+"kpi_interest_saved_title" = "节省利息";
+"kpi_interest_saved_explanation" = "不提前还款的利息与提前还款后利息之差。这是扣除违约金前的毛节省额。";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "提前还款2万元，根据时间节点可节省8,000至18,000元利息。";
+
+"kpi_net_saving_title" = "净节省金额";
+"kpi_net_saving_explanation" = "实际节省金额：节省利息减去银行收取的提前还款违约金。若为负数，则提前还款不划算。";
+"kpi_net_saving_formula" = "净节省 = 节省利息 − 违约金";
+"kpi_net_saving_example" = "节省利息1.5万 − 违约金500 = 净节省1.45万。";
+
+"kpi_commission_title" = "提前还款违约金";
+"kpi_commission_explanation" = "银行可能对提前还款收取违约金。各国法规不同，均对消费者有一定保护。";
+"kpi_commission_formula" = "浮动利率：0.25% × 金额（第1-3年）\n固定利率：2% × 金额（第1-10年）";
+"kpi_commission_example" = "浮动利率贷款第2年提前还款2万 → 违约金 = 20,000 × 0.25% = 50元。";
+
+"kpi_new_payment_title" = "新月供";
+"kpi_new_payment_explanation" = "选择部分提前还款后减少月供，这将是您在保持原还款期限的情况下，剩余贷款期间的新月供金额。";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "当前月供898元 → 提前还款2万后 → 新月供798元。";
+
+"kpi_euribor_diff_monthly_title" = "每月差额";
+"kpi_euribor_diff_monthly_explanation" = "按模拟情景利率上升或下降后，月供的变化幅度。正值表示需多付费用。";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "利率上升1个百分点，15万元20年期贷款月供约增加60元。";
+
+"kpi_amortize_saving_title" = "提前还款节省";
+"kpi_amortize_saving_explanation" = "将这笔钱用于提前还款的确定性收益。相当于以与贷款利率相同的无风险收益率获得回报。";
+"kpi_amortize_saving_formula" = "本金 × ((1 + 利率)^年数 − 1)";
+"kpi_amortize_saving_example" = "2万元，贷款利率3.5%，期限10年 → 确定节省9,773元。";
+
+"kpi_invest_gain_title" = "投资收益";
+"kpi_invest_gain_explanation" = "将这笔钱用于投资而非提前还款的预期收益，按您输入的年收益率计算。请记住，投资存在风险，收益不受保证。";
+"kpi_invest_gain_formula" = "本金 × ((1 + 收益率)^年数 − 1)";
+"kpi_invest_gain_example" = "2万元，年收益率7%，期限10年 → 预期收益19,343元。";
+
+"kpi_section_what" = "这是什么？";
+"kpi_section_formula" = "公式";
+"kpi_section_example" = "示例";
+"kpi_chart_label" = "图表";
+"kpi_example_reduce_term" = "缩短还款期";
+"kpi_example_reduce_payment" = "减少月供";
+
+// MARK: - General units
+"general_years" = "年";
+"general_months" = "个月";
+"general_done" = "完成";
+"general_cancel" = "取消";
+"partial_section_commission" = "手续费";
+
+"kpi_input_capital_title" = "贷款金额";
+"kpi_input_capital_explanation" = "您向银行借款的总金额。这是计算利息的基础。";
+"kpi_input_capital_example" = "25万元房屋，首付20% → 贷款金额20万元。";
+"kpi_input_years_title" = "贷款年限";
+"kpi_input_years_explanation" = "还清贷款所需的年数。年限越长 = 月供越低，但总利息越多。";
+"kpi_input_years_example" = "25年月供低于15年，但总利息可能是两倍。";
+"kpi_input_rate_title" = "年利率";
+"kpi_input_rate_explanation" = "银行收取的年利率百分比。这是决定贷款成本最重要的因素。";
+"kpi_input_rate_example" = "20万元贷25年：从3%到4%多付约2.8万元利息。";
+"kpi_input_euribor_title" = "基准利率";
+"kpi_input_euribor_explanation" = "银行间参考利率。浮动利率贷款 = 基准利率 + 利差。";
+"kpi_input_euribor_example" = "基准3.75% + 利差0.75% = 实际利率4.50%。";
+"kpi_input_spread_title" = "利差";
+"kpi_input_spread_explanation" = "银行在基准利率基础上加收的固定利差，用于计算浮动利率。";
+"kpi_input_spread_example" = "利差0.75% + 基准3.75% = 利率4.50%。";
+"kpi_input_remaining_capital_title" = "剩余本金";
+"kpi_input_remaining_capital_explanation" = "您仍欠银行的债务，未来利息将基于此计算。";
+"kpi_input_remaining_capital_example" = "5年前贷款20万元，25年期 → 剩余本金约17.5万元。";
+"kpi_input_months_title" = "剩余月数";
+"kpi_input_months_explanation" = "还需支付的月供数量。";
+"kpi_input_months_example" = "30年贷款已还5年 → 剩余300个月。";
+"kpi_input_amortize_amount_title" = "提前还款金额";
+"kpi_input_amortize_amount_explanation" = "您希望提前偿还以减少债务的额外金额。";
+"kpi_input_amortize_amount_example" = "提前还款2万元可以减少数年的贷款期限。";
+"kpi_input_extra_monthly_title" = "每月额外还款";
+"kpi_input_extra_monthly_explanation" = "每月在正常月供基础上额外支付的金额，全部用于还本金。";
+"kpi_input_extra_monthly_example" = "每月多还2000元，15万元3.5%贷款可提前5-7年还清。";
+"kpi_input_stress_rate_title" = "压力测试基准利率";
+"kpi_input_stress_rate_explanation" = "压力测试的起始利率，工具将模拟利率上下波动的各种情境。";
+"kpi_input_stress_rate_example" = "基准3.5% → 模拟从1.5%到8.5%的情境。";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "利率审查";
+"tab_extra_monthly" = "额外还款";
+"calculator_reference_rate" = "参考利率";
+"calculator_tin_mixed" = "利率（固定期）";
+"calculator_mixed_effective_hint %@" = "有效浮动利率：%@";
+"country_menu_header" = "选择国家";
+"settings_country_footer" = "国家决定货币和提前还款手续费计算的法律框架。";
+
+"extra_view_title" = "额外月供模拟器";
+"extra_view_description" = "计算每月额外支付固定金额可节省的利息和还款时间。";
+"country_menu_footer" = "影响货币和提前还款手续费的法律框架。";
+"partial_mortgage_type" = "贷款类型（用于计算合法手续费）";
+
+"partial_years_remaining" = "剩余年数";
+"partial_months_extra" = "额外月数";
+"partial_tab_reduce_payment" = "降低月供";
+"partial_tab_reduce_term" = "缩短期限";
+"partial_new_payment" = "新月供";
+"partial_new_term" = "新期限";
+"partial_remaining_interest" = "节省利息";
+"partial_narrative_title" = "计算结果";
+"partial_narrative_s1a" = "提前还款金额";
+"partial_narrative_s1b" = "后，剩余本金降至";
+"partial_narrative_s2" = "你可以选择：保持期限不变并降低月供，或保持月供不变并缩短期限。";
+"partial_narrative_s3a" = "较差方案可节省利息";
+"partial_narrative_s3b" = "；最优方案可节省多达";
+"partial_narrative_s4a" = "请记得从节省金额中扣除提前还款手续费";
+"partial_narrative_s4b" = "。";
+"partial_reduce_payment_explain_a" = "降低月供后，每月还款金额变为";
+"partial_reduce_payment_explain_b" = "，而非原来的";
+"partial_reduce_term_explain_a" = "缩短期限后，还款期限变为";
+"partial_reduce_term_explain_b" = "，而非原来的";
+"partial_saving_explain" = "此方案合计为您节省";
+"partial_table_title" = "年度还款计划表";
+"partial_table_year" = "年";
+"partial_table_payment" = "还款额";
+"partial_table_capital" = "本金";
+"partial_table_interest" = "利息";
+"partial_table_balance" = "剩余本金";
+"partial_chart_payments_title" = "年度还款";
+"partial_chart_amort_title" = "累计还款";
+
+"partial_time_remaining" = "剩余期限";
+"kpi_input_euribor_delta_title" = "欧元同业拆借利率变动";
+"kpi_input_euribor_delta_explanation" = "您希望在当前欧元同业拆借利率基础上模拟的涨幅（或降幅）。显示若利率在下次房贷审核时变动相应百分点，您的月供将如何变化。";
+"kpi_input_euribor_delta_example" = "若当前欧元同业拆借利率为3.75%，输入+0.50%，模拟将以4.25%的利率计算您的月供。";
+"euribor_chart_title" = "月供对比";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "移除广告";
+"settings_remove_ads_subtitle" = "一次性付款 · 永久无广告";
+"settings_web_app" = "应用网站";
+"settings_support" = "支持";
+"settings_send_feedback" = "发送反馈";
+"settings_share_app" = "分享应用";
+"settings_share_app_message" = "探索 Amortix，按揭计算器";
+"settings_coming_soon_title" = "即将推出";
+"settings_coming_soon_message" = "此功能即将推出。";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "恢复购买";
+"settings_purchase_error_title" = "购买失败";
+"settings_restore_success_title" = "购买已恢复";
+"settings_restore_success_message" = "广告已移除。";
+"settings_restore_empty_title" = "无以往购买记录";
+"settings_restore_empty_message" = "未找到此 Apple 账号的任何以往购买记录。";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "本金";
+"partial_chart_legend_interest" = "利息";
+
+/* MARK: - KPI 用你的数字 + 混合型贷款 + 本金/利息图表 */
+"kpi_section_your_numbers" = "用你的数字";
+"kpi_label_rate" = "适用利率";
+"kpi_label_variable_rate" = "浮动阶段利率";
+"kpi_label_balance_after_fixed" = "固定阶段结束后余额";
+"kpi_label_first_interest" = "利息（首月）";
+"kpi_label_first_principal" = "本金（首月）";
+"kpi_label_amount" = "金额";
+"kpi_label_return" = "年化收益率";
+"calculator_result_mixed_fixed" = "固定阶段月供";
+"calculator_result_mixed_variable" = "预计浮动月供";
+"calculator_mixed_explanation_title" = "你的混合型贷款如何运作";
+"calculator_mixed_explain_s1a" = "在前";
+"calculator_mixed_explain_s1b" = "年里，你每月将支付";
+"calculator_mixed_explain_s1c" = "，固定利率为";
+"calculator_mixed_explain_s2a" = "之后，按欧元同业拆借利率 + 加点";
+"calculator_mixed_explain_s2b" = "，预计月供将变为";
+"kpi_mixed_fixed_payment_title" = "固定阶段月供";
+"kpi_mixed_fixed_payment_explanation" = "这是混合型贷款初始固定利率期间的每月还款额。按固定利率在整个期限上摊还计算。";
+"kpi_mixed_fixed_payment_example" = "20 万欧元、30 年期、5 年固定阶段、利率 2.5% → 前 5 年固定月供 790 欧元。";
+"kpi_mixed_variable_payment_title" = "浮动阶段月供";
+"kpi_mixed_variable_payment_explanation" = "固定期结束后的预计月供。按欧元同业拆借利率 + 加点对剩余本金在剩余年限内重新计算，每次重定价都会变化。";
+"kpi_mixed_variable_payment_example" = "5 年固定期后，25 年内剩余 17.5 万欧元；按 Euribor + 加点 4.5%，预计月供为 973 欧元。";
+"chart_capital_interest_title" = "本金与利息";
+"chart_total_capital" = "本金合计";
+"chart_total_interest" = "利息合计";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "还款模型";
+"settings_model_title" = "模型";
+"settings_model_caption" = "适用于计算器的计算。";
+"system_french" = "等额本息";
+"system_linear" = "等额本金";
+"system_american" = "到期还本";
+"systems_info_title" = "还款方式";
+"systems_info_cta" = "该选哪种方式？";
+"systems_info_french" = "每期还款额固定。前期主要是利息，本金后期增多。最常见的方式。";
+"systems_info_linear" = "每期偿还相同本金，因此还款额先高后低。总利息低于等额本息。";
+"systems_info_american" = "每期只付利息，到期一次性偿还全部本金。还款额最低但总利息最高。";
+"calculator_payment_first" = "首期还款";
+"calculator_payment_interest_only" = "仅利息";
+"calculator_result_final_capital" = "到期本金";
+"amortization_system_label" = "方式：";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "观看视频 — 1 小时无广告";
+"rewarded_active" = "无广告剩余时间";
+"rewarded_unavailable_title" = "暂无可用视频";
+"rewarded_unavailable_message" = "当前没有可播放的视频广告，请几分钟后再试。";
+"settings_privacy_options" = "隐私选项";

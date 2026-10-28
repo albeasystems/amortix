@@ -1,0 +1,221 @@
+// One place that knows how every page presents itself to a crawler: <head> data, JSON-LD, sitemap,
+// robots and the llms.txt files. The prerender script and the components both read from here.
+import { content, PAGE_IDS } from './content/index.js';
+import { captureLang } from './captures.js';
+import { LANGS, HREFLANG, LOCALES, INTL, LANG_NAMES, LEGAL_LANGS, PUBLISHED, UPDATED, ORIGIN, PUBLISHER, SITE_NAME, CONTACT, APP_STORE, APP_ID, BASE, url, href } from './site.js';
+
+const LEGAL = ['privacy', 'terms', 'support'];
+const VIEWS = ['inputs', 'advanced', 'results', 'chart', 'table'];
+const have = (l) => !!content[l];
+export const activeLangs = () => LANGS.filter(have);
+
+/** Every page of the site as a route record. */
+export function routes() {
+  const out = [];
+  for (const lang of activeLangs()) {
+    out.push({ lang, page: 'home', route: `${lang}/` });
+    for (const id of PAGE_IDS) out.push({ lang, page: 'calc', id, route: `${lang}/${content[lang].pages[id].slug}/` });
+    if (LEGAL_LANGS.includes(lang)) for (const id of LEGAL) out.push({ lang, page: 'legal', id, route: `${lang}/${id}/` });
+  }
+  return out;
+}
+
+/** The same page in each language that really has it, for hreflang. */
+export function alternates(r) {
+  const out = [];
+  for (const l of activeLangs()) {
+    if (r.page === 'home') out.push([l, `${l}/`]);
+    else if (r.page === 'calc') out.push([l, `${l}/${content[l].pages[r.id].slug}/`]);
+    else if (LEGAL_LANGS.includes(l)) out.push([l, `${l}/${r.id}/`]);
+  }
+  return out;
+}
+
+export function pageMeta(r) {
+  const c = content[r.lang];
+  if (r.page === 'home') return c.home.meta;
+  if (r.page === 'calc') return c.pages[r.id].meta;
+  const d = c.legal[r.id];
+  return { title: `${d.title} | ${SITE_NAME}`, description: d.description };
+}
+
+const faqSchema = (items) => ({
+  '@type': 'FAQPage',
+  mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+});
+
+const publisher = {
+  '@type': 'Organization', '@id': `${url('')}#publisher`, name: PUBLISHER, email: CONTACT, url: url(''), logo: { '@type': 'ImageObject', url: url('media/icon-256.png'), width: 256, height: 256 },
+  contactPoint: { '@type': 'ContactPoint', email: CONTACT, contactType: 'customer support' },
+};
+
+const app = (lang) => {
+  const c = content[lang];
+  return {
+    '@type': ['SoftwareApplication', 'MobileApplication'],
+    '@id': `${url('')}#app`,
+    name: SITE_NAME,
+    description: c.home.meta.description,
+    operatingSystem: 'iOS 17 or later',
+    applicationCategory: 'FinanceApplication',
+    inLanguage: LANGS.map((l) => HREFLANG[l]),
+    // Free to download. The in-app purchase (remove ads) is not priced here: no price source exists yet.
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+    downloadUrl: APP_STORE,
+    installUrl: APP_STORE,
+    image: url('media/icon-256.png'),
+    screenshot: VIEWS.map((f) => url(`media/views/${captureLang(lang)}/${f}.webp`)),
+    featureList: c.featureList,
+    publisher: { '@id': `${url('')}#publisher` },
+  };
+};
+
+export function jsonLd(r) {
+  const c = content[r.lang];
+  const here = url(r.route);
+  const meta = pageMeta(r);
+  const graph = [];
+  if (r.page === 'home') {
+    graph.push(
+      { '@type': 'WebSite', '@id': `${url('')}#site`, url: url(`${r.lang}/`), name: SITE_NAME, inLanguage: HREFLANG[r.lang], publisher: { '@id': `${url('')}#publisher` } },
+      publisher,
+      app(r.lang),
+      { '@type': 'WebPage', '@id': `${here}#page`, url: here, name: meta.title, description: meta.description, inLanguage: HREFLANG[r.lang], datePublished: PUBLISHED, dateModified: UPDATED, primaryImageOfPage: { '@type': 'ImageObject', url: url(`media/og-${r.lang}.jpg`), width: 1200, height: 630 }, isPartOf: { '@id': `${url('')}#site` }, about: { '@id': `${url('')}#app` } },
+      { '@type': 'ItemList', '@id': `${here}#calculators`, name: c.home.index.title, numberOfItems: PAGE_IDS.length,
+        itemListElement: PAGE_IDS.map((id, i) => ({ '@type': 'ListItem', position: i + 1, name: c.pages[id].h1, url: url(`${r.lang}/${c.pages[id].slug}/`) })) },
+      faqSchema(c.home.faq.items),
+    );
+  } else if (r.page === 'calc') {
+    const p = c.pages[r.id];
+    graph.push(
+      { '@type': 'WebPage', '@id': `${here}#page`, url: here, name: p.h1, description: meta.description, inLanguage: HREFLANG[r.lang], datePublished: PUBLISHED, dateModified: UPDATED, primaryImageOfPage: { '@type': 'ImageObject', url: url(`media/og-${r.lang}.jpg`), width: 1200, height: 630 }, author: { '@id': `${url('')}#publisher` }, publisher: { '@id': `${url('')}#publisher` }, isPartOf: { '@id': `${url('')}#site` }, about: { '@id': `${url('')}#app` }, mainEntity: { '@id': `${here}#tool` } },
+      { '@type': 'WebApplication', '@id': `${here}#tool`, name: p.h1, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', browserRequirements: 'Requires JavaScript', url: here,
+        inLanguage: HREFLANG[r.lang], offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, isBasedOn: { '@id': `${url('')}#app` }, publisher: { '@id': `${url('')}#publisher` } },
+      { '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: SITE_NAME, item: url(`${r.lang}/`) },
+        { '@type': 'ListItem', position: 2, name: c.ui.nav.calculators, item: url(`${r.lang}/#calculators`) },
+        { '@type': 'ListItem', position: 3, name: p.h1, item: here },
+      ] },
+      faqSchema(p.faq),
+    );
+  } else {
+    graph.push({ '@type': 'WebPage', url: here, name: meta.title, inLanguage: HREFLANG[r.lang], isPartOf: { '@id': `${url('')}#site` } });
+  }
+  return { '@context': 'https://schema.org', '@graph': graph };
+}
+
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+
+export function headHtml(r, assets) {
+  const m = pageMeta(r);
+  const canonical = url(r.route);
+  const alts = alternates(r);
+  const xdef = alts.find(([l]) => l === 'en') || alts[0];
+  const og = url(`media/og-${r.lang}.jpg`);
+  const ogAlt = content[r.lang].home.h1;
+  const ld = JSON.stringify(jsonLd(r)).replace(/</g, '\\u003c');
+  return `<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${esc(m.title)}</title>
+    <meta name="description" content="${esc(m.description)}" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="${canonical}" />
+    ${alts.map(([l, rt]) => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(rt)}" />`).join('\n    ')}
+    <link rel="alternate" hreflang="x-default" href="${url(xdef[1])}" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfbfc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-itunes-app" content="app-id=${APP_ID}" />
+    <meta property="og:type" content="${r.page === 'home' ? 'website' : 'article'}" />
+    <meta property="og:site_name" content="${SITE_NAME}" />
+    <meta property="og:title" content="${esc(m.title)}" />
+    <meta property="og:description" content="${esc(m.description)}" />
+    <meta property="og:url" content="${canonical}" />
+    <meta property="og:locale" content="${LOCALES[r.lang]}" />
+    ${alts.filter(([l]) => l !== r.lang).map(([l]) => `<meta property="og:locale:alternate" content="${LOCALES[l]}" />`).join('\n    ')}
+    <meta property="og:image" content="${og}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${esc(ogAlt)}" />
+    <meta name="twitter:image:alt" content="${esc(ogAlt)}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${esc(m.title)}" />
+    <meta name="twitter:description" content="${esc(m.description)}" />
+    <meta name="twitter:image" content="${og}" />
+    <link rel="icon" type="image/png" href="${href('media/favicon.png')}" />
+    <link rel="apple-touch-icon" href="${href('media/icon-256.png')}" />
+    ${assets}
+    <script type="application/ld+json">${ld}</script>`;
+}
+
+// ---- llms.txt: a plain-text map of the site for language models ----
+
+const bullet = (title, route, note) => `- [${title}](${url(route)})${note ? `: ${note}` : ''}`;
+
+export function llmsTxt(lang) {
+  const c = content[lang];
+  const L = c.llms;
+  const lines = [
+    `# ${SITE_NAME}`, '', `> ${c.summary}`, '',
+    `## ${L.app}`,
+    bullet(c.home.meta.title, `${lang}/`, c.home.meta.description),
+    `- [${L.store}](${APP_STORE})`,
+    `- [${SITE_NAME}: full text](${url('llms-full.txt')})`, '',
+    `## ${L.calc}`,
+    ...PAGE_IDS.map((id) => bullet(c.pages[id].h1, `${lang}/${c.pages[id].slug}/`, c.pages[id].answer)), '',
+    `## ${L.legal}`,
+    ...(LEGAL_LANGS.includes(lang) ? LEGAL.map((id) => bullet(c.legal[id].title, `${lang}/${id}/`)) : []), '',
+    `## ${L.other}`,
+    ...activeLangs().filter((l) => l !== lang).map((l) => bullet(LANG_NAMES[l], `${l}/`)), '',
+  ];
+  return lines.join('\n');
+}
+
+/** Every language in one plain-text file, answer-first, for models that read a single document. */
+export function llmsFull() {
+  const out = [`# ${SITE_NAME}: full text`, ''];
+  for (const lang of activeLangs()) {
+    const c = content[lang];
+    out.push(`## ${LANG_NAMES[lang]}`, '', c.summary, '');
+    for (const id of PAGE_IDS) {
+      const p = c.pages[id];
+      out.push(`### ${p.h1}`, url(`${lang}/${p.slug}/`), '', p.answer, '', p.formula, '', ...p.how.paras.flatMap((t) => [t, '']));
+      for (const [q, a] of p.faq) out.push(`**${q}**`, a, '');
+    }
+    out.push(`### ${c.home.faq.title}`, '');
+    for (const [q, a] of c.home.faq.items) out.push(`**${q}**`, a, '');
+  }
+  return out.join('\n');
+}
+
+export function sitemapXml(lastmod) {
+  const entries = routes().map((r) => {
+    const alts = alternates(r);
+    const xdef = alts.find(([l]) => l === 'en') || alts[0];
+    return `  <url>
+    <loc>${url(r.route)}</loc>
+    <lastmod>${lastmod}</lastmod>
+${r.page === 'home' ? `    <image:image><image:loc>${url(`media/og-${r.lang}.jpg`)}</image:loc></image:image>\n${VIEWS.map((f) => `    <image:image><image:loc>${url(`media/views/${captureLang(r.lang)}/${f}.webp`)}</image:loc></image:image>`).join('\n')}\n` : ''}${alts.map(([l, rt]) => `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(rt)}" />`).join('\n')}
+    <xhtml:link rel="alternate" hreflang="x-default" href="${url(xdef[1])}" />
+    <priority>${r.page === 'home' ? '1.0' : r.page === 'calc' ? '0.8' : '0.3'}</priority>
+  </url>`;
+  }).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${entries}
+</urlset>
+`;
+}
+
+export function robotsTxt() {
+  const bots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'CCBot', 'Perplexity-User', 'DuckAssistBot', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'Amazonbot', 'MistralAI-User', 'cohere-ai', 'YouBot', 'Bingbot', 'Googlebot'];
+  return `User-agent: *
+Allow: /
+
+${bots.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}
+
+Sitemap: ${url('sitemap.xml')}
+`;
+}
+
+export { ORIGIN, BASE };

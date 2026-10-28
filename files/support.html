@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Centro de soporte de Amortix. Preguntas frecuentes y contacto directo."/>
+<title>Soporte — Amortix</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="icon">🏠</div>
+    <span>Amortix</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-hide">Inicio</a>
+    <a href="privacy.html" class="nav-hide">Privacidad</a>
+    <a href="support.html" class="active">Soporte</a>
+    <a href="https://apps.apple.com/app/amortix" class="btn-nav">Descargar</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Centro de Soporte</h1>
+  <p>Encuentra respuestas a las preguntas más frecuentes o escríbenos directamente.</p>
+</div>
+
+<div class="content">
+
+  <!-- FAQ -->
+  <span class="section-label">Preguntas frecuentes</span>
+  <div style="margin-top: 14px;">
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Qué método de amortización utiliza Amortix?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Amortix utiliza el <strong>método francés de amortización</strong>, que es el más empleado por los bancos en España. En este sistema la cuota mensual es constante a lo largo de toda la vida del préstamo, aunque la parte de capital e intereses varía en cada cuota.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Puedo calcular hipotecas a tipo variable?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Sí. Puedes introducir el tipo de interés actual y simular distintos escenarios de subida o bajada del Euríbor para ver cómo afectaría a tu cuota mensual. El comparador te permite visualizar varios escenarios a la vez.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Cómo funciona el simulador de amortización anticipada?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Introduce el importe del pago extraordinario y elige si prefieres <strong>reducir la cuota mensual</strong> o <strong>acortar el plazo</strong>. La app calcula al instante cuántos intereses ahorras y cuántos meses reduces la vida del préstamo.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Los cálculos coinciden exactamente con los de mi banco?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Amortix usa las fórmulas estándar del mercado hipotecario español. Pueden existir pequeñas diferencias con tu banco debido a comisiones, seguros vinculados, gastos notariales u otras condiciones particulares de tu contrato. Consulta siempre con tu entidad para obtener cifras definitivas.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Puedo exportar la tabla de amortización?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Sí. Desde la pantalla de tabla de amortización puedes exportar el informe completo en PDF y compartirlo desde tu iPhone con cualquier aplicación (correo, WhatsApp, Archivos, etc.).
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿La app necesita conexión a internet?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        No. Amortix funciona completamente sin conexión a internet. Todos los cálculos se realizan localmente en tu iPhone y tus datos nunca salen del dispositivo.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Dónde se guardan los datos de mi hipoteca?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Todos los datos que introduces se guardan únicamente en tu iPhone. No se envían a ningún servidor externo. Si desinstallas la app, los datos se eliminan. Si tienes activado iCloud Backup en tu dispositivo, los datos pueden incluirse en la copia de seguridad de iOS.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        He cambiado de iPhone y he perdido mis hipotecas guardadas.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Si realizaste una copia de seguridad con iCloud o iTunes/Finder antes del cambio de dispositivo y la restauraste en el nuevo iPhone, los datos deberían estar disponibles. Si no hiciste copia de seguridad, lamentablemente no es posible recuperarlos, ya que los datos se almacenan localmente.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        ¿Está disponible para Android?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Actualmente Amortix está disponible únicamente para iPhone (iOS 16 o superior). Estamos valorando el desarrollo de una versión para Android en el futuro.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        Creo que hay un error en un cálculo.
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-a">
+        Si detectas un resultado que no parece correcto, escríbenos indicando los valores que has introducido (importe, plazo, tipo de interés) y el resultado esperado. Lo revisaremos y corregiremos en la siguiente actualización si procede.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card" style="text-align:center; margin-top: 36px;">
+    <p style="font-size:22px; font-weight:800; margin-bottom:10px;">¿Necesitas más ayuda?</p>
+    <p style="font-size:15px; color: var(--text-muted); margin-bottom:28px; line-height:1.65; max-width:420px; margin-left:auto; margin-right:auto;">
+      Si no encontraste respuesta a tu pregunta, escríbenos y te responderemos en un plazo de 48 horas.
+    </p>
+    <a href="mailto:albeasystems@gmail.com?subject=Soporte%20Amortix" class="btn-contact">
+      ✉ Enviar mensaje
+    </a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="icon">🏠</div>
+        <span>Amortix</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="terms.html">Términos de uso</a>
+        <a href="support.html">Soporte</a>
+        <a href="https://apps.apple.com/app/amortix">App Store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Amortix. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggle(el) {
+  el.classList.toggle('open');
+  el.nextElementSibling.classList.toggle('open');
+}
+</script>
+</body>
+</html>

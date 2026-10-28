@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (Italian — it) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Salta";
+"onboarding_next" = "Avanti";
+"onboarding_start" = "Inizia";
+"onboarding_page1_title" = "Calcola il tuo mutuo";
+"onboarding_page1_subtitle" = "Scopri la tua rata mensile, gli interessi totali e il costo reale del tuo finanziamento.";
+"onboarding_page2_title" = "Simula i rimborsi anticipati";
+"onboarding_page2_subtitle" = "Confronta se conviene di più ridurre la durata o la rata quando effettui un rimborso parziale.";
+"onboarding_page3_title" = "Prendi decisioni migliori";
+"onboarding_page3_subtitle" = "Analizza l'impatto delle variazioni dei tassi, fai uno stress test e scopri se conviene estinguere il mutuo o investire.";
+
+// MARK: - Tabs
+"tab_calculator" = "Calcolatore";
+"tab_euribor" = "Revisione tasso";
+"tab_stress" = "Stress test";
+"tab_amortize" = "Rimborso";
+"tab_extra" = "Rate extra";
+"tab_invest" = "Investire";
+"tab_mortgage_tab" = "Mutuo";
+"tab_amortize_tab" = "Ammortamento";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Calcolatore mutuo";
+"calculator_section_loan" = "Dati del finanziamento";
+"calculator_capital" = "Capitale (€)";
+"calculator_years" = "Anni";
+"calculator_tin" = "Tasso nominale (%)";
+"calculator_section_type" = "Tipo di mutuo";
+"calculator_type_fixed" = "Fisso";
+"calculator_type_variable" = "Variabile";
+"calculator_type_mixed" = "Misto";
+"calculator_euribor" = "Tasso di riferimento (%)";
+"calculator_spread" = "Spread (%)";
+"calculator_fixed_period_years" = "Periodo fisso (anni)";
+"calculator_btn_calculate" = "Calcola";
+"calculator_result_monthly" = "Rata mensile";
+"calculator_result_total_interest" = "Totale interessi";
+"calculator_result_total_cost" = "Costo totale";
+"calculator_btn_see_table" = "Vedi piano di ammortamento";
+
+// MARK: - Amortization table
+"table_nav_title" = "Piano di ammortamento";
+"table_col_period" = "Periodo";
+"table_col_payment" = "Rata";
+"table_col_principal" = "Capitale";
+"table_col_interest" = "Interessi";
+"table_col_balance" = "Debito residuo";
+"table_export_pdf" = "Esporta";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Rimborso parziale anticipato";
+"partial_remaining_capital" = "Capitale residuo";
+"partial_remaining_months" = "Mesi rimanenti";
+"partial_current_rate" = "Tasso attuale (%)";
+"partial_amount" = "Importo da rimborsare";
+"partial_commission_mode_auto" = "Automatica (legge)";
+"partial_commission_mode_percent" = "Percentuale (%)";
+"partial_commission_mode_fixed" = "Importo fisso";
+"partial_commission_mode_none" = "Senza penale";
+"partial_mortgage_type" = "Tipo di mutuo";
+"partial_years_since_signing" = "Anni dalla stipula";
+"partial_btn_simulate" = "Simula";
+"partial_result_reduce_term" = "Ridurre la durata";
+"partial_result_reduce_quota" = "Ridurre la rata";
+"partial_months_saved" = "Mesi risparmiati";
+"partial_interest_saved" = "Interessi risparmiati";
+"partial_commission_cost" = "Penale di estinzione";
+"partial_net_saving" = "Risparmio netto";
+"partial_new_payment" = "Nuova rata";
+"partial_recommended" = "Consigliato";
+"partial_info_law_fixed" = "Mutuo fisso: 2% primi 10 anni, 1,5% dall'anno 11 in poi.";
+"partial_info_law_variable" = "Mutuo variabile: 0,25% primi 3 anni, 0% dall'anno 4 in poi.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Il tuo mutuo attuale";
+"extra_section_extra" = "Pagamento mensile aggiuntivo";
+"extra_monthly_amount" = "Importo extra/mese";
+"extra_btn_simulate" = "Calcola risparmio";
+"extra_months_saved" = "Mesi risparmiati";
+"extra_interest_saved" = "Interessi risparmiati";
+"extra_current_payment" = "Rata attuale";
+"extra_new_payoff" = "Nuova durata";
+"extra_interest_comparison" = "Confronto interessi";
+"extra_without_extra" = "Senza rate extra";
+"extra_with_extra" = "Con rate extra";
+"extra_balance_chart" = "Andamento del debito";
+
+// MARK: - Stress test
+"stress_section_loan" = "Dati del mutuo";
+"stress_base_rate" = "Tasso attuale (%)";
+"stress_btn_calculate" = "Calcola scenari";
+"stress_scenarios_title" = "Scenari di tasso d'interesse";
+"stress_col_rate" = "Variazione";
+"stress_col_payment" = "Rata/mese";
+"stress_col_diff" = "Differenza";
+"stress_chart_title" = "Impatto sulla rata mensile";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Revisione del tasso";
+"euribor_remaining_capital" = "Capitale residuo";
+"euribor_remaining_months" = "Mesi rimanenti";
+"euribor_spread" = "Spread (%)";
+"euribor_current_rate" = "Tasso attuale (%)";
+"euribor_current_payment" = "Rata attuale";
+"euribor_scenario_label" = "Variazione tasso (pp)";
+"euribor_simulated_payment" = "Nuova rata";
+"euribor_difference_monthly" = "Differenza mensile";
+"euribor_difference_annual" = "Differenza annuale";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "Investire o Estinguere?";
+"invest_amount" = "Importo disponibile";
+"invest_mortgage_tin" = "Tasso mutuo (%)";
+"invest_expected_return" = "Rendimento atteso (%)";
+"invest_horizon_years" = "Orizzonte (anni)";
+"invest_btn_compare" = "Confronta";
+"invest_option_amortize" = "Estinguere";
+"invest_option_invest" = "Investire";
+"invest_amortize_saving" = "Risparmio estinguendo";
+"invest_invest_gain" = "Guadagno investendo";
+"invest_recommendation_amortize" = "Meglio estinguere";
+"invest_recommendation_invest" = "Meglio investire";
+"invest_premium_title" = "Funzione Premium";
+"invest_premium_body" = "Sblocca il comparatore Investire vs Estinguere per prendere la migliore decisione finanziaria.";
+"invest_tax_note" = "Nota fiscale: i rendimenti degli investimenti possono essere soggetti a tassazione. Consulta un consulente fiscale.";
+
+// MARK: - Settings
+"settings_nav_title" = "Impostazioni";
+"settings_language" = "Lingua";
+"settings_language_system" = "Sistema";
+"settings_language_footer" = "Il cambio di lingua viene applicato immediatamente.";
+"settings_country" = "Paese / Mercato";
+"settings_section_about" = "Informazioni";
+"settings_app_version" = "Versione";
+"settings_privacy_policy" = "Informativa sulla privacy";
+"settings_terms_of_use" = "Termini di utilizzo";
+"settings_rate_app" = "Valuta l'app";
+"settings_premium_active" = "Premium attivo";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "Premium attivato!";
+"premium_unlock_message" = "Annunci disattivati. Goditi tutte le funzioni.";
+"premium_lock_title" = "Premium disattivato";
+"premium_lock_message" = "Gli annunci sono nuovamente attivi.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Annulla";
+"general_close" = "Chiudi";
+"general_done" = "Fatto";
+"general_share" = "Condividi";
+"general_year_singular" = "anno";
+"general_year_plural" = "anni";
+"general_month_singular" = "mese";
+"general_month_plural" = "mesi";
+"general_loading" = "Calcolo in corso...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "GRATIS";
+
+// MARK: - Errors
+"error_invalid_capital" = "Inserisci un capitale valido maggiore di 0.";
+"error_invalid_years" = "Inserisci una durata valida in anni o mesi.";
+"error_invalid_rate" = "Inserisci un tasso di interesse valido maggiore di 0.";
+"error_invalid_amount" = "Inserisci un importo valido maggiore di 0.";
+"error_amount_exceeds_capital" = "L'importo da rimborsare non può essere maggiore del capitale residuo.";
+
+// MARK: - ATT
+"att_usage_description" = "Utilizziamo la tua attività per mostrarti annunci pertinenti e misurare le prestazioni degli annunci.";
+
+// MARK: - Countries
+"country_es" = "Spagna";
+"country_en" = "Stati Uniti";
+"country_hi" = "India";
+"country_pt_BR" = "Brasile";
+"country_it" = "Italia";
+"country_fr" = "Francia";
+"country_de" = "Germania";
+"country_ar" = "Arabo / GCC";
+
+// MARK: - Laws by country
+"law_es" = "Legge 5/2019: Variabile 0,25% anni 1-3, 0% dopo. Fisso 2% anni 1-10, 1,5% dopo.";
+"law_en" = "Dodd-Frank Act (2014): Max. 3%/2%/1% anni 1/2/3, 0% dall'anno 4 in poi.";
+"law_hi" = "RBI Circular 2012: 0% tasso variabile. Max. 2% tasso fisso.";
+"law_pt_BR" = "SFH Lei 9.514/1997: Max. 2% sull'importo rimborsato.";
+"law_it" = "TUB + Direttiva UE: 0,5% tasso variabile, 1,5% tasso fisso.";
+"law_fr" = "Code de la Consommation L313-47: IRA = min(3% capitale, 6 mesi di interessi).";
+"law_de" = "§490 BGB: Max. 1% se rimangono >12 mesi, 0,5% se rimangono ≤12 mesi.";
+"law_ar" = "Finanza islamica (Murabaha/Ijara): senza interessi; ~1% commissione amministrativa.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Rata mensile";
+"kpi_monthly_payment_explanation" = "L'importo fisso che paghi ogni mese per tutta la durata del finanziamento. Include una quota capitale (ciò che restituisci del prestito) e una quota interessi (il costo del denaro preso in prestito).";
+"kpi_monthly_payment_formula" = "C × [r(1+r)^n] / [(1+r)^n - 1]\nC=capitale  r=tasso mensile  n=mesi";
+"kpi_monthly_payment_example" = "Mutuo 200.000€ a 30 anni al 3,5% → rata mensile di 898€.";
+
+"kpi_total_interest_title" = "Totale interessi";
+"kpi_total_interest_explanation" = "La somma di tutti gli interessi che pagherai nel corso della durata del finanziamento. Maggiore è il tasso o la durata, più interessi pagherai.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "Su un mutuo di 200.000€ a 30 anni al 3,5%, pagherai circa 123.000€ solo di interessi.";
+
+"kpi_total_cost_title" = "Costo totale";
+"kpi_total_cost_explanation" = "Il denaro totale che restituirai alla banca: capitale prestato + tutti gli interessi. È la migliore metrica per confrontare due mutui.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Capitale 200.000€ + 123.000€ interessi = 323.000€ costo totale.";
+
+"kpi_months_saved_title" = "Mesi risparmiati";
+"kpi_months_saved_explanation" = "Se scegli di ridurre la durata con un rimborso parziale, questi sono i mesi che non pagherai più. Prima avviene nel finanziamento, maggiore sarà il risparmio.";
+"kpi_months_saved_formula" = "n_nuovo = -ln(1 - C_nuovo × r / rata) / ln(1 + r)";
+"kpi_months_saved_example" = "Rimborsando 20.000€ all'anno 5 di un mutuo a 30 anni potresti eliminare 4-6 anni di pagamenti.";
+
+"kpi_interest_saved_title" = "Interessi risparmiati";
+"kpi_interest_saved_explanation" = "La differenza tra gli interessi che pagheresti senza rimborso anticipato e quelli che pagherai dopo. È il risparmio lordo prima di detrarre la penale.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Rimborsando 20.000€ puoi risparmiare tra 8.000€ e 18.000€ di interessi a seconda del momento.";
+
+"kpi_net_saving_title" = "Risparmio netto";
+"kpi_net_saving_explanation" = "Il risparmio reale: interessi risparmiati meno la penale di estinzione anticipata addebitata dalla banca. Se negativo, il rimborso anticipato non conviene.";
+"kpi_net_saving_formula" = "Risparmio netto = Interessi risparmiati − Penale";
+"kpi_net_saving_example" = "Interessi risparmiati 15.000€ − Penale 500€ = Risparmio netto 14.500€.";
+
+"kpi_commission_title" = "Penale di estinzione";
+"kpi_commission_explanation" = "La banca può addebitare una penale per l'estinzione anticipata. La normativa varia per paese e tutela il consumatore.";
+"kpi_commission_formula" = "Variabile: 0,25% × importo (anni 1-3)\nFisso: 2% × importo (anni 1-10)";
+"kpi_commission_example" = "Rimborsando 20.000€ all'anno 2 di un mutuo variabile → penale = 20.000 × 0,25% = 50€.";
+
+"kpi_new_payment_title" = "Nuova rata";
+"kpi_new_payment_explanation" = "Se scegli di ridurre la rata con il rimborso parziale, questa sarà la tua nuova rata mensile per il resto del finanziamento, mantenendo la durata originale.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Rata attuale 898€/mese → dopo rimborso di 20.000€ → nuova rata 798€/mese.";
+
+"kpi_euribor_diff_monthly_title" = "Differenza mensile";
+"kpi_euribor_diff_monthly_explanation" = "Di quanto cambia la tua rata mensile se i tassi salgono o scendono secondo lo scenario simulato. Un valore positivo significa che pagherai di più.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "Se i tassi salgono di 1 punto, un mutuo di 150.000€ a 20 anni può aumentare di ~60€/mese.";
+
+"kpi_amortize_saving_title" = "Risparmio estinguendo";
+"kpi_amortize_saving_explanation" = "Il beneficio garantito di usare quel denaro per estinguere il mutuo. È equivalente a ottenere un rendimento pari al tasso del tuo mutuo, senza rischio.";
+"kpi_amortize_saving_formula" = "Capitale × ((1 + tasso)^anni − 1)";
+"kpi_amortize_saving_example" = "20.000€ su mutuo al 3,5% per 10 anni → risparmio garantito di 9.773€.";
+
+"kpi_invest_gain_title" = "Guadagno investendo";
+"kpi_invest_gain_explanation" = "Il beneficio atteso di investire quel denaro invece di estinguere il mutuo, applicando il rendimento annuo che inserisci. Ricorda che l'investimento comporta rischi e i rendimenti non sono garantiti.";
+"kpi_invest_gain_formula" = "Capitale × ((1 + rendimento)^anni − 1)";
+"kpi_invest_gain_example" = "20.000€ al 7% annuo per 10 anni → guadagno atteso di 19.343€.";
+
+"kpi_section_what" = "Cos'è?";
+"kpi_section_formula" = "Formula";
+"kpi_section_example" = "Esempio";
+"kpi_chart_label" = "Grafico";
+"kpi_example_reduce_term" = "Ridurre la durata";
+"kpi_example_reduce_payment" = "Ridurre la rata";
+
+// MARK: - General units
+"general_years" = "anni";
+"general_months" = "mesi";
+"general_done" = "Fine";
+"general_cancel" = "Annulla";
+"partial_section_commission" = "Commissione";
+
+"kpi_input_capital_title" = "Capitale del prestito";
+"kpi_input_capital_explanation" = "L'importo totale che chiedi alla banca. È la base su cui vengono calcolati gli interessi.";
+"kpi_input_capital_example" = "Casa da 250.000 € con 20% di anticipo → capitale 200.000 €.";
+"kpi_input_years_title" = "Durata del prestito";
+"kpi_input_years_explanation" = "Il numero di anni per rimborsare il mutuo. Durata maggiore = rata più bassa, ma più interessi totali.";
+"kpi_input_years_example" = "Un mutuo a 25 anni ha rate più basse di uno a 15, ma paga molti più interessi.";
+"kpi_input_rate_title" = "Tasso di interesse";
+"kpi_input_rate_explanation" = "La percentuale annua che la banca ti addebita. Piccole differenze hanno un grande impatto nel lungo periodo.";
+"kpi_input_rate_example" = "Su 200.000 € a 25 anni, passare dal 3% al 4% significa ~28.000 € in più di interessi.";
+"kpi_input_euribor_title" = "Euribor";
+"kpi_input_euribor_explanation" = "Il tasso interbancario europeo di riferimento. I mutui variabili = Euribor + spread.";
+"kpi_input_euribor_example" = "Euribor 3,75% + spread 0,75% = tasso effettivo 4,50%.";
+"kpi_input_spread_title" = "Spread";
+"kpi_input_spread_explanation" = "Il margine fisso aggiunto dalla banca all'Euribor per calcolare il tasso variabile.";
+"kpi_input_spread_example" = "Spread 0,75% su Euribor 3,75% = tasso 4,50%.";
+"kpi_input_remaining_capital_title" = "Capitale residuo";
+"kpi_input_remaining_capital_explanation" = "Il debito che hai ancora con la banca, su cui si calcolano gli interessi futuri.";
+"kpi_input_remaining_capital_example" = "Mutuo 200.000 € di 5 anni fa a 25 anni → capitale residuo ≈ 175.000 €.";
+"kpi_input_months_title" = "Mesi rimanenti";
+"kpi_input_months_explanation" = "Il numero di rate mensili che rimangono da pagare.";
+"kpi_input_months_example" = "Mutuo 30 anni firmato 5 anni fa → 300 mesi rimanenti.";
+"kpi_input_amortize_amount_title" = "Importo da estinguere";
+"kpi_input_amortize_amount_explanation" = "La somma extra che vuoi versare per ridurre il debito in anticipo.";
+"kpi_input_amortize_amount_example" = "20.000 € in anticipo possono eliminare diversi anni di mutuo.";
+"kpi_input_extra_monthly_title" = "Pagamento mensile extra";
+"kpi_input_extra_monthly_explanation" = "Un importo aggiuntivo pagato ogni mese oltre alla rata normale.";
+"kpi_input_extra_monthly_example" = "200 € extra al mese su 150.000 € al 3,5% può finire 5-7 anni prima.";
+"kpi_input_stress_rate_title" = "Tasso base stress test";
+"kpi_input_stress_rate_explanation" = "Il tasso di partenza per simulare scenari di aumento o diminuzione.";
+"kpi_input_stress_rate_example" = "Base 3,5% → scenari da 1,5% a 8,5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Revisione tasso";
+"tab_extra_monthly" = "Pagamento extra";
+"calculator_reference_rate" = "Tasso di riferimento";
+"calculator_tin_mixed" = "Tasso (fase fissa)";
+"calculator_mixed_effective_hint %@" = "Tasso variabile effettivo: %@";
+"country_menu_header" = "Seleziona paese";
+"settings_country_footer" = "Il paese determina la valuta e la normativa per il calcolo delle penali di estinzione anticipata.";
+
+"extra_view_title" = "Simulatore pagamento mensile extra";
+"extra_view_description" = "Calcola quanto risparmi in interessi e tempo pagando un importo fisso aggiuntivo ogni mese.";
+"country_menu_footer" = "Influisce sulla valuta e sulla normativa sulle penali di estinzione anticipata.";
+"partial_mortgage_type" = "Tipo di mutuo (per applicare la commissione legale corretta)";
+
+"partial_years_remaining" = "Anni rimanenti";
+"partial_months_extra" = "Mesi aggiuntivi";
+"partial_tab_reduce_payment" = "Rata ridotta";
+"partial_tab_reduce_term" = "Durata ridotta";
+"partial_new_payment" = "Nuova rata";
+"partial_new_term" = "Nuova durata";
+"partial_remaining_interest" = "Interessi risparmiati";
+"partial_narrative_title" = "Risultato";
+"partial_narrative_s1a" = "Con questo rimborso anticipato di";
+"partial_narrative_s1b" = "il capitale residuo si riduce a";
+"partial_narrative_s2" = "Puoi scegliere di ridurre la rata mensile mantenendo la durata, oppure di ridurre la durata mantenendo la stessa rata.";
+"partial_narrative_s3a" = "L'opzione meno conveniente risparmia";
+"partial_narrative_s3b" = "in interessi; quella migliore risparmia fino a";
+"partial_narrative_s4a" = "Ricorda di sottrarre la penale di estinzione anticipata di";
+"partial_narrative_s4b" = "dal risparmio calcolato.";
+"partial_reduce_payment_explain_a" = "Riducendo la rata, pagherai";
+"partial_reduce_payment_explain_b" = "al mese invece di";
+"partial_reduce_term_explain_a" = "Riducendo la durata, finirai tra";
+"partial_reduce_term_explain_b" = "invece di";
+"partial_saving_explain" = "Questa opzione ti permette di risparmiare in totale";
+"partial_table_title" = "Piano di ammortamento annuale";
+"partial_table_year" = "Anno";
+"partial_table_payment" = "Rata";
+"partial_table_capital" = "Capitale";
+"partial_table_interest" = "Interessi";
+"partial_table_balance" = "Debito residuo";
+"partial_chart_payments_title" = "Rate annuali";
+"partial_chart_amort_title" = "Ammortamento cumulato";
+
+"partial_time_remaining" = "Durata residua";
+"kpi_input_euribor_delta_title" = "Variazione Euribor";
+"kpi_input_euribor_delta_explanation" = "L'aumento (o la diminuzione) che vuoi simulare sull'Euribor attuale. Mostra come cambierebbe la tua rata se l'Euribor si muovesse di questi punti percentuali alla prossima revisione del mutuo.";
+"kpi_input_euribor_delta_example" = "Se l'Euribor attuale è 3,75% e inserisci +0,50%, la simulazione calcola la rata con un Euribor del 4,25%.";
+"euribor_chart_title" = "Confronto rate";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Rimuovi pubblicità";
+"settings_remove_ads_subtitle" = "Pagamento unico · senza pubblicità per sempre";
+"settings_web_app" = "Sito dell'app";
+"settings_support" = "Supporto";
+"settings_send_feedback" = "Invia suggerimento";
+"settings_share_app" = "Condividi app";
+"settings_share_app_message" = "Scopri Amortix, il calcolatore di mutui";
+"settings_coming_soon_title" = "Prossimamente";
+"settings_coming_soon_message" = "Questa funzione sarà presto disponibile.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Ripristina acquisti";
+"settings_purchase_error_title" = "Acquisto fallito";
+"settings_restore_success_title" = "Acquisto ripristinato";
+"settings_restore_success_message" = "La pubblicità è stata rimossa.";
+"settings_restore_empty_title" = "Nessun acquisto precedente";
+"settings_restore_empty_message" = "Non abbiamo trovato acquisti precedenti con questo account Apple.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Capitale";
+"partial_chart_legend_interest" = "Interessi";
+
+/* MARK: - KPI "Con i tuoi numeri" + mutuo misto + grafico capitale/interessi */
+"kpi_section_your_numbers" = "Con i tuoi numeri";
+"kpi_label_rate" = "Tasso applicato";
+"kpi_label_variable_rate" = "Tasso fase variabile";
+"kpi_label_balance_after_fixed" = "Debito residuo dopo la fase fissa";
+"kpi_label_first_interest" = "Interessi (1° mese)";
+"kpi_label_first_principal" = "Capitale (1° mese)";
+"kpi_label_amount" = "Importo";
+"kpi_label_return" = "Rendimento annuo";
+"calculator_result_mixed_fixed" = "Rata fase fissa";
+"calculator_result_mixed_variable" = "Rata variabile stimata";
+"calculator_mixed_explanation_title" = "Come funziona il tuo mutuo misto";
+"calculator_mixed_explain_s1a" = "Per i primi";
+"calculator_mixed_explain_s1b" = "anni pagherai";
+"calculator_mixed_explain_s1c" = "al mese, a un tasso fisso del";
+"calculator_mixed_explain_s2a" = "Successivamente, con un tasso Euribor + spread del";
+"calculator_mixed_explain_s2b" = "la rata stimata sarà di";
+"kpi_mixed_fixed_payment_title" = "Rata fase fissa";
+"kpi_mixed_fixed_payment_explanation" = "È la rata mensile durante il periodo iniziale a tasso fisso del tuo mutuo misto. Si calcola al tasso fisso ammortizzando sull'intera durata.";
+"kpi_mixed_fixed_payment_example" = "200.000 € a 30 anni con 5 anni di fase fissa al 2,5% → rata fissa di 790 €/mese per i primi 5 anni.";
+"kpi_mixed_variable_payment_title" = "Rata fase variabile";
+"kpi_mixed_variable_payment_explanation" = "La rata stimata dalla fine del periodo fisso. Viene ricalcolata sul capitale residuo al tasso Euribor + spread per gli anni restanti e varia a ogni revisione.";
+"kpi_mixed_variable_payment_example" = "Dopo 5 anni fissi restano 175.000 € in 25 anni; con Euribor + spread del 4,5% la rata stimata sarebbe 973 €/mese.";
+"chart_capital_interest_title" = "Capitale vs interessi";
+"chart_total_capital" = "Capitale totale";
+"chart_total_interest" = "Interessi totali";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Modello di ammortamento";
+"settings_model_title" = "Modello";
+"settings_model_caption" = "Si applica al calcolo della Calcolatrice.";
+"system_french" = "Francese";
+"system_linear" = "Lineare";
+"system_american" = "Americano";
+"systems_info_title" = "Sistemi di ammortamento";
+"systems_info_cta" = "Quale sistema scegliere?";
+"systems_info_french" = "Rata costante ogni periodo. All'inizio paghi soprattutto interessi, il capitale cresce dopo. Il più comune.";
+"systems_info_linear" = "Rimborsi lo stesso capitale ogni periodo: la rata parte alta e diminuisce. Meno interessi totali del francese.";
+"systems_info_american" = "Paghi solo interessi ogni periodo e restituisci tutto il capitale alla fine. Rate minime ma più interessi totali.";
+"calculator_payment_first" = "Prima rata";
+"calculator_payment_interest_only" = "Solo interessi";
+"calculator_result_final_capital" = "Capitale finale";
+"amortization_system_label" = "Sistema:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Guarda un video — 1 ora senza pubblicità";
+"rewarded_active" = "Tempo senza pubblicità";
+"rewarded_unavailable_title" = "Nessun video disponibile";
+"rewarded_unavailable_message" = "Al momento non c’è nessun video disponibile. Riprova tra qualche minuto.";
+"settings_privacy_options" = "Opzioni sulla privacy";

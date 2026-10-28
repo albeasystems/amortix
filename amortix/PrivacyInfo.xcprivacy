@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Same declarations as Capital, which ships the same SDK set.
+	     The app's own code does not perform tracking. NSPrivacyTracking is true because
+	     the ad networks reached through LevelPlay mediation track via IDFA (ATT-gated).
+	     Of the bundled SDKs (IronSource, UnityAds, GoogleMobileAds, UserMessagingPlatform,
+	     FBAudienceNetwork and their adapters) only FBAudienceNetwork declares tracking
+	     domains, so those two are all that appear here; Apple aggregates each SDK's own
+	     bundled manifest with this one. Re-check after any SDK version bump:
+	         find Pods -name PrivacyInfo.xcprivacy \
+	           -exec plutil -extract NSPrivacyTrackingDomains xml1 -o - {} \; -->
+	<key>NSPrivacyTracking</key>
+	<true/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array>
+		<string>ep1.facebook.com</string>
+		<string>ep6.facebook.com</string>
+	</array>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeAdvertisingData</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising</string>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeDeviceID</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising</string>
+			</array>
+		</dict>
+	</array>
+	<!-- Required-reason API: UserDefaults, used by this app (@AppStorage, the review
+	     and ads bookkeeping) and by the Audience Network SDK (which also declares
+	     SystemBootTime and FileTimestamp in its own manifest; the app itself doesn't
+	     call those APIs, so they're not duplicated here). -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

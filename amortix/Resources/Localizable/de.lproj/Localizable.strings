@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (German — de) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Überspringen";
+"onboarding_next" = "Weiter";
+"onboarding_start" = "Loslegen";
+"onboarding_page1_title" = "Berechne dein Darlehen";
+"onboarding_page1_subtitle" = "Erfahre deine monatliche Rate, die Gesamtzinsen und die wahren Kosten deines Kredits.";
+"onboarding_page2_title" = "Simuliere Sondertilgungen";
+"onboarding_page2_subtitle" = "Vergleiche, ob es besser ist, die Laufzeit oder die Rate zu reduzieren, wenn du eine Teilsondertilgung vornimmst.";
+"onboarding_page3_title" = "Triff bessere Entscheidungen";
+"onboarding_page3_subtitle" = "Analysiere die Auswirkung von Zinsänderungen, führe Stresstests durch und finde heraus, ob Tilgen oder Anlegen sinnvoller ist.";
+
+// MARK: - Tabs
+"tab_calculator" = "Rechner";
+"tab_euribor" = "Zinsanpassung";
+"tab_stress" = "Stresstest";
+"tab_amortize" = "Sondertilgung";
+"tab_extra" = "Extrazahlungen";
+"tab_invest" = "Anlegen";
+"tab_mortgage_tab" = "Darlehen";
+"tab_amortize_tab" = "Tilgungsplan";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Darlehensrechner";
+"calculator_section_loan" = "Darlehensdaten";
+"calculator_capital" = "Darlehensbetrag (€)";
+"calculator_years" = "Jahre";
+"calculator_tin" = "Sollzinssatz (%)";
+"calculator_section_type" = "Darlehensart";
+"calculator_type_fixed" = "Festzins";
+"calculator_type_variable" = "Variabler Zins";
+"calculator_type_mixed" = "Kombikredit";
+"calculator_euribor" = "Referenzzins (%)";
+"calculator_spread" = "Aufschlag (%)";
+"calculator_fixed_period_years" = "Zinsbindung (Jahre)";
+"calculator_btn_calculate" = "Berechnen";
+"calculator_result_monthly" = "Monatliche Rate";
+"calculator_result_total_interest" = "Gesamtzinsen";
+"calculator_result_total_cost" = "Gesamtkosten";
+"calculator_btn_see_table" = "Tilgungsplan anzeigen";
+
+// MARK: - Amortization table
+"table_nav_title" = "Tilgungsplan";
+"table_col_period" = "Periode";
+"table_col_payment" = "Rate";
+"table_col_principal" = "Tilgung";
+"table_col_interest" = "Zinsen";
+"table_col_balance" = "Restschuld";
+"table_export_pdf" = "Exportieren";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Sondertilgung";
+"partial_remaining_capital" = "Restschuld";
+"partial_remaining_months" = "Verbleibende Monate";
+"partial_current_rate" = "Aktueller Zinssatz (%)";
+"partial_amount" = "Sondertilgungsbetrag";
+"partial_commission_mode_auto" = "Automatisch (gesetzlich)";
+"partial_commission_mode_percent" = "Prozentsatz (%)";
+"partial_commission_mode_fixed" = "Fester Betrag";
+"partial_commission_mode_none" = "Keine Gebühr";
+"partial_mortgage_type" = "Darlehensart";
+"partial_years_since_signing" = "Jahre seit Vertragsabschluss";
+"partial_btn_simulate" = "Simulieren";
+"partial_result_reduce_term" = "Laufzeit verkürzen";
+"partial_result_reduce_quota" = "Rate reduzieren";
+"partial_months_saved" = "Gesparte Monate";
+"partial_interest_saved" = "Gesparte Zinsen";
+"partial_commission_cost" = "Vorfälligkeitsentschädigung";
+"partial_net_saving" = "Nettoeinsparung";
+"partial_new_payment" = "Neue Rate";
+"partial_recommended" = "Empfohlen";
+"partial_info_law_fixed" = "Festzinsdarlehen: 2% in den ersten 10 Jahren, 1,5% ab Jahr 11.";
+"partial_info_law_variable" = "Variables Darlehen: 0,25% in den ersten 3 Jahren, 0% ab Jahr 4.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Dein aktuelles Darlehen";
+"extra_section_extra" = "Monatliche Extrazahlung";
+"extra_monthly_amount" = "Extrabetrag/Monat";
+"extra_btn_simulate" = "Ersparnis berechnen";
+"extra_months_saved" = "Gesparte Monate";
+"extra_interest_saved" = "Gesparte Zinsen";
+"extra_current_payment" = "Aktuelle Rate";
+"extra_new_payoff" = "Neue Laufzeit";
+"extra_interest_comparison" = "Zinsvergleich";
+"extra_without_extra" = "Ohne Extrazahlungen";
+"extra_with_extra" = "Mit Extrazahlungen";
+"extra_balance_chart" = "Schuldenverlauf";
+
+// MARK: - Stress test
+"stress_section_loan" = "Darlehensdaten";
+"stress_base_rate" = "Aktueller Zinssatz (%)";
+"stress_btn_calculate" = "Szenarien berechnen";
+"stress_scenarios_title" = "Zinsszenarien";
+"stress_col_rate" = "Veränderung";
+"stress_col_payment" = "Rate/Monat";
+"stress_col_diff" = "Differenz";
+"stress_chart_title" = "Auswirkung auf die Monatsrate";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Zinsanpassung";
+"euribor_remaining_capital" = "Restschuld";
+"euribor_remaining_months" = "Verbleibende Monate";
+"euribor_spread" = "Aufschlag (%)";
+"euribor_current_rate" = "Aktueller Zinssatz (%)";
+"euribor_current_payment" = "Aktuelle Rate";
+"euribor_scenario_label" = "Zinsveränderung (Pp)";
+"euribor_simulated_payment" = "Neue Rate";
+"euribor_difference_monthly" = "Monatliche Differenz";
+"euribor_difference_annual" = "Jährliche Differenz";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "Tilgen oder Anlegen?";
+"invest_amount" = "Verfügbarer Betrag";
+"invest_mortgage_tin" = "Darlehenszins (%)";
+"invest_expected_return" = "Erwartete Rendite (%)";
+"invest_horizon_years" = "Anlagehorizont (Jahre)";
+"invest_btn_compare" = "Vergleichen";
+"invest_option_amortize" = "Tilgen";
+"invest_option_invest" = "Anlegen";
+"invest_amortize_saving" = "Ersparnis durch Tilgung";
+"invest_invest_gain" = "Gewinn durch Anlage";
+"invest_recommendation_amortize" = "Tilgen ist besser";
+"invest_recommendation_invest" = "Anlegen ist besser";
+"invest_premium_title" = "Premium-Funktion";
+"invest_premium_body" = "Schalte den Tilgen-vs.-Anlegen-Vergleich frei, um die beste Finanzentscheidung zu treffen.";
+"invest_tax_note" = "Steuerhinweis: Kapitalerträge können steuerpflichtig sein. Bitte einen Steuerberater konsultieren.";
+
+// MARK: - Settings
+"settings_nav_title" = "Einstellungen";
+"settings_language" = "Sprache";
+"settings_language_system" = "System";
+"settings_language_footer" = "Die Sprachänderung wird sofort angewendet.";
+"settings_country" = "Land / Markt";
+"settings_section_about" = "Über die App";
+"settings_app_version" = "Version";
+"settings_privacy_policy" = "Datenschutzerklärung";
+"settings_terms_of_use" = "Nutzungsbedingungen";
+"settings_rate_app" = "App bewerten";
+"settings_premium_active" = "Premium aktiv";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "Premium aktiviert!";
+"premium_unlock_message" = "Werbung deaktiviert. Genieße alle Funktionen.";
+"premium_lock_title" = "Premium deaktiviert";
+"premium_lock_message" = "Werbung ist wieder aktiv.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Abbrechen";
+"general_close" = "Schließen";
+"general_done" = "Fertig";
+"general_share" = "Teilen";
+"general_year_singular" = "Jahr";
+"general_year_plural" = "Jahre";
+"general_month_singular" = "Monat";
+"general_month_plural" = "Monate";
+"general_loading" = "Wird berechnet...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "KOSTENLOS";
+
+// MARK: - Errors
+"error_invalid_capital" = "Bitte gib einen gültigen Darlehensbetrag größer als 0 ein.";
+"error_invalid_years" = "Bitte gib eine gültige Laufzeit in Jahren oder Monaten ein.";
+"error_invalid_rate" = "Bitte gib einen gültigen Zinssatz größer als 0 ein.";
+"error_invalid_amount" = "Bitte gib einen gültigen Betrag größer als 0 ein.";
+"error_amount_exceeds_capital" = "Der Sondertilgungsbetrag kann die Restschuld nicht übersteigen.";
+
+// MARK: - ATT
+"att_usage_description" = "Wir nutzen deine Aktivitäten, um dir relevante Werbung anzuzeigen und die Anzeigenleistung zu messen.";
+
+// MARK: - Countries
+"country_es" = "Spanien";
+"country_en" = "Vereinigte Staaten";
+"country_hi" = "Indien";
+"country_pt_BR" = "Brasilien";
+"country_it" = "Italien";
+"country_fr" = "Frankreich";
+"country_de" = "Deutschland";
+"country_ar" = "Arabisch / GCC";
+
+// MARK: - Laws by country
+"law_es" = "Gesetz 5/2019: Variabel 0,25% Jahre 1-3, 0% danach. Fest 2% Jahre 1-10, 1,5% danach.";
+"law_en" = "Dodd-Frank Act (2014): Max. 3%/2%/1% Jahre 1/2/3, 0% ab Jahr 4.";
+"law_hi" = "RBI Circular 2012: 0% variabler Zins. Max. 2% Festzins.";
+"law_pt_BR" = "SFH Lei 9.514/1997: Max. 2% auf den getilgten Betrag.";
+"law_it" = "TUB + EU-Richtlinie: 0,5% variabler Zins, 1,5% Festzins.";
+"law_fr" = "Code de la Consommation L313-47: IRA = min(3% Kapital, 6 Monate Zinsen).";
+"law_de" = "§490 BGB: Max. 1% bei >12 verbleibenden Monaten, 0,5% bei ≤12 verbleibenden Monaten.";
+"law_ar" = "Islamische Finanzierung (Murabaha/Ijara): ohne Zinsen; ~1% Verwaltungsgebühr.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Monatliche Rate";
+"kpi_monthly_payment_explanation" = "Der feste Betrag, den du jeden Monat während der gesamten Darlehenslaufzeit zahlst. Er enthält einen Tilgungsanteil (was du vom Darlehen zurückzahlst) und einen Zinsanteil (die Kosten des geliehenen Geldes).";
+"kpi_monthly_payment_formula" = "K × [r(1+r)^n] / [(1+r)^n - 1]\nK=Kapital  r=Monatszins  n=Monate";
+"kpi_monthly_payment_example" = "Darlehen 200.000€ auf 30 Jahre zu 3,5% → monatliche Rate von 898€.";
+
+"kpi_total_interest_title" = "Gesamtzinsen";
+"kpi_total_interest_explanation" = "Die Summe aller Zinsen, die du über die Laufzeit des Darlehens zahlen wirst. Je höher der Zinssatz oder die Laufzeit, desto mehr Zinsen zahlst du.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "Bei einem Darlehen von 200.000€ über 30 Jahre zu 3,5% zahlst du rund 123.000€ allein an Zinsen.";
+
+"kpi_total_cost_title" = "Gesamtkosten";
+"kpi_total_cost_explanation" = "Das gesamte Geld, das du an die Bank zurückzahlst: geliehenes Kapital + alle Zinsen. Dies ist der beste Vergleichsmaßstab für zwei Darlehen.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Kapital 200.000€ + 123.000€ Zinsen = 323.000€ Gesamtkosten.";
+
+"kpi_months_saved_title" = "Gesparte Monate";
+"kpi_months_saved_explanation" = "Wenn du dich für eine Laufzeitverkürzung durch Sondertilgung entscheidest, sind das die Monate, die du nicht mehr zahlen musst. Je früher im Darlehen, desto größer die Ersparnis.";
+"kpi_months_saved_formula" = "n_neu = -ln(1 - K_neu × r / Rate) / ln(1 + r)";
+"kpi_months_saved_example" = "Eine Sondertilgung von 20.000€ im Jahr 5 eines 30-Jahre-Darlehens könnte 4-6 Jahre einsparen.";
+
+"kpi_interest_saved_title" = "Gesparte Zinsen";
+"kpi_interest_saved_explanation" = "Die Differenz zwischen den Zinsen, die du ohne Sondertilgung zahlen würdest, und denen nach der Tilgung. Dies ist die Bruttoersparnis vor Abzug der Vorfälligkeitsentschädigung.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Eine Sondertilgung von 20.000€ kann je nach Zeitpunkt zwischen 8.000€ und 18.000€ an Zinsen einsparen.";
+
+"kpi_net_saving_title" = "Nettoeinsparung";
+"kpi_net_saving_explanation" = "Die tatsächliche Ersparnis: gesparte Zinsen abzüglich der vom Kreditinstitut erhobenen Vorfälligkeitsentschädigung. Ist sie negativ, lohnt sich die Sondertilgung nicht.";
+"kpi_net_saving_formula" = "Nettoeinsparung = Gesparte Zinsen − Vorfälligkeitsentschädigung";
+"kpi_net_saving_example" = "Gesparte Zinsen 15.000€ − Entschädigung 500€ = Nettoeinsparung 14.500€.";
+
+"kpi_commission_title" = "Vorfälligkeitsentschädigung";
+"kpi_commission_explanation" = "Das Kreditinstitut kann für eine vorzeitige Tilgung eine Entschädigung erheben. Die Vorschriften variieren je nach Land und schützen den Verbraucher.";
+"kpi_commission_formula" = "Variabel: 0,25% × Betrag (Jahre 1-3)\nFest: 2% × Betrag (Jahre 1-10)";
+"kpi_commission_example" = "Sondertilgung 20.000€ im Jahr 2 eines variablen Darlehens → Entschädigung = 20.000 × 0,25% = 50€.";
+
+"kpi_new_payment_title" = "Neue Rate";
+"kpi_new_payment_explanation" = "Wenn du dich für eine Ratensenkung durch Sondertilgung entscheidest, ist dies deine neue monatliche Rate für den Rest des Darlehens bei unveränderter Laufzeit.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Aktuelle Rate 898€/Monat → nach Sondertilgung von 20.000€ → neue Rate 798€/Monat.";
+
+"kpi_euribor_diff_monthly_title" = "Monatliche Differenz";
+"kpi_euribor_diff_monthly_explanation" = "Wie stark sich deine Monatsrate verändert, wenn die Zinsen gemäß dem simulierten Szenario steigen oder fallen. Ein positiver Wert bedeutet, dass du mehr zahlst.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "Wenn die Zinsen um 1 Punkt steigen, kann ein Darlehen von 150.000€ über 20 Jahre um ~60€/Monat steigen.";
+
+"kpi_amortize_saving_title" = "Ersparnis durch Tilgung";
+"kpi_amortize_saving_explanation" = "Der garantierte Vorteil, dieses Geld zur Tilgung einzusetzen. Es entspricht einer risikofreien Rendite in Höhe deines Darlehenszinssatzes.";
+"kpi_amortize_saving_formula" = "Kapital × ((1 + Zins)^Jahre − 1)";
+"kpi_amortize_saving_example" = "20.000€ bei einem Darlehenszins von 3,5% über 10 Jahre → garantierte Ersparnis von 9.773€.";
+
+"kpi_invest_gain_title" = "Gewinn durch Anlage";
+"kpi_invest_gain_explanation" = "Der erwartete Vorteil, dieses Geld anzulegen statt zu tilgen, unter Anwendung der von dir eingegebenen Jahresrendite. Denk daran, dass Geldanlagen Risiken bergen und Erträge nicht garantiert sind.";
+"kpi_invest_gain_formula" = "Kapital × ((1 + Rendite)^Jahre − 1)";
+"kpi_invest_gain_example" = "20.000€ bei 7% Jahresrendite über 10 Jahre → erwarteter Gewinn von 19.343€.";
+
+"kpi_section_what" = "Was ist das?";
+"kpi_section_formula" = "Formel";
+"kpi_section_example" = "Beispiel";
+"kpi_chart_label" = "Diagramm";
+"kpi_example_reduce_term" = "Laufzeit verkürzen";
+"kpi_example_reduce_payment" = "Rate reduzieren";
+
+// MARK: - General units
+"general_years" = "Jahre";
+"general_months" = "Monate";
+"general_done" = "Fertig";
+"general_cancel" = "Abbrechen";
+"partial_section_commission" = "Provision";
+
+"kpi_input_capital_title" = "Darlehensbetrag";
+"kpi_input_capital_explanation" = "Der Gesamtbetrag, den Sie von der Bank leihen. Er bildet die Grundlage für die Zinsberechnung.";
+"kpi_input_capital_example" = "Immobilie 250.000 € mit 20% Eigenkapital → Darlehensbetrag 200.000 €.";
+"kpi_input_years_title" = "Laufzeit";
+"kpi_input_years_explanation" = "Die Anzahl der Jahre zur Rückzahlung. Längere Laufzeit = niedrigere Rate, aber viel mehr Zinsen.";
+"kpi_input_years_example" = "25 Jahre haben niedrigere Raten als 15 Jahre, kosten aber viel mehr Zinsen.";
+"kpi_input_rate_title" = "Zinssatz";
+"kpi_input_rate_explanation" = "Der jährliche Prozentsatz, den die Bank für das Darlehen berechnet. Kleine Unterschiede haben langfristig große Auswirkungen.";
+"kpi_input_rate_example" = "200.000 € über 25 Jahre: von 3% auf 4% = ~28.000 € mehr Zinsen.";
+"kpi_input_euribor_title" = "Euribor";
+"kpi_input_euribor_explanation" = "Der europäische Interbanken-Referenzzinssatz. Variable Darlehen = Euribor + Aufschlag.";
+"kpi_input_euribor_example" = "Euribor 3,75% + Aufschlag 0,75% = effektiver Zins 4,50%.";
+"kpi_input_spread_title" = "Zinsaufschlag";
+"kpi_input_spread_explanation" = "Der feste Aufschlag der Bank auf den Euribor zur Berechnung des variablen Zinssatzes.";
+"kpi_input_spread_example" = "Aufschlag 0,75% auf Euribor 3,75% = Zins 4,50%.";
+"kpi_input_remaining_capital_title" = "Restschuld";
+"kpi_input_remaining_capital_explanation" = "Die verbleibende Schuld bei der Bank, auf die künftige Zinsen berechnet werden.";
+"kpi_input_remaining_capital_example" = "200.000 € vor 5 Jahren auf 25 Jahre → Restschuld ≈ 175.000 €.";
+"kpi_input_months_title" = "Verbleibende Monate";
+"kpi_input_months_explanation" = "Die Anzahl der noch zu zahlenden Monatsraten.";
+"kpi_input_months_example" = "30-Jahres-Darlehen vor 5 Jahren abgeschlossen → 300 Monate verbleibend.";
+"kpi_input_amortize_amount_title" = "Tilgungsbetrag";
+"kpi_input_amortize_amount_explanation" = "Der zusätzliche Betrag, den Sie zur vorzeitigen Schuldenreduzierung einzahlen möchten.";
+"kpi_input_amortize_amount_example" = "20.000 € Sondertilgung können mehrere Jahre Laufzeit einsparen.";
+"kpi_input_extra_monthly_title" = "Monatliche Zusatzzahlung";
+"kpi_input_extra_monthly_explanation" = "Ein zusätzlicher Betrag, der jeden Monat über die normale Rate hinaus gezahlt wird.";
+"kpi_input_extra_monthly_example" = "200 € extra/Monat bei 150.000 € und 3,5% kann 5-7 Jahre früher fertig sein.";
+"kpi_input_stress_rate_title" = "Basiszinssatz Stresstest";
+"kpi_input_stress_rate_explanation" = "Der Ausgangszinssatz für die Simulation verschiedener Szenarien.";
+"kpi_input_stress_rate_example" = "Basis 3,5% → Szenarien von 1,5% bis 8,5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Zinsrevision";
+"tab_extra_monthly" = "Extrazahlung";
+"calculator_reference_rate" = "Referenzzins";
+"calculator_tin_mixed" = "Zinssatz (feste Phase)";
+"calculator_mixed_effective_hint %@" = "Effektiver variabler Zins: %@";
+"country_menu_header" = "Land auswählen";
+"settings_country_footer" = "Das Land bestimmt die Währung und die gesetzlichen Regeln für Vorfälligkeitsentschädigungen.";
+
+"extra_view_title" = "Simulator für monatliche Extrazahlung";
+"extra_view_description" = "Berechne, wie viel Zinsen und Zeit du sparst, wenn du jeden Monat einen festen Betrag zusätzlich zahlst.";
+"country_menu_footer" = "Beeinflusst die Währung und das Vorfälligkeitsentschädigungsgesetz.";
+"partial_mortgage_type" = "Darlehensart (für die gesetzliche Vorfälligkeitsentschädigung)";
+
+"partial_years_remaining" = "Verbleibende Jahre";
+"partial_months_extra" = "Zusätzliche Monate";
+"partial_tab_reduce_payment" = "Rate reduziert";
+"partial_tab_reduce_term" = "Laufzeit reduziert";
+"partial_new_payment" = "Neue Rate";
+"partial_new_term" = "Neue Laufzeit";
+"partial_remaining_interest" = "Zinsen gespart";
+"partial_narrative_title" = "Ergebnis";
+"partial_narrative_s1a" = "Durch die Sondertilgung von";
+"partial_narrative_s1b" = "sinkt dein ausstehender Kredit auf";
+"partial_narrative_s2" = "Du kannst wählen: monatliche Rate senken bei gleicher Laufzeit, oder Laufzeit verkürzen bei gleicher Rate.";
+"partial_narrative_s3a" = "Die ungünstigere Option spart";
+"partial_narrative_s3b" = "an Zinsen; die bessere Option spart bis zu";
+"partial_narrative_s4a" = "Vergiss nicht, die Vorfälligkeitsentschädigung von";
+"partial_narrative_s4b" = "vom errechneten Gewinn abzuziehen.";
+"partial_reduce_payment_explain_a" = "Bei reduzierter Rate zahlst du";
+"partial_reduce_payment_explain_b" = "pro Monat statt";
+"partial_reduce_term_explain_a" = "Bei verkürzter Laufzeit bist du fertig in";
+"partial_reduce_term_explain_b" = "statt";
+"partial_saving_explain" = "Diese Option ermöglicht dir eine Gesamtersparnis von";
+"partial_table_title" = "Jährlicher Tilgungsplan";
+"partial_table_year" = "Jahr";
+"partial_table_payment" = "Rate";
+"partial_table_capital" = "Tilgung";
+"partial_table_interest" = "Zinsen";
+"partial_table_balance" = "Restschuld";
+"partial_chart_payments_title" = "Jährliche Raten";
+"partial_chart_amort_title" = "Kumulative Tilgung";
+
+"partial_time_remaining" = "Verbleibende Laufzeit";
+"kpi_input_euribor_delta_title" = "Euribor-Veränderung";
+"kpi_input_euribor_delta_explanation" = "Der Anstieg (oder Rückgang), den Sie auf den aktuellen Euribor simulieren möchten. Zeigt, wie sich Ihre Rate ändert, wenn der Euribor bei Ihrer nächsten Zinsanpassung um diesen Betrag steigt oder fällt.";
+"kpi_input_euribor_delta_example" = "Liegt der aktuelle Euribor bei 3,75 % und Sie geben +0,50 % ein, berechnet die Simulation Ihre Rate mit einem Euribor von 4,25 %.";
+"euribor_chart_title" = "Zahlungsvergleich";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Werbung entfernen";
+"settings_remove_ads_subtitle" = "Einmalige Zahlung · für immer werbefrei";
+"settings_web_app" = "App-Website";
+"settings_support" = "Support";
+"settings_send_feedback" = "Feedback senden";
+"settings_share_app" = "App teilen";
+"settings_share_app_message" = "Entdecke Amortix, den Hypothekenrechner";
+"settings_coming_soon_title" = "Demnächst verfügbar";
+"settings_coming_soon_message" = "Diese Funktion wird bald verfügbar sein.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Käufe wiederherstellen";
+"settings_purchase_error_title" = "Kauf fehlgeschlagen";
+"settings_restore_success_title" = "Kauf wiederhergestellt";
+"settings_restore_success_message" = "Werbung wurde entfernt.";
+"settings_restore_empty_title" = "Keine früheren Käufe";
+"settings_restore_empty_message" = "Mit diesem Apple-Konto wurden keine früheren Käufe gefunden.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Kapital";
+"partial_chart_legend_interest" = "Zinsen";
+
+/* MARK: - KPI "Mit deinen Zahlen" + Mischhypothek + Tilgung/Zinsen-Diagramm */
+"kpi_section_your_numbers" = "Mit deinen Zahlen";
+"kpi_label_rate" = "Angewandter Zinssatz";
+"kpi_label_variable_rate" = "Zinssatz variable Phase";
+"kpi_label_balance_after_fixed" = "Restschuld nach Fixphase";
+"kpi_label_first_interest" = "Zinsen (1. Monat)";
+"kpi_label_first_principal" = "Tilgung (1. Monat)";
+"kpi_label_amount" = "Betrag";
+"kpi_label_return" = "Jährliche Rendite";
+"calculator_result_mixed_fixed" = "Rate Fixphase";
+"calculator_result_mixed_variable" = "Geschätzte variable Rate";
+"calculator_mixed_explanation_title" = "So funktioniert deine Mischhypothek";
+"calculator_mixed_explain_s1a" = "In den ersten";
+"calculator_mixed_explain_s1b" = "Jahren zahlst du";
+"calculator_mixed_explain_s1c" = "pro Monat, zu einem Festzins von";
+"calculator_mixed_explain_s2a" = "Danach, bei einem Euribor + Aufschlag von";
+"calculator_mixed_explain_s2b" = "beträgt die geschätzte Rate";
+"kpi_mixed_fixed_payment_title" = "Rate Fixphase";
+"kpi_mixed_fixed_payment_explanation" = "Das ist die monatliche Rate während der anfänglichen Festzinsphase deiner Mischhypothek. Sie wird mit dem Festzins über die gesamte Laufzeit berechnet.";
+"kpi_mixed_fixed_payment_example" = "200.000 € auf 30 Jahre mit 5 Jahren Fixphase zu 2,5 % → feste Rate von 790 €/Monat in den ersten 5 Jahren.";
+"kpi_mixed_variable_payment_title" = "Rate variable Phase";
+"kpi_mixed_variable_payment_explanation" = "Die geschätzte Rate nach Ablauf der Festzinsphase. Sie wird auf die Restschuld zum Euribor + Aufschlag für die verbleibenden Jahre neu berechnet und ändert sich bei jeder Euribor-Anpassung.";
+"kpi_mixed_variable_payment_example" = "Nach 5 Festzinsjahren verbleiben 175.000 € auf 25 Jahre; bei Euribor + Aufschlag von 4,5 % läge die geschätzte Rate bei 973 €/Monat.";
+"chart_capital_interest_title" = "Tilgung vs. Zinsen";
+"chart_total_capital" = "Gesamttilgung";
+"chart_total_interest" = "Gesamtzinsen";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Tilgungsmodell";
+"settings_model_title" = "Modell";
+"settings_model_caption" = "Gilt für die Berechnung im Rechner.";
+"system_french" = "Französisch";
+"system_linear" = "Linear";
+"system_american" = "Endfällig";
+"systems_info_title" = "Tilgungssysteme";
+"systems_info_cta" = "Welches System wählen?";
+"systems_info_french" = "Konstante Rate pro Periode. Anfangs überwiegend Zinsen, später mehr Tilgung. Das gängigste System.";
+"systems_info_linear" = "Du tilgst jede Periode denselben Kapitalbetrag; die Rate startet hoch und sinkt. Weniger Gesamtzinsen als beim französischen System.";
+"systems_info_american" = "Du zahlst pro Periode nur Zinsen und tilgst das gesamte Kapital am Ende. Niedrigste Raten, aber die höchsten Gesamtzinsen.";
+"calculator_payment_first" = "Erste Rate";
+"calculator_payment_interest_only" = "Nur Zinsen";
+"calculator_result_final_capital" = "Endkapital";
+"amortization_system_label" = "System:";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Video ansehen — 1 Stunde ohne Werbung";
+"rewarded_active" = "Verbleibende werbefreie Zeit";
+"rewarded_unavailable_title" = "Kein Video verfügbar";
+"rewarded_unavailable_message" = "Derzeit ist kein Video verfügbar. Bitte versuche es in ein paar Minuten erneut.";
+"settings_privacy_options" = "Datenschutzoptionen";

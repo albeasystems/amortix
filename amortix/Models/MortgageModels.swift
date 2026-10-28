@@ -5,6 +5,7 @@ struct MortgageInput {
     var years: Int             = 30
     var tin: Double            = 3.5
     var mortgageType: MortgageType = .fixed
+    var system: AmortizationSystem = .french
     var euribor: Double        = 3.0
     var spread: Double         = 1.0
     var fixedPeriodYears: Int  = 5
@@ -12,7 +13,7 @@ struct MortgageInput {
     var effectiveRate: Double {
         switch mortgageType {
         case .fixed:    return tin
-        case .variable: return euribor + spread
+        case .variable: return FinancialCalculator.variableRate(euribor: euribor, spread: spread)
         case .mixed:    return tin
         }
     }
@@ -26,6 +27,21 @@ struct MortgageResult {
     let totalInterest:     Double
     let totalCost:         Double
     let amortizationTable: [AmortizationRow]
+
+    // Type + mixed-mortgage two-phase detail (nil for fixed/variable)
+    var mortgageType:        MortgageType = .fixed
+
+    // Amortization system + whether the headline payment stays constant
+    // (true only for French). For linear/american `monthlyPayment` is the
+    // first-period instalment.
+    var system:              AmortizationSystem = .french
+    var paymentIsConstant:   Bool         = true
+
+    var fixedPhasePayment:   Double?      = nil
+    var variablePhasePayment: Double?     = nil
+    var fixedPhaseMonths:    Int?         = nil
+    var balanceAfterFixed:   Double?      = nil
+    var variableRate:        Double?      = nil
 }
 
 struct AmortizationRow: Identifiable {

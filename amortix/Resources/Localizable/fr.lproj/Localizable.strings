@@ -1,0 +1,415 @@
+/* Amortix — Localizable.strings (French — fr) */
+
+// MARK: - Onboarding
+"onboarding_skip" = "Passer";
+"onboarding_next" = "Suivant";
+"onboarding_start" = "Commencer";
+"onboarding_page1_title" = "Calculez votre prêt";
+"onboarding_page1_subtitle" = "Découvrez vos mensualités, les intérêts totaux et le coût réel de votre prêt.";
+"onboarding_page2_title" = "Simulez les remboursements";
+"onboarding_page2_subtitle" = "Comparez s'il vaut mieux réduire la durée ou la mensualité lors d'un remboursement anticipé partiel.";
+"onboarding_page3_title" = "Prenez de meilleures décisions";
+"onboarding_page3_subtitle" = "Analysez l'impact des variations de taux, faites un test de résistance et découvrez s'il vaut mieux rembourser ou investir.";
+
+// MARK: - Tabs
+"tab_calculator" = "Calculatrice";
+"tab_euribor" = "Révision taux";
+"tab_stress" = "Résistance";
+"tab_amortize" = "Rembourser";
+"tab_extra" = "Paiements extra";
+"tab_invest" = "Investir";
+"tab_mortgage_tab" = "Prêt";
+"tab_amortize_tab" = "Amortissement";
+
+// MARK: - Calculator
+"calculator_nav_title" = "Calculatrice de prêt";
+"calculator_section_loan" = "Données du prêt";
+"calculator_capital" = "Capital (€)";
+"calculator_years" = "Années";
+"calculator_tin" = "Taux nominal (%)";
+"calculator_section_type" = "Type de prêt";
+"calculator_type_fixed" = "Fixe";
+"calculator_type_variable" = "Variable";
+"calculator_type_mixed" = "Mixte";
+"calculator_euribor" = "Taux de référence (%)";
+"calculator_spread" = "Marge (%)";
+"calculator_fixed_period_years" = "Période fixe (années)";
+"calculator_btn_calculate" = "Calculer";
+"calculator_result_monthly" = "Mensualité";
+"calculator_result_total_interest" = "Total des intérêts";
+"calculator_result_total_cost" = "Coût total";
+"calculator_btn_see_table" = "Voir le tableau d'amortissement";
+
+// MARK: - Amortization table
+"table_nav_title" = "Tableau d'amortissement";
+"table_col_period" = "Période";
+"table_col_payment" = "Mensualité";
+"table_col_principal" = "Capital";
+"table_col_interest" = "Intérêts";
+"table_col_balance" = "Solde";
+"table_export_pdf" = "Exporter";
+
+// MARK: - Partial amortization
+"partial_nav_title" = "Remboursement partiel";
+"partial_remaining_capital" = "Capital restant dû";
+"partial_remaining_months" = "Mois restants";
+"partial_current_rate" = "Taux actuel (%)";
+"partial_amount" = "Montant à rembourser";
+"partial_commission_mode_auto" = "Automatique (loi)";
+"partial_commission_mode_percent" = "Pourcentage (%)";
+"partial_commission_mode_fixed" = "Montant fixe";
+"partial_commission_mode_none" = "Sans pénalité";
+"partial_mortgage_type" = "Type de prêt";
+"partial_years_since_signing" = "Années depuis la signature";
+"partial_btn_simulate" = "Simuler";
+"partial_result_reduce_term" = "Réduire la durée";
+"partial_result_reduce_quota" = "Réduire la mensualité";
+"partial_months_saved" = "Mois économisés";
+"partial_interest_saved" = "Intérêts économisés";
+"partial_commission_cost" = "Indemnité de remboursement";
+"partial_net_saving" = "Économie nette";
+"partial_new_payment" = "Nouvelle mensualité";
+"partial_recommended" = "Recommandé";
+"partial_info_law_fixed" = "Prêt fixe : 2 % les 10 premières années, 1,5 % à partir de l'an 11.";
+"partial_info_law_variable" = "Prêt variable : 0,25 % les 3 premières années, 0 % à partir de l'an 4.";
+
+// MARK: - Extra payments
+"extra_section_loan" = "Votre prêt actuel";
+"extra_section_extra" = "Paiement mensuel supplémentaire";
+"extra_monthly_amount" = "Montant extra/mois";
+"extra_btn_simulate" = "Calculer l'économie";
+"extra_months_saved" = "Mois économisés";
+"extra_interest_saved" = "Intérêts économisés";
+"extra_current_payment" = "Mensualité actuelle";
+"extra_new_payoff" = "Nouvelle durée";
+"extra_interest_comparison" = "Comparatif des intérêts";
+"extra_without_extra" = "Sans paiements extra";
+"extra_with_extra" = "Avec paiements extra";
+"extra_balance_chart" = "Évolution du solde";
+
+// MARK: - Stress test
+"stress_section_loan" = "Données du prêt";
+"stress_base_rate" = "Taux actuel (%)";
+"stress_btn_calculate" = "Calculer les scénarios";
+"stress_scenarios_title" = "Scénarios de taux d'intérêt";
+"stress_col_rate" = "Variation";
+"stress_col_payment" = "Mensualité";
+"stress_col_diff" = "Différence";
+"stress_chart_title" = "Impact sur la mensualité";
+
+// MARK: - Euribor
+"euribor_nav_title" = "Révision du taux";
+"euribor_remaining_capital" = "Capital restant dû";
+"euribor_remaining_months" = "Mois restants";
+"euribor_spread" = "Marge (%)";
+"euribor_current_rate" = "Taux actuel (%)";
+"euribor_current_payment" = "Mensualité actuelle";
+"euribor_scenario_label" = "Variation de taux (pp)";
+"euribor_simulated_payment" = "Nouvelle mensualité";
+"euribor_difference_monthly" = "Différence mensuelle";
+"euribor_difference_annual" = "Différence annuelle";
+
+// MARK: - Invest vs Amortize
+"invest_nav_title" = "Investir ou Rembourser ?";
+"invest_amount" = "Montant disponible";
+"invest_mortgage_tin" = "Taux du prêt (%)";
+"invest_expected_return" = "Rendement attendu (%)";
+"invest_horizon_years" = "Horizon (années)";
+"invest_btn_compare" = "Comparer";
+"invest_option_amortize" = "Rembourser";
+"invest_option_invest" = "Investir";
+"invest_amortize_saving" = "Économie en remboursant";
+"invest_invest_gain" = "Gain en investissant";
+"invest_recommendation_amortize" = "Mieux vaut rembourser";
+"invest_recommendation_invest" = "Mieux vaut investir";
+"invest_premium_title" = "Fonctionnalité Premium";
+"invest_premium_body" = "Déverrouillez le comparateur Investir vs Rembourser pour prendre la meilleure décision financière.";
+"invest_tax_note" = "Note fiscale : les rendements des investissements peuvent être soumis à l'impôt. Consultez un conseiller fiscal.";
+
+// MARK: - Settings
+"settings_nav_title" = "Réglages";
+"settings_language" = "Langue";
+"settings_language_system" = "Système";
+"settings_language_footer" = "Le changement de langue s'applique immédiatement.";
+"settings_country" = "Pays / Marché";
+"settings_section_about" = "À propos";
+"settings_app_version" = "Version";
+"settings_privacy_policy" = "Politique de confidentialité";
+"settings_terms_of_use" = "Conditions d'utilisation";
+"settings_rate_app" = "Noter l'application";
+"settings_premium_active" = "Premium actif";
+
+// MARK: - Easter egg
+"premium_unlock_title" = "Premium activé !";
+"premium_unlock_message" = "Publicités désactivées. Profitez de toutes les fonctionnalités.";
+"premium_lock_title" = "Premium désactivé";
+"premium_lock_message" = "Les publicités sont à nouveau actives.";
+"premium_alert_ok" = "OK";
+
+// MARK: - General
+"general_ok" = "OK";
+"general_cancel" = "Annuler";
+"general_close" = "Fermer";
+"general_done" = "Terminé";
+"general_share" = "Partager";
+"general_year_singular" = "an";
+"general_year_plural" = "ans";
+"general_month_singular" = "mois";
+"general_month_plural" = "mois";
+"general_loading" = "Calcul en cours...";
+"general_premium_badge" = "PREMIUM";
+"general_free_badge" = "GRATUIT";
+
+// MARK: - Errors
+"error_invalid_capital" = "Veuillez saisir un capital valide supérieur à 0.";
+"error_invalid_years" = "Veuillez saisir une durée valide en années ou en mois.";
+"error_invalid_rate" = "Veuillez saisir un taux d'intérêt valide supérieur à 0.";
+"error_invalid_amount" = "Veuillez saisir un montant valide supérieur à 0.";
+"error_amount_exceeds_capital" = "Le montant à rembourser ne peut pas être supérieur au capital restant dû.";
+
+// MARK: - ATT
+"att_usage_description" = "Nous utilisons votre activité pour vous afficher des publicités pertinentes et mesurer leurs performances.";
+
+// MARK: - Countries
+"country_es" = "Espagne";
+"country_en" = "États-Unis";
+"country_hi" = "Inde";
+"country_pt_BR" = "Brésil";
+"country_it" = "Italie";
+"country_fr" = "France";
+"country_de" = "Allemagne";
+"country_ar" = "Arabe / CCG";
+
+// MARK: - Laws by country
+"law_es" = "Loi 5/2019 : Variable 0,25 % ans 1-3, 0 % ensuite. Fixe 2 % ans 1-10, 1,5 % ensuite.";
+"law_en" = "Dodd-Frank Act (2014) : Max. 3 %/2 %/1 % ans 1/2/3, 0 % à partir de l'an 4.";
+"law_hi" = "RBI Circular 2012 : 0 % taux variable. Max. 2 % taux fixe.";
+"law_pt_BR" = "SFH Lei 9.514/1997 : Max. 2 % sur le montant remboursé.";
+"law_it" = "TUB + Directive UE : 0,5 % taux variable, 1,5 % taux fixe.";
+"law_fr" = "Code de la Consommation L313-47 : IRA = min(3 % capital, 6 mois d'intérêts).";
+"law_de" = "§490 BGB : Max. 1 % si >12 mois restants, 0,5 % si ≤12 mois restants.";
+"law_ar" = "Finance islamique (Murabaha/Ijara) : sans intérêt ; ~1 % de frais administratifs.";
+
+// MARK: - KPI info
+"kpi_monthly_payment_title" = "Mensualité";
+"kpi_monthly_payment_explanation" = "Le montant fixe que vous payez chaque mois pendant toute la durée du prêt. Il comprend une part de capital (ce que vous remboursez du prêt) et une part d'intérêts (le coût de l'argent emprunté).";
+"kpi_monthly_payment_formula" = "C × [r(1+r)^n] / [(1+r)^n - 1]\nC=capital  r=taux mensuel  n=mois";
+"kpi_monthly_payment_example" = "Prêt de 200 000 € sur 30 ans à 3,5 % → mensualité de 898 €.";
+
+"kpi_total_interest_title" = "Total des intérêts";
+"kpi_total_interest_explanation" = "La somme de tous les intérêts que vous paierez sur la durée du prêt. Plus le taux ou la durée est élevé, plus vous paierez d'intérêts.";
+"kpi_total_interest_formula" = "";
+"kpi_total_interest_example" = "Pour un prêt de 200 000 € sur 30 ans à 3,5 %, vous paierez environ 123 000 € rien qu'en intérêts.";
+
+"kpi_total_cost_title" = "Coût total";
+"kpi_total_cost_explanation" = "L'argent total que vous rembourserez à la banque : capital emprunté + tous les intérêts. C'est la meilleure mesure pour comparer deux prêts.";
+"kpi_total_cost_formula" = "";
+"kpi_total_cost_example" = "Capital 200 000 € + 123 000 € d'intérêts = 323 000 € de coût total.";
+
+"kpi_months_saved_title" = "Mois économisés";
+"kpi_months_saved_explanation" = "Si vous choisissez de réduire la durée avec un remboursement partiel, voici les mois que vous ne paierez plus. Plus c'est tôt dans le prêt, plus l'économie est grande.";
+"kpi_months_saved_formula" = "n_nouveau = -ln(1 - C_nouveau × r / mensualité) / ln(1 + r)";
+"kpi_months_saved_example" = "Rembourser 20 000 € en année 5 d'un prêt sur 30 ans pourrait éliminer 4 à 6 ans de paiements.";
+
+"kpi_interest_saved_title" = "Intérêts économisés";
+"kpi_interest_saved_explanation" = "La différence entre les intérêts que vous paieriez sans remboursement anticipé et ceux que vous paierez après. C'est l'économie brute avant déduction de l'indemnité.";
+"kpi_interest_saved_formula" = "";
+"kpi_interest_saved_example" = "Rembourser 20 000 € peut économiser entre 8 000 € et 18 000 € d'intérêts selon le moment.";
+
+"kpi_net_saving_title" = "Économie nette";
+"kpi_net_saving_explanation" = "L'économie réelle : intérêts économisés moins l'indemnité de remboursement anticipé facturée par la banque. Si elle est négative, le remboursement anticipé n'est pas rentable.";
+"kpi_net_saving_formula" = "Économie nette = Intérêts économisés − Indemnité";
+"kpi_net_saving_example" = "Intérêts économisés 15 000 € − Indemnité 500 € = Économie nette 14 500 €.";
+
+"kpi_commission_title" = "Indemnité de remboursement";
+"kpi_commission_explanation" = "La banque peut facturer une indemnité pour un remboursement anticipé. La réglementation varie selon les pays et protège le consommateur.";
+"kpi_commission_formula" = "Variable : 0,25 % × montant (ans 1-3)\nFixe : 2 % × montant (ans 1-10)";
+"kpi_commission_example" = "Rembourser 20 000 € en an 2 d'un prêt variable → indemnité = 20 000 × 0,25 % = 50 €.";
+
+"kpi_new_payment_title" = "Nouvelle mensualité";
+"kpi_new_payment_explanation" = "Si vous choisissez de réduire la mensualité avec un remboursement partiel, ce sera votre nouvelle mensualité pour le reste du prêt, en conservant la durée initiale.";
+"kpi_new_payment_formula" = "";
+"kpi_new_payment_example" = "Mensualité actuelle 898 €/mois → après remboursement de 20 000 € → nouvelle mensualité 798 €/mois.";
+
+"kpi_euribor_diff_monthly_title" = "Différence mensuelle";
+"kpi_euribor_diff_monthly_explanation" = "De combien varie votre mensualité si les taux montent ou baissent selon le scénario simulé. Une valeur positive signifie que vous paierez plus.";
+"kpi_euribor_diff_monthly_formula" = "";
+"kpi_euribor_diff_monthly_example" = "Si les taux augmentent de 1 point, un prêt de 150 000 € sur 20 ans peut augmenter d'environ 60 €/mois.";
+
+"kpi_amortize_saving_title" = "Économie en remboursant";
+"kpi_amortize_saving_explanation" = "Le bénéfice garanti d'utiliser cet argent pour rembourser votre prêt. C'est équivalent à obtenir un rendement égal au taux de votre prêt, sans risque.";
+"kpi_amortize_saving_formula" = "Capital × ((1 + taux)^années − 1)";
+"kpi_amortize_saving_example" = "20 000 € sur un prêt à 3,5 % pendant 10 ans → économie garantie de 9 773 €.";
+
+"kpi_invest_gain_title" = "Gain en investissant";
+"kpi_invest_gain_explanation" = "Le bénéfice attendu d'investir cet argent plutôt que de rembourser le prêt, en appliquant le rendement annuel que vous saisissez. N'oubliez pas que l'investissement comporte des risques et que les rendements ne sont pas garantis.";
+"kpi_invest_gain_formula" = "Capital × ((1 + rendement)^années − 1)";
+"kpi_invest_gain_example" = "20 000 € à 7 % annuel pendant 10 ans → gain attendu de 19 343 €.";
+
+"kpi_section_what" = "Qu'est-ce que c'est ?";
+"kpi_section_formula" = "Formule";
+"kpi_section_example" = "Exemple";
+"kpi_chart_label" = "Graphique";
+"kpi_example_reduce_term" = "Réduire la durée";
+"kpi_example_reduce_payment" = "Réduire la mensualité";
+
+// MARK: - General units
+"general_years" = "ans";
+"general_months" = "mois";
+"general_done" = "OK";
+"general_cancel" = "Annuler";
+"partial_section_commission" = "Commission";
+
+"kpi_input_capital_title" = "Capital emprunté";
+"kpi_input_capital_explanation" = "Le montant total que vous empruntez à la banque. C'est la base sur laquelle les intérêts sont calculés.";
+"kpi_input_capital_example" = "Pour un bien à 250 000 € avec 20% d'apport, le capital serait 200 000 €.";
+"kpi_input_years_title" = "Durée du prêt";
+"kpi_input_years_explanation" = "Le nombre d'années pour rembourser. Plus longue = mensualité plus faible, mais beaucoup plus d'intérêts au total.";
+"kpi_input_years_example" = "Un prêt sur 25 ans a des mensualités plus faibles qu'un prêt sur 15 ans, mais coûte beaucoup plus en intérêts.";
+"kpi_input_rate_title" = "Taux d'intérêt";
+"kpi_input_rate_explanation" = "Le pourcentage annuel que la banque facture. C'est le facteur le plus important du coût du crédit.";
+"kpi_input_rate_example" = "Sur 200 000 € à 25 ans, passer de 3% à 4% représente ~28 000 € d'intérêts supplémentaires.";
+"kpi_input_euribor_title" = "Euribor";
+"kpi_input_euribor_explanation" = "Le taux interbancaire européen de référence. Les prêts variables = Euribor + marge.";
+"kpi_input_euribor_example" = "Euribor 3,75% + marge 0,75% = taux effectif 4,50%.";
+"kpi_input_spread_title" = "Marge bancaire";
+"kpi_input_spread_explanation" = "La marge fixe ajoutée par la banque à l'Euribor pour calculer votre taux variable.";
+"kpi_input_spread_example" = "Marge de 0,75% sur Euribor 3,75% = taux 4,50%.";
+"kpi_input_remaining_capital_title" = "Capital restant dû";
+"kpi_input_remaining_capital_explanation" = "La dette que vous devez encore à la banque, sur laquelle les intérêts futurs sont calculés.";
+"kpi_input_remaining_capital_example" = "Emprunté 200 000 € il y a 5 ans sur 25 ans → capital restant ≈ 175 000 €.";
+"kpi_input_months_title" = "Mois restants";
+"kpi_input_months_explanation" = "Le nombre de mensualités qu'il vous reste à payer.";
+"kpi_input_months_example" = "Prêt sur 30 ans signé il y a 5 ans → 300 mois restants.";
+"kpi_input_amortize_amount_title" = "Montant à rembourser";
+"kpi_input_amortize_amount_explanation" = "La somme supplémentaire que vous souhaitez verser pour réduire votre dette.";
+"kpi_input_amortize_amount_example" = "20 000 € de remboursement anticipé peut supprimer plusieurs années de prêt.";
+"kpi_input_extra_monthly_title" = "Versement mensuel supplémentaire";
+"kpi_input_extra_monthly_explanation" = "Un montant additionnel payé chaque mois en plus de la mensualité normale.";
+"kpi_input_extra_monthly_example" = "200 € de plus par mois sur 150 000 € à 3,5% peut terminer 5 à 7 ans plus tôt.";
+"kpi_input_stress_rate_title" = "Taux de base du stress test";
+"kpi_input_stress_rate_explanation" = "Le taux de départ pour simuler différents scénarios de hausse ou de baisse.";
+"kpi_input_stress_rate_example" = "Base 3,5% → scénarios de 1,5% à 8,5%.";
+
+/* MARK: - New UX keys */
+"tab_rate_review" = "Révision taux";
+"tab_extra_monthly" = "Paiement extra";
+"calculator_reference_rate" = "Taux de référence";
+"calculator_tin_mixed" = "Taux (phase fixe)";
+"calculator_mixed_effective_hint %@" = "Taux variable effectif : %@";
+"country_menu_header" = "Sélectionner pays";
+"settings_country_footer" = "Le pays détermine la devise et le cadre légal pour le calcul des indemnités de remboursement anticipé.";
+
+"extra_view_title" = "Simulateur de versement mensuel supplémentaire";
+"extra_view_description" = "Calculez combien vous économisez en intérêts et en durée en payant un montant fixe supplémentaire chaque mois.";
+"country_menu_footer" = "Détermine la devise et la loi sur les indemnités de remboursement anticipé.";
+"partial_mortgage_type" = "Type de prêt (pour appliquer la commission légale correcte)";
+
+"partial_years_remaining" = "Années restantes";
+"partial_months_extra" = "Mois supplémentaires";
+"partial_tab_reduce_payment" = "Mensualité réduite";
+"partial_tab_reduce_term" = "Durée réduite";
+"partial_new_payment" = "Nouvelle mensualité";
+"partial_new_term" = "Nouvelle durée";
+"partial_remaining_interest" = "Intérêts économisés";
+"partial_narrative_title" = "Résultat";
+"partial_narrative_s1a" = "En remboursant par anticipation";
+"partial_narrative_s1b" = "votre capital restant dû passe à";
+"partial_narrative_s2" = "Vous pouvez choisir de réduire votre mensualité en maintenant la durée, ou de raccourcir la durée en maintenant la même mensualité.";
+"partial_narrative_s3a" = "L'option moins favorable vous fait économiser";
+"partial_narrative_s3b" = "en intérêts ; la meilleure option économise jusqu'à";
+"partial_narrative_s4a" = "Pensez à déduire l'indemnité de remboursement anticipé de";
+"partial_narrative_s4b" = "de l'économie calculée.";
+"partial_reduce_payment_explain_a" = "En réduisant la mensualité, vous payerez";
+"partial_reduce_payment_explain_b" = "par mois au lieu de";
+"partial_reduce_term_explain_a" = "En réduisant la durée, vous finirez dans";
+"partial_reduce_term_explain_b" = "au lieu de";
+"partial_saving_explain" = "Cette option vous permet d'économiser au total";
+"partial_table_title" = "Tableau d'amortissement annuel";
+"partial_table_year" = "Année";
+"partial_table_payment" = "Mensualité";
+"partial_table_capital" = "Capital";
+"partial_table_interest" = "Intérêts";
+"partial_table_balance" = "Capital restant";
+"partial_chart_payments_title" = "Mensualités annuelles";
+"partial_chart_amort_title" = "Amortissement cumulé";
+
+"partial_time_remaining" = "Durée restante";
+"kpi_input_euribor_delta_title" = "Variation de l'Euribor";
+"kpi_input_euribor_delta_explanation" = "La hausse (ou la baisse) que vous souhaitez simuler par rapport à l'Euribor actuel. Cela vous montre comment votre mensualité évoluerait si l'Euribor change de ce nombre de points de pourcentage lors de votre prochaine révision.";
+"kpi_input_euribor_delta_example" = "Si l'Euribor actuel est de 3,75 % et que vous saisissez +0,50 %, la simulation calcule votre mensualité avec un Euribor de 4,25 %.";
+"euribor_chart_title" = "Comparaison des mensualités";
+
+// MARK: - Settings (redesigned)
+"settings_remove_ads" = "Supprimer la publicité";
+"settings_remove_ads_subtitle" = "Paiement unique · sans pub à vie";
+"settings_web_app" = "Site de l'app";
+"settings_support" = "Support";
+"settings_send_feedback" = "Envoyer un commentaire";
+"settings_share_app" = "Partager l'app";
+"settings_share_app_message" = "Découvre Amortix, le simulateur de prêt immobilier";
+"settings_coming_soon_title" = "Bientôt disponible";
+"settings_coming_soon_message" = "Cette fonctionnalité sera bientôt disponible.";
+
+// MARK: - IAP / Purchases
+"settings_restore_purchases" = "Restaurer les achats";
+"settings_purchase_error_title" = "Achat échoué";
+"settings_restore_success_title" = "Achat restauré";
+"settings_restore_success_message" = "La publicité a été supprimée.";
+"settings_restore_empty_title" = "Aucun achat précédent";
+"settings_restore_empty_message" = "Nous n'avons trouvé aucun achat antérieur avec ce compte Apple.";
+
+// MARK: - Chart legends
+"partial_chart_legend_capital" = "Capital";
+"partial_chart_legend_interest" = "Intérêts";
+
+/* MARK: - KPI "Avec vos chiffres" + prêt mixte + graphique capital/intérêts */
+"kpi_section_your_numbers" = "Avec vos chiffres";
+"kpi_label_rate" = "Taux appliqué";
+"kpi_label_variable_rate" = "Taux phase variable";
+"kpi_label_balance_after_fixed" = "Capital restant après la phase fixe";
+"kpi_label_first_interest" = "Intérêts (1er mois)";
+"kpi_label_first_principal" = "Capital (1er mois)";
+"kpi_label_amount" = "Montant";
+"kpi_label_return" = "Rendement annuel";
+"calculator_result_mixed_fixed" = "Mensualité phase fixe";
+"calculator_result_mixed_variable" = "Mensualité variable estimée";
+"calculator_mixed_explanation_title" = "Comment fonctionne votre prêt mixte";
+"calculator_mixed_explain_s1a" = "Pendant les";
+"calculator_mixed_explain_s1b" = "premières années, vous paierez";
+"calculator_mixed_explain_s1c" = "par mois, à un taux fixe de";
+"calculator_mixed_explain_s2a" = "Ensuite, avec un taux Euribor + marge de";
+"calculator_mixed_explain_s2b" = "la mensualité estimée sera de";
+"kpi_mixed_fixed_payment_title" = "Mensualité phase fixe";
+"kpi_mixed_fixed_payment_explanation" = "C'est la mensualité payée pendant la période initiale à taux fixe de votre prêt mixte. Elle est calculée au taux fixe sur la durée totale.";
+"kpi_mixed_fixed_payment_example" = "200 000 € sur 30 ans avec 5 ans de phase fixe à 2,5 % → mensualité fixe de 790 €/mois les 5 premières années.";
+"kpi_mixed_variable_payment_title" = "Mensualité phase variable";
+"kpi_mixed_variable_payment_explanation" = "La mensualité estimée à partir de la fin de la période fixe. Elle est recalculée sur le capital restant au taux Euribor + marge pour les années restantes et varie à chaque révision.";
+"kpi_mixed_variable_payment_example" = "Après 5 ans fixes, il reste 175 000 € sur 25 ans ; avec Euribor + marge de 4,5 %, la mensualité estimée serait de 973 €/mois.";
+"chart_capital_interest_title" = "Capital vs intérêts";
+"chart_total_capital" = "Capital total";
+"chart_total_interest" = "Intérêts totaux";
+
+/* MARK: - Amortization system (model) */
+"settings_model_header" = "Modèle d'amortissement";
+"settings_model_title" = "Modèle";
+"settings_model_caption" = "S'applique au calcul de la Calculatrice.";
+"system_french" = "Français";
+"system_linear" = "Linéaire";
+"system_american" = "Américain";
+"systems_info_title" = "Systèmes d'amortissement";
+"systems_info_cta" = "Quel système choisir ?";
+"systems_info_french" = "Mensualité constante à chaque période. Au début, surtout des intérêts ; le capital augmente ensuite. Le plus courant.";
+"systems_info_linear" = "Vous remboursez le même capital à chaque période ; la mensualité commence haute puis baisse. Moins d'intérêts qu'en français.";
+"systems_info_american" = "Vous ne payez que les intérêts à chaque période et remboursez tout le capital à la fin. Mensualités les plus basses mais le plus d'intérêts au total.";
+"calculator_payment_first" = "Première mensualité";
+"calculator_payment_interest_only" = "Intérêts uniquement";
+"calculator_result_final_capital" = "Capital final";
+"amortization_system_label" = "Système :";
+
+/* MARK: - Ads: rewarded video & CMP (LevelPlay) */
+"rewarded_watch" = "Regarder une vidéo — 1 heure sans publicité";
+"rewarded_active" = "Temps sans publicité";
+"rewarded_unavailable_title" = "Aucune vidéo disponible";
+"rewarded_unavailable_message" = "Aucune vidéo n’est disponible pour le moment. Réessayez dans quelques minutes.";
+"settings_privacy_options" = "Options de confidentialité";
