@@ -10,11 +10,19 @@ import ar from './ar.js';
 import hi from './hi.js';
 import zh from './zh.js';
 import { legal } from './legal.js';
+import { legalMore } from './legal-more.js';
+const allLegal = { ...legal, ...legalMore };
 
-// Legal pages are only written for Spanish and English; the rest link to the English ones.
+// Privacy, terms and support exist in every language.
 export const content = {
-  es: { ...es, legal: legal.es },
-  en: { ...en, legal: legal.en },
-  fr, it, de, pt, ar, hi, zh,
+  es: { ...es, legal: allLegal.es },
+  en: { ...en, legal: allLegal.en },
+  fr: { ...fr, legal: allLegal.fr },
+  it: { ...it, legal: allLegal.it },
+  de: { ...de, legal: allLegal.de },
+  pt: { ...pt, legal: allLegal.pt },
+  ar: { ...ar, legal: allLegal.ar },
+  hi: { ...hi, legal: allLegal.hi },
+  zh: { ...zh, legal: allLegal.zh },
 };
 export const PAGE_IDS = ['mortgage', 'early-repayment', 'schedule', 'stress'];

@@ -18,8 +18,8 @@ export const LANG_NAMES = { es: 'Español', en: 'English', fr: 'Français', it: 
 export const PUBLISHED = '2026-10-28';
 export const UPDATED = '2026-10-28';
 export const RTL = new Set(['ar']);
-/** Legal pages are written and reviewed in these languages only; the others link to English. */
-export const LEGAL_LANGS = ['es', 'en'];
+/** Privacy, terms and support are published in every language of the app (not lawyer-reviewed). */
+export const LEGAL_LANGS = LANGS;
 
 export const url = (route = '') => `${ORIGIN}${BASE}${route}`;
 export const href = (route = '') => `${BASE}${route}`;

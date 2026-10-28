@@ -21,6 +21,9 @@ for (const l of LANGS) {
     assert.ok(!text.includes('—'), 'em-dash found');
     assert.ok(!/aggregateRating|testimonial/i.test(text));
   });
+  test(`${l}: legal pages complete`, () => {
+    for (const id of ['privacy', 'terms', 'support']) { const d = content[l].legal[id]; assert.ok(d.title && d.description && d.updated && d.sections.length >= 5, id); assert.ok(!JSON.stringify(d).includes('—')); }
+  });
   test(`${l}: slugs are unique and url-safe`, () => {
     const s = PAGE_IDS.map((id) => content[l].pages[id].slug);
     assert.equal(new Set(s).size, s.length);

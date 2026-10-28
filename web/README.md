@@ -16,7 +16,7 @@ node scripts/audit.mjs    # SEO and link audit over dist/
 - `src/engine.js` is a port of `amortix/Services/FinancialCalculator.swift`; `src/engine.test.js` pins the figures
   that appear in the app captures (449,04 / 498,57 / 76.512,32) and in the page copy.
 - `src/content/<lang>.js` mirrors `es.js` key for key; `src/content.test.js` enforces it. A language appears on the
-  site as soon as it is registered in `src/content/index.js`. Legal pages exist in Spanish and English only.
+  site as soon as it is registered in `src/content/index.js`. Privacy, terms and support exist in all nine languages.
 - `src/seo.js` builds head tags, JSON-LD (SoftwareApplication, WebPage, WebApplication, FAQPage, BreadcrumbList,
   ItemList), hreflang, sitemap, robots and llms.txt / llms-full.txt.
 - `public/media/` is generated from `../marketing/` (`node make-gif.mjs`): animated WebP + framed GIF of the happy
@@ -29,7 +29,7 @@ rating prompt silenced, and drives the journey: advanced mixed mortgage, results
 Then `cd marketing && npm install && node make-gif.mjs` produces the media.
 
 ## Deploy
-`.github/workflows/pages.yml` publishes `dist/` to GitHub Pages at `https://albeasystems.github.io/amortix/` (repo
+`../.github/workflows/pages.yml` publishes `dist/` to GitHub Pages at `https://albeasystems.github.io/amortix/` (repo
 `albeasystems/amortix`). There is no domain yet: with one, build with `VITE_SITE_ORIGIN=https://your.domain BASE_PATH=/`
 and update `ORIGIN`/`BASE` expectations in `scripts/audit.mjs`. The build also writes `/privacy.html`, `/terms.html`
 and `/support.html` as redirects so the URLs the released app links to keep working.

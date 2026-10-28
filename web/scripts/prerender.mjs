@@ -94,12 +94,13 @@ for (const p of ['privacy', 'terms', 'support']) {
     <meta name="robots" content="noindex, follow" />
     <link rel="canonical" href="${rootUrl}en/${p}/" />
     <script>
-      var l = (navigator.languages && navigator.languages[0] || navigator.language || "en").slice(0, 2);
-      location.replace(${JSON.stringify(base)} + (l === "es" ? "es" : "en") + "/${p}/");
+            var have = ${JSON.stringify(langs)}; var pick = "en"; var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+      for (var i = 0; i < prefs.length; i++) { var c = String(prefs[i]).slice(0, 2).toLowerCase(); if (have.indexOf(c) > -1) { pick = c; break; } }
+      location.replace(${JSON.stringify(base)} + pick + "/${p}/");
     </script>
   </head>
   <body style="font-family:system-ui,sans-serif;max-width:34rem;margin:4rem auto;padding:0 1.25rem">
-    <p><a href="en/${p}/">English</a> · <a href="es/${p}/">Español</a></p>
+    <p>${langs.map((l) => `<a href="${l}/${p}/" hreflang="${hreflang(l)}">${names[l]}</a>`).join(" · ")}</p>
   </body>
 </html>
 `);
